@@ -18,7 +18,7 @@ and this is the animated version of my portrait:
 
 After class, as I was so excited to try out things that I learnt in the class, I started to code directly on Processing Program. Since this was my first time drawing by code, it was not easy for me to visualize while coding. Therefore, although it seemed like an extrawork, I decided to sketch the outline first. On my ipad, I used simple shapes to sketch out the portrait of myself as shown below:
 
-![](images/Selfportrait Sketch.jpg)
+![](images/sketchportrait.jpg)
 
 Based on this sketch, I started to code one shape at a time. When coding shapes, I depended greatly on https://processing.org/reference/ reference page to learn code languages, order of script and customized examples on the reference page to my project. 
 
