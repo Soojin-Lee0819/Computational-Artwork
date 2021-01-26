@@ -1,7 +1,7 @@
 # Assignment 1:Processing Self Portrait 
 
 ## Project Description
-This project is a self-portrait drawn entirely by code using basic drawing functions in Processing. I used simple shapes to create a cartoon-like self-portrait. Since this is my first project using Processing, the main focus was on understanding the principles of coding. I mainly used simple shapes such as circle, ellipse, rectangle, and strokes, instead of making a realistic representation of myself. I focused on capturing the character and personality of myself in the portrait. The scope of this project was to create a non-dynamic static image but as I was exploing different features on processing, I added some dynamic animation features like changing colors, moving eyebrows, and enlarging blush to make it more engaging for the viewers. 
+This project is a self-portrait drawn entirely by code using basic drawing functions in Processing. I used simple shapes to create a cartoon-like self-portrait. Since this was my first project using Processing, the main focus was on understanding the principles of coding. I mainly used simple shapes such as circle, ellipse, rectangle, and strokes instead of making a realistic representation of myself. I focused on capturing the character and personality of myself in the portrait. The scope of this project was to create a non-dynamic static image but as I was exploing some features on Processing, I added some dynamic animation features like changing colors, moving eyebrows, and enlarging blush to make it more engaging for the viewers. 
 
 Below is the image of my final self portrait:
 
@@ -15,19 +15,19 @@ and this is the animated version of my portrait:
 ## Process 
 
 
-1) After class, I was so excited to try out things that I learnt in the class that I started to code directly on Processing Program. Since this was my first time drawing by code, it was not easy for me to visualize or translate image to code simultaneously. Therefore, although it seemed like an extrawork, I decided to sketch the outline first. On my ipad, I used simple shapes to sketch out the portrait of myself as shown below:
+1) After class, I was so excited to try out things that I learnt in the class that I started to code directly on Processing Program. Since this was my first time drawing by code, it was not easy for me to visualize or translate image directly to code. Therefore, although it seemed like an extrawork, I decided to sketch the outline first. On my ipad, I used simple shapes to sketch out the portrait of myself as shown below:
 
 ![](images/sketchportrait.jpg)
 
 2) Based on this sketch, I started to code one shape at a time. When coding shapes, I depended greatly on https://processing.org/reference/ reference page to learn code languages and applied them to this project with my own twist. 
 
-3) I started with big structure of the body such as an ellipse shape for the face and the rectangle shape for the upper body. I then filled in smaller elements like eyes, nose, mouth and earings. 
+3) I started with big structure of the body such as an ellipse shape for the face and the rectangle shape for the upper body. I then filled in some smaller elements like eyes, nose, mouth, and earings. 
 
 4) As I create shapes, I experimented with colors and carefully assigned colors to the shapes.  
 
 5) Originally, I did not plan to design background but I decided to create a background that represents the personality of myslef, hence I added some sunshine patterns. 
 
-6) After inputting all the shapes and background patterns, I added simple animations that changes colors, positions, and sizes. 
+6) After inputting all the shapes and background patterns, I added simple animations like changing colors, positions, and sizes. 
 
 7) Finally, I reviewed codes to make sure that they are indented properlly, and got rid of the unnecessary comments or sentences. 
 
@@ -39,18 +39,18 @@ Here are some of the challenges that I faced:
 
 ### *Positioning & Sizing*
 
-Daniel shiffman's article https://processing.org/tutorials/drawing/ was very useful for me to have a basic understanding of coordinate system in Processing programme. However, to position shapes in relative to other shapes were much more challenging than expected. It was a very tedious process for me to position shapes at the exact place where I want it to be placed. It was especially challenging when positioning eyelashes. 
+Daniel shiffman's article https://processing.org/tutorials/drawing/ was very useful for me to have a basic understanding of coordinate system in Processing programme. However, to position shapes in relative to other shapes were much more challenging than expected. It was a very tedious process for me to position shapes at the exact place where I want it to be placed. It was especially challenging when positioning strokss for the eyelashes. 
 
 
 ### *Rotation*
 
-When I was coding bangs, I used the function **rotate(radians())** to rotate semi-circle shapes but as I run the program, it was not only semi-circles that were rotated but all of the following shapes were rotated and distorted the entire image. After a few trials and errors, I realized that I need to rotate it back to original angle to prevent following shapes from rotating. 
+When I was coding bangs, I used the function **rotate(radians())** to rotate semi-circle shapes but as I run the program, it was not only semi-circles that are being rotated but all of the following shapes were rotated altogether and distorted the image. After a few trials and errors, I realized that I need to rotate it back to the original angle to prevent following shapes from rotating. 
 
-Apart from this, positioning and coordinating shapes after the rotation were also very complicated. I was able to position shapes using negative values for x or y axis but I still don't understand how positioning works after rotation. I would like to learn this in upcoming lesson.  
+Apart from this, positioning and coordinating shapes after the rotation were also very complicated. I was able to position shapes using negative values for x or y axis but I still don't understand fully on how to position shapes after rotation. I would like to learn this in upcoming lessons.  
 
 ### *Customizing shape: Drawing Bezier Curves*
 
-Since the nose shape required more sophisticated curves, I could not use simple polygon shape. Instead I had to customize the shape. After some research, I found out that I can use Bezier curve to customize shape, but since I had limited understanding of the concept of Bezier functions, it took me a while to understand how x and y coordinates control the curve of the line. I was able to create the nose shape I wanted but I still need to explore more to fully understand this function.
+Since the nose shape required more sophisticated curves, I could not use simple polygon shapes to represent nose but I had to customize the shape. After some research, I found out that I can use Bezier curve, but since I had a limited understanding on the concept of Bezier functions, it took me a while to understand how x and y coordinates control the curve of the line. Afterall, I was able to draw a nose shape but I will want to explore more on this function. 
 
 ### *Color Choices*
 
