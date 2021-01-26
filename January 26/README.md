@@ -49,16 +49,16 @@ When I was coding bangs, I used the function **rotate(radians())** to rotate sem
 
 Apart from this, positioning and coordinating shapes after the rotation were also very complicated. I was able to position shapes using negative values for x or y axies but I still don't understand how positioning works after rotation. I would like to learn this in upcoming lesson.  
 
-### *Customizing shape: Drawing Bezier Curves *
+### *Customizing shape: Drawing Bezier Curves*
 
 To draw nose shape that I wanted with curves, I found out that it can't be drawn with simple polygon shapes but the shape has to be customized. Even after finding out that I can use Bezier curve to customize shape, since I had limited understanding of the concept of Bezier functions, it took me a while to understand how x and y coordinates control the curve of the line. 
 
 ### *Color Choices*
 
-Another challenge was to understand the RGB values. Since I am used to linguistic representation of colors, it was difficult for me to use numbers to generate colors. Therefore, for a defined color, I searched the name of the color online, and translate it to HEX value. However, when I was coding colors for sunshine patterns for the background, as I wanted it to change its color randomly, I had to code span of RGB value and it was a tedious process finding a good value for RGB that will result in outcome that I want.
+Another challenge was to understand the RGB values. Since I am used to linguistic representation of colors, it was difficult for me to use numbers to generate colors that I have in mind. Therefore, for a defined color such as maroon, I searched the name of the color online, and translate it to HEX value. Even then, since there are so many varieties of Maroon colors, it was a tedious process for me to  
+
+The greatest challenge was when I was coding colors for sunshine patterns for the background. I wanted its color to change randomly. In order to do this, I had to code the span of R,G, and B values and it was a tedious process finding a good spectrum of for RGB that will give me the result that I want. It was difficult to make the color change not too subtle but also to stay in the spectrum of bright yellow and orange colors. 
 
 ## Reflection/Evaluation
 
-Overall, I enjoyed working on this project and I am very satified with the outcome. Previous to this project, I thought have limited application but it allowed me to realize how much  was excited with the potential of compuOne thing that I would like to work on is to
-
-
+Overall, I enjoyed working on this project and I am very satified with the outcome. Working on this project, I discovered the potentials of computational drawing and now, I am really excited to explore its unlimited potential. One interesting point that I found out working on this project is that although it is a 2D image, to code this image, I had to continuously layer shapes  and consider it as a 3D space. For example, on the surface, it looks like a flat image, but to compute it, the face ellipse is layered in front of the hair ellipse and if they are layered differently, it will generate a completley different image. 
