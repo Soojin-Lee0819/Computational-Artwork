@@ -14,25 +14,24 @@ and this is the animated version of my portrait:
 
 ## Process 
 
-### *1. Brainstorm & Limitation on variety of shapes I can code*
 
-After class, I was so excited to try out things that I learnt in the class that I started to code directly on Processing Program. Since this was my first time drawing by code, it was not easy for me to visualize or translate image to code simultaneously. Therefore, although it seemed like an extrawork, I decided to sketch the outline first. On my ipad, I used simple shapes to sketch out the portrait of myself as shown below:
+1) After class, I was so excited to try out things that I learnt in the class that I started to code directly on Processing Program. Since this was my first time drawing by code, it was not easy for me to visualize or translate image to code simultaneously. Therefore, although it seemed like an extrawork, I decided to sketch the outline first. On my ipad, I used simple shapes to sketch out the portrait of myself as shown below:
 
 ![](images/sketchportrait.jpg)
 
-Based on this sketch, I started to code one shape at a time. When coding shapes, I depended greatly on https://processing.org/reference/ reference page to learn code languages and applied them with my own twist. 
+2) Based on this sketch, I started to code one shape at a time. When coding shapes, I depended greatly on https://processing.org/reference/ reference page to learn code languages and applied them with my own twist. 
 
-I started with big structure of the body such as an ellipse shape for the face and the rectangle shape for the upper body. I then filled in smaller elements like eyes, nose, and mouth. 
+3) I started with big structure of the body such as an ellipse shape for the face and the rectangle shape for the upper body. I then filled in smaller elements like eyes, nose, and mouth. 
 
-As I create shapes, I experimented with colors and carefully assigned appropriate colors to shapes. 
+4) As I create shapes, I experimented with colors and carefully assigned appropriate colors to shapes. 
 
-Originally, I did not plan to design background but I decided to create a background that represents the personality of myslef, hence I added sunshine patterns. 
+5)Originally, I did not plan to design background but I decided to create a background that represents the personality of myslef, hence I added sunshine patterns. 
 
-After inputting all the shapes and background patterns, I added simple animations that changes colors, positions, and sizes. 
+6) After inputting all the shapes and background patterns, I added simple animations that changes colors, positions, and sizes. 
 
-Finally, I reviewed codes to make sure that they are indented properlly, and got rid of the unnecessary comments or sentences. 
+7) Finally, I reviewed codes to make sure that they are indented properlly, and got rid of the unnecessary comments or sentences. 
 
-To export the final project, I used  saveFrame("line-######.png") function to save each frame and I used online GIF converter to make a GIF file. 
+8) To export the final project, I used  saveFrame("line-######.png") function to save each frame and I used online GIF converter to make a GIF file. 
 
 ## Challenges 
 
