@@ -1,7 +1,7 @@
 # Assignment 1:Processing Self Portrait 
 
 ## Project Description
-This project is a self-portrait drawn entirely by code using basic drawing functions in Processing. I used simple shapes to create a cartoon-like self-portrait. Since this was my first project using Processing, the main focus was on understanding the principles of coding. I mainly used simple shapes such as circle, ellipse, rectangle, and strokes instead of making a realistic representation of myself. I focused on capturing the character and personality of myself in the portrait. The scope of this project was to create a non-dynamic static image but as I was exploing some features on Processing, I added some dynamic animation features like changing colors, moving eyebrows, and enlarging blush to make it more engaging for the viewers. 
+This project is a self-portrait drawn entirely by code using basic drawing functions in Processing. I used simple shapes to create a cartoon-like self-portrait. Since this was my first project using Processing, the main focus was on understanding the principles of coding and I mainly used simple shapes such as circle, ellipse, rectangle, and strokes. Instead of making a realistic representation of myself, I focused on capturing the character and personality of myself in the portrait. The scope of this project was to create a non-dynamic static image but as I was exploing some features on Processing, I added some dynamic animation features like changing colors, moving eyebrows, and enlarging blush to make it more engaging for the viewers. 
 
 Below is the image of my final self portrait:
 
@@ -19,9 +19,9 @@ and this is the animated version of my portrait:
 
 ![](images/sketchportrait.jpg)
 
-2) Based on this sketch, I started to code one shape at a time. When coding shapes, I depended greatly on https://processing.org/reference/ reference page to learn code languages and applied them to this project with my own twist. 
+2) Based on this sketch, I started to code one shape at a time. When coding shapes, I depended greatly on https://processing.org/reference/ reference page to learn code languages and applied them with my own twist. 
 
-3) I started with big structure of the body such as an ellipse shape for the face and the rectangle shape for the upper body. I then filled in some smaller elements like eyes, nose, mouth, and earings. 
+3) I started with big structure of the figure such as an ellipse shape for the face and the rectangle shape for the upper body. I then filled in some smaller elements like eyes, nose, mouth, and earings. 
 
 4) As I create shapes, I experimented with colors and carefully assigned colors to the shapes.  
 
@@ -39,7 +39,7 @@ Here are some of the challenges that I faced:
 
 ### *Positioning & Sizing*
 
-Daniel shiffman's article https://processing.org/tutorials/drawing/ was very useful for me to have a basic understanding of coordinate system in Processing programme. However, to position shapes in relative to other shapes were much more challenging than expected. It was a very tedious process for me to position shapes at the exact place where I want it to be placed. It was especially challenging when positioning strokss for the eyelashes. 
+Daniel shiffman's article https://processing.org/tutorials/drawing/ was very useful for me to have a basic understanding of coordinate system in Processing programme. However, to position shapes in relative to other shapes were much more challenging than expected. It was a very tedious process for me to position shapes at the exact place where I want it to be placed. It was especially challenging when positioning strokes around the arc for the eyelashes. I used 
 
 
 ### *Rotation*
@@ -50,7 +50,7 @@ Apart from this, positioning and coordinating shapes after the rotation were als
 
 ### *Customizing shape: Drawing Bezier Curves*
 
-Since the nose shape required more sophisticated curves, I could not use simple polygon shapes to represent nose but I had to customize the shape. After some research, I found out that I can use Bezier curve, but since I had a limited understanding on the concept of Bezier functions, it took me a while to understand how x and y coordinates control the curve of the line. Afterall, I was able to draw a nose shape but I will want to explore more on this function. 
+I faced a challenge when I was drawing nose. Since nose required more sophisticated curves, I could not use simple polygon shapes to represent it but I had to customize the shape. After some research, I found out that I can use Bezier curve, but since I had a limited understanding on the concept of Bezier functions, it took me a while to understand how x and y coordinates control the curve of the line. After all, I was able to draw a nose shape but I will want to explore more on this function. 
 
 ### *Color Choices*
 
