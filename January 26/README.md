@@ -25,7 +25,7 @@ and this is the animated version of my portrait:
 
 4) As I create shapes, I experimented with colors and carefully assigned appropriate colors to shapes. 
 
-5)Originally, I did not plan to design background but I decided to create a background that represents the personality of myslef, hence I added sunshine patterns. 
+5) Originally, I did not plan to design background but I decided to create a background that represents the personality of myslef, hence I added sunshine patterns. 
 
 6) After inputting all the shapes and background patterns, I added simple animations that changes colors, positions, and sizes. 
 
@@ -50,14 +50,14 @@ Apart from this, positioning and coordinating shapes after the rotation were als
 
 ### *Customizing shape: Drawing Bezier Curves*
 
-To draw nose shape that I wanted with curves, I found out that it can't be drawn with simple polygon shapes but the shape has to be customized. Even after finding out that I can use Bezier curve to customize shape, since I had limited understanding of the concept of Bezier functions, it took me a while to understand how x and y coordinates control the curve of the line. 
+Since nose shape required more sophisticated curves, I could not use simple polygon shape, instead I had to customize the shape. After research, I found out that I can use Bezier curve to customize shape, but since I had limited understanding of the concept of Bezier functions, it took me a while to understand how x and y coordinates control the curve of the line. 
 
 ### *Color Choices*
 
-Another challenge was to understand the RGB values. Since I am used to linguistic representation of colors, it was difficult for me to use numbers to generate colors that I have in mind. Therefore, for a defined color such as maroon, I searched the name of the color online, and translate it to HEX value. Even then, since there are so many varieties of Maroon colors, it was a tedious process for me to  
+Another challenge was to understand the RGB values. Since I am used to linguistic representation of colors, it was difficult for me to use numbers to generate colors that I have in mind. Therefore, for a defined color such as maroon, I searched the name of the color online, and translate it to HEX value. Even then, since there are so many varieties of Maroon colors, it was a tedious process for me to find the color that works well with the rest of the image. 
 
-The greatest challenge was when I was coding colors for sunshine patterns for the background. I wanted its color to change randomly. In order to do this, I had to code the span of R,G, and B values and it was a tedious process finding a good spectrum of for RGB that will give me the result that I want. It was difficult to make the color change not too subtle but also to stay in the spectrum of bright yellow and orange colors. 
+The greatest challenge was when I was coding colors for sunshine patterns for the background. I wanted its color to change randomly. In order to do this, I had to code the span of R,G, and B values and it was a tedious process finding a good spectrum of for RGB that will give me the result that does not make the color change too subtle but also to stay in the spectrum of bright yellow and orange colors. 
 
 ## Reflection/Evaluation
 
-Overall, I enjoyed working on this project and I am very satified with the outcome. Working on this project, I discovered the potentials of computational drawing and now, I am really excited to explore its unlimited potential. One interesting point that I found out working on this project is that although it is a 2D image, to code this image, I had to continuously layer shapes  and consider it as a 3D space. For example, on the surface, it looks like a flat image, but to compute it, the face ellipse is layered in front of the hair ellipse and if they are layered differently, it will generate a completley different image. 
+Overall, I enjoyed working on this project and I am very satified with the outcome. I discovered the potentials of computational drawing and I am really excited to explore its unlimited potential. One interesting point that I found out working on this project is that although it is a 2D image, to code this image, I had to think it as a 3D space since I had to layer shapes. For example, on the surface, it looks like a flat image, but to compute it, the hair ellipse had to be drawn first, followed by the face ellipse in front of the hair, eyes, pupils and so on. If they were layered in different order, it will generate a completley different image.
