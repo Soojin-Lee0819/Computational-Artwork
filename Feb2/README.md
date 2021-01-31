@@ -52,5 +52,6 @@ Color: Using I was able to
 
 After learning how to animate on processing, I would like to make 
 
+![](Images/treeAnimation.jpg)
 
 
