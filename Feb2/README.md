@@ -18,27 +18,31 @@ Below is the final image of my Computer Graphic Art:
 ![](Images/Brainstorm.jpg) 
 
 ### 2. Trunk and Branches (Fractal Tree)
-![](Images/trunkProgress.png)![](Images/branchProgress.png)
+![](Images/trunkProgress.png)    ![](Images/branchProgress.png)
 
 I originally planned to separate trunk with branches that I started with drawing triangle shape for the trunk. However, to manually position branches individually on the trunk seemed to be a tedious process, and having learnt for() and while() syntax in previous lesson, I saw the potential of loops that can provide a solution to this tedious process. Referencing, the example from the website https://www.rosettacode.org/wiki/Fractal_tree#Processing, I applide fractal tree principle to draw tree branches that split and created beautifully symmetrical branch pattern. 
 
 Apart from using loops(for()) feature, I also incorporated if() statement, that decides whether the branch should split or not. 
 
-### 3. Leaves (Challenge of Rotation & Layering)
-
+### 3. Leaves Pattern 
 ![](Images/leavesProgress1.png)
 
+During classs, since we only it was difficult for me to learn how to use for() that applies for both. It took me a lot of time to learn how to continuously run for () { for x axies and y axies. It was making a diagonal line, when what I wanted to continuously draw both rows and . 
 Creating leaves were the biggest challenge for me. Using 
 
 One issue was layering. I reordered 
 
+Color: Using I was able to 
+
 ![](Images/leavesProgress2.png)
+
+### 4. Rotation & Organize layering order 
 
 ![](Images/finalProgress2.png)
 
 ### 4. Masking 
 
-[](Images/SoojinComputerArt.png)
+![](Images/SoojinComputerArt.png)
 
 
 
