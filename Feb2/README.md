@@ -2,7 +2,7 @@
 
 
 Below is the final image of Soojin's Computer Graphic Art: 
-![](Images/computerGraphicArt.png)
+![](Images/SoojinComputerArt.png)
 
 
 
