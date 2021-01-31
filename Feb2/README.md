@@ -10,7 +10,7 @@ Below is the final image of Soojin's Computer Graphic Art:
 
 ## Process 
 
-![](Images/Brainstorm.jpg)
+![](Images/Brainstorm.jpg) 
 
 ![](Images/trunkProgress.png)
 
