@@ -25,9 +25,9 @@ The idea stemed from myself wanting to capture the beauty of nature in the graph
 I originally planned to separate trunk from branches. So I started with drawing triangle shape for the trunk. However, to manually position branches on the trunk was a tedious process. Having learnt for() and while() syntax in class, I decided to use loops as a solution to this challenge. Referencing the example from the website https://www.rosettacode.org/wiki/Fractal_tree#Processing, I applid fractal tree principle to draw branch with a beautifully symmetrical pattern. 
 
 ### 3. Leaves Pattern 
-![](Images/dotsPractice1.png)  ![](Images/dotsPracticeDocument1.png)
+![](Images/dotsPractice1.png)![](Images/dotsPracticeDocument1.png)
 
-![](Images/dotsPractice2.png)  ![](Images/dotsPracticeDocument2.png)
+![](Images/dotsPractice2.png)![](Images/dotsPracticeDocument2.png)
 
 
 ![](Images/leavesProgress1.png)
@@ -36,8 +36,6 @@ It was challenging for me to learn how to use loops (while() or for()) that appl
 Creating leaves were the biggest challenge for me. Using 
 
 
-
-![](Images/leavesProgress2.png)
 
 ### 4. Rotation & Organize layering order 
 
