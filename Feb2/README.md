@@ -1,9 +1,12 @@
 # Assignment 2:Processing Computer Graphic Artwork 
 
-## Title: Pattern in Nature 
+## Title: Pattern in Nature  
 
 
-For week 2, I created a computer graphic artwork using loops (for() or while()). In nutshell, structured in three parts: init, test and update, it controls a sequence of repitions. The loop continues until the test evaluates to false. Therefore, when a loop is executed, it creates a pattern with variables. Experimenting with loops, and incorporating if() syntax, I made an artistic representation of a tree with colorful leaves and aesthetically designed branch. I chose to represent tree since, I always thought patterns in the nature and visible regulairties of form found in the natural world extremely fascinating. Through this project, I wanted to model this beauty of nature through coding. This is an interesting concept because we often consider computer processed work as an antonym of natural world but this project shows how they are not necessarily a black or white binary concept but 
+For week 2, I created a computer graphic artwork using loops (for() or while()). In nutshell, structured in three parts - *init, test, and update* - loops operates *init* and continues until the test evaluates to false. Since it is a sequence of repetition, when a loop is executed, it creates a pattern. Using this loops function, and incorporating if() syntax, I made an artistic representation of a tree with colorful leaves and aesthetically designed branch.
+
+The idea stemed from myself wanting to capture the beauty of nature in the graphic world. I always thought patterns in the nature and visible regulairties of form found in the natural world extremely fascinating. Therefore, since the scope of this project is largely about incorporating *loops* that creates pattern, I wanted to model the beauty of nature in graphic form. It was especially interesting because we often consider computer graphic world as an antonym of natural world. However this project shows how they are not necessarily a black or white binary concept instead, it proves how they are interrelated and how every man-made things stems from natural principles. 
+
 **Below is the final image of my Computer Graphic Art:**
 
 ![](Images/SoojinComputerArt.png)
@@ -19,23 +22,30 @@ For week 2, I created a computer graphic artwork using loops (for() or while()).
 ### 2. Trunk and Branches (Fractal Tree)
 ![](Images/trunkProgress.png)                       ![](Images/branchProgress.png)
 
-I originally planned to separate trunk with branches. So I started with drawing triangle shape for the trunk. However, to manually position branches on the trunk was a tedious process. Having learnt for() and while() syntax in class, I saw the potential of using loops as a solution to this tedious process. Referencing the fractal tree example from the website https://www.rosettacode.org/wiki/Fractal_tree#Processing, I applide fractal tree principle to draw a beautifully symmetrical branch pattern. 
+I originally planned to separate trunk from branches. So I started with drawing triangle shape for the trunk. However, to manually position branches on the trunk was a tedious process. Having learnt for() and while() syntax in class, I decided to use loops as a solution to this challenge. Referencing the example from the website https://www.rosettacode.org/wiki/Fractal_tree#Processing, I applid fractal tree principle to draw branch with a beautifully symmetrical pattern. 
 
 ### 3. Leaves Pattern 
+![](Images/dotsPractice1.png)  ![](Images/dotsPracticeDocument1.png)
+
+![](Images/dotsPractice2.png)  ![](Images/dotsPracticeDocument2.png)
+
+
 ![](Images/leavesProgress1.png)
 
-Although it was difficult for me to learn how to use for() that applies for both. It took me a lot of time to learn how to continuously run for () { for x axies and y axies. It was making a diagonal line, when what I wanted to continuously draw both rows and . 
+It was challenging for me to learn how to use loops (while() or for()) that applies for both x and y axies. When  It took me a lot of time to learn how to continuously run for () { for x axies and y axies. Instead of filling. it was making a diagonal line, when what I wanted to continuously draw both rows and . 
 Creating leaves were the biggest challenge for me. Using 
 
-One issue was layering. I reordered 
 
-Color: Using I was able to 
 
 ![](Images/leavesProgress2.png)
 
 ### 4. Rotation & Organize layering order 
 
 ![](Images/finalProgress2.png)
+
+One issue was layering. I reordered 
+
+Color: Using I was able to 
 
 ### 4. Masking 
 
