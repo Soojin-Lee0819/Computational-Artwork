@@ -39,7 +39,7 @@ Color: Using I was able to
 
 ### 4. Masking 
 
-![](Images/SoojinComputerArt.png)
+![](Images/finalProgress1.png)
 
 
 
