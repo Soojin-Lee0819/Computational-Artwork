@@ -1,6 +1,6 @@
 # Assignment 2:Processing Computer Graphic Artwork 
 
-## Title: Pattern in Nature  
+## Title: Patterns in Nature  
 
 
 For week 2, I learnt loops (for() or while()) in processing. In nutshell, structured in three parts - *init, test, and update* - loops operates *init* and continues until the *test* evaluates to false. Since it is a sequence of repetition, when a loop is executed, it creates a pattern. Using this loops function, and incorporating if() syntax, I created a computer graphic artwork of a tree with colorful leaves and aesthetically designed branch.
