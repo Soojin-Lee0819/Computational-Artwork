@@ -66,9 +66,10 @@ To mask the pattern of leaves into the shape of tree was challenging. Initially,
 
 ## Evaluation & Reflection 
 
-Although I have faced many small and big challenges throughout the process, I really enjoyed working on this process. Understanding the concept of loops( while() and for() ) function was fundamental for me to apply such functions in creating an artwork. Since I started with a specific visual outcome in mind, it was a process of trying to translate visual image into code. I think the reverse approach might have been a easier approach since I can experiment and go wild with ; because it may bring unexpected artwork. 
+Understanding the concept of loops( while() and for() )  was fundamental for me to apply such function in creating an artwork. 
 
-<What Next?>
+Although I have faced many small and big challenges throughout the process, I really enjoyed working on this artwork. I was fascinated by the potential of graphic processing in generating a beautiful artwork. Since I already had an idea on what image I want to represnet, the process for me was to write down a code that can translate the visual image in my mind to a code-generated image. Although I was successfully able to achieve this with some modifications, I think the reverse approach may be a better option since I can go wild and I may end up finding a code that goes beyong my thought and expectation.  
+
 Originally, I wanted to create an animaion using if(mouseclick); function, to animate the leaves falling off and animate-in snow falling. However, since I have not learnt how to animate, and due to the scope of this project, I end up creating a static image of tree with colorful leaves. In future, I would like to learn how to animate on processing, come back to this project and animation to this artwork. 
 
 ![](Images/treeAnimation.jpg)
