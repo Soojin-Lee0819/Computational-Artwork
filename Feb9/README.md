@@ -98,7 +98,7 @@ Originally I set color scale to random to have variety of fish solors. However, 
 
 
 ## What's up next?
-Working on this project, I built a solid foundation on array, class, and OOP. In future, I want to make the animation more sophisticated by adding features such as opening up, closing Salmon's mouth as it eats fish and make the size of Salmon to get bigger as it eats fish. 
+Working on this project, I built a solid foundation on array, class, and OOP. In future, I want to make a more sophisticated animation by adding features such as opening up, closing Salmon's mouth as it eats fish, and make the size of Salmon to get bigger as it eats fish. 
 
 I also want to set a timer feature and turn this interactive animation into a game, where users have to catch all the fish within a time limit. 
 
