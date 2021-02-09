@@ -22,7 +22,10 @@ I was exploring example Java to
 
 [![Watch the video](Image/fisharray.png)](https://youtu.be/ahqS62cjVPs)
 
+
 When it reaches maximum, it notify how that there is no more Salmon in the ocean
+
+![](Image/thereisnomore.png)
 
 
 ## Challenges
