@@ -5,7 +5,7 @@
 My favorite fish is Salmon. I wanted to create a . I wanted to create a light-hearted animation that the food chain.  Salmon 
 This is demonstrated in the video below. 
 
-![](Image/salmoneatsfish.mov)
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/vt5fpE0bzSY)
 
 Following to the instructions for this assignment to in corporate object-oriented programming, I created two classes, "fish", and "salmon",, This includes location, shape, movement and interactivity of two ocean creatures. 
 
