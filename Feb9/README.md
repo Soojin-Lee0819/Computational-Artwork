@@ -30,6 +30,12 @@ Before I start coding, I explored Java Examples preloaded in Processing and Dani
 
 [![Watch the video](Image/fisharray.png)](https://youtu.be/ahqS62cjVPs)
 
+Designing Salmon 
+
+I designed Salmon 
+
+Coded everything based on the unit scale of Salmon body. 
+
 
 When it reaches maximum, it notify how that there is no more Salmon in the ocean
 
@@ -38,9 +44,16 @@ When it reaches maximum, it notify how that there is no more Salmon in the ocean
 
 ## Challenges
 
+(Multiple tabs)
+Instead of writing all I have separated tabs by classes. I have
+
 Although it turned out to be really convenient and in the beginning having multiple tabs was confusing. 
 
 How to Erase Fish?
+
+I wanted Fish to disappear but I couldn't find 
+
+
 
 Draw Salmon 
 
