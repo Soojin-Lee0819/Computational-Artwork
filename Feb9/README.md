@@ -44,19 +44,28 @@ When it reaches maximum, it notify how that there is no more Salmon in the ocean
 
 ## Challenges
 
-(Multiple tabs)
+**Class**
 Instead of writing all I have separated tabs by classes. I have
 
 Although it turned out to be really convenient and in the beginning having multiple tabs was confusing. 
 
-How to Erase Fish?
+**Orienting Fish**
+I wanted fish to move around in its cells. Setting offset, x,y position along with 
+
+**Draw Salmon**
+
+![](Image/salmondraw.jpg)
+
+It was especially challenging to 
+
+**How to Erase Fish?**
 
 I wanted Fish to disappear but I couldn't find 
 
+**Color Random**
+Originally I set color scale to random to have variety of fish in the ocean. However, instead of colors were changing every frame. I have tried. Therefore, I ended up having unified color; white. 
 
 
-Draw Salmon 
-![](Image/salmondraw.jpg)
 
 
 
