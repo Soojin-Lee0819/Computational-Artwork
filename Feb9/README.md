@@ -56,6 +56,7 @@ I wanted Fish to disappear but I couldn't find
 
 
 Draw Salmon 
+![](Image/drawsalmon.png)
 
 
 
