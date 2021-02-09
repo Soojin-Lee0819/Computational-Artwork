@@ -1,6 +1,6 @@
 # Assignment 3:Object Oriented Programming
 
-## Title: Underwater Foodchain 
+## Title: The Underwater Foodchain 
 
 For this week's assignment, following the instruction to corporate object oriented programming (OOP),arrays, and classes, I created an interactive animation piece using processing. 
 
