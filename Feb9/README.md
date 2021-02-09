@@ -1,8 +1,31 @@
 # Assignment 3:Object Oriented Programming
 
-## Title: Ocean Food Chain  
+## Title: Foodchain underwater
+
+My favorite fish is Salmon. I wanted to create a . I wanted to create a light-hearted animation that the food chain.  Salmon 
+This is demonstrated in the video below. 
+
+![](Image/salmoneatsfish.mov)
+
+Following to the instructions for this assignment to in corporate object-oriented programming, I created two classes, "fish", and "salmon",, This includes location, shape, movement and interactivity of two ocean creatures. 
+
+## Process
+I was exploring example Java to 
 
 
-For week 2, I learnt loops (for() or while()) in processing. In nutshell, structured in three parts - *init, test, and update* - loops operates *init* and continues until the *test* evaluates to false. Since it is a sequence of repetition, when a loop is executed, it creates a pattern. Using this loops function, and incorporating if() syntax, I created a computer graphic artwork of a tree with colorful leaves and aesthetically designed branch.
 
-The idea stemmed from myself wanting to capture the beauty of nature in the graphic world. I always thought patterns in the nature, and visible regulairties of form found in the natural world extremely fascinating. Therefore, since the scope of this project was to incorporate *loops* function that creates pattern, I wanted to model the beauty of nature in digital domain. It was especially interesting to work on this project because I often consider computer graphic work as an antonym of natural world. However this project proved me how they are not mutualy exclusive but instead, it showed how everything is interrelated and reminded me that afterall, every man-made object originates from the natural principles. 
+When it reaches maximum, it notify how that there is no more Salmon in the ocean
+
+
+## Challenges
+
+Although it turned out to be really convenient and in the beginning having multiple tabs was confusing. 
+
+How to Erase Fish?
+
+Draw Salmon 
+
+
+
+## Reflection/What's up next?
+
