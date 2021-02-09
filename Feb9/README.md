@@ -81,7 +81,7 @@ Users can add up to 4 Salmons and when it reaches the limit, the processor print
 
 ![](Image/thereisnomore.png)
 
-**Animation How to Erase Fish?**
+**Animation How to Erase an Object?**
 
 To create an effect of Salmon eating fish, I explored different ways to eliminate fish from the screen. 
 However, I struggled finding function that eliminates fish. There was no erase() or disappear() function.
@@ -89,7 +89,7 @@ Instead, I created my own function of erase() { by translating y value of an obj
 
 **Distance between Salmon and Fish**
 
-To craete an effect of Salmon eating fish, I had to set a function that when the distance between Salmon and fish is less than certain value, erase fish. Although it sounds simple in words, to find out x,y position for moving objects were difficult. Salmon's x,y position was more straightforward but finding x,y positions for fish that are located in array boxes were complicated since I had to add its offset value to its x,y position.
+To craete an effect of Salmon eating fish, I had to set a function that when the distance between Salmon and fish is less than certain value, then erase fish. Although it sounds simple, it was much more challenging. Finding out x,y positions for moving multiple objects was difficult. Salmon's x,y positions were much  more straightforward than finding x,y positions for fish that are located in array boxes. When I only set fishxPosition and fishyPosition without an offset, it was only recognizing the fish on the first array. Through many trial and errors, I found out that I have to add its offset value to its x,y position.
 
 
 **Color Random**
@@ -97,9 +97,9 @@ Originally I set color scale to random to have variety of fish solors. However, 
 
 
 
-## Reflection/What's up next?
-Working on this project, I built a solid understanding of array feature and classes in Processing. 
-I want to make the animation more sophisticated by adding features such as moving Salmon's mouth, and make Salmon gets bigger as it eats fish. 
+## What's up next?
+Working on this project, I built a solid foundation on array, class, and OOP. In future, I want to make the animation more sophisticated by adding features such as opening up, closing Salmon's mouth as it eats fish and make the size of Salmon to get bigger as it eats fish. 
+
 I also want to set a timer feature and turn this interactive animation into a game, where users have to catch all the fish within a time limit. 
 
 
