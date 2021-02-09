@@ -2,12 +2,20 @@
 
 ## Title: Foodchain underwater
 
-My favorite fish is Salmon. I wanted to create a . I wanted to create a light-hearted animation that the food chain.  Salmon 
-This is demonstrated in the video below. 
+My favorite fish is Salmon but I came across the news article ever since then, I can not think about . I wanted to create a. I wanted to create a light-hearted interactive animation that mimics the food chain.
+
+Following to the instructions for this assignment to in corporate object-oriented programming, I created two classes, "fish", and "salmon",, This includes location, shape, movement and interactivity of two ocean creatures. 
+
+Salmon eats fish and when the mouse is clicked, new Salmon appears. 
+
+This is demonstrated in the video below: 
 
 [![Watch the video](Image/salmoneatsfish.png)](https://youtu.be/HjzMetCymzY)
 
-Following to the instructions for this assignment to in corporate object-oriented programming, I created two classes, "fish", and "salmon",, This includes location, shape, movement and interactivity of two ocean creatures. 
+Users can not only create more Salmons but they can also catch Salmons by hovering mouse over the Salmon. 
+I have demonstrated this when there is no fish left in the ocean in the video below:
+
+[![Watch the video](Image/catchsalmon.png)](https://youtu.be/U45Wx4rRSPU)
 
 ## Process
 I was exploring example Java to 
