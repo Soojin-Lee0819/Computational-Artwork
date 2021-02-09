@@ -37,7 +37,7 @@ I have demonstrated this when there is no more fish left in the ocean in the vid
 
 Before I start coding, I explored preloaded Java Examples and Daniel Shiffman's contributed examples in Processing. 
 
-I have studied some example codes on ArrayObjects. Incorporating this with what I have learnt in class on Feburary 4th, I started with creating an animation of fish positioned in an array that are floating around within its array box in randomized speed. 
+I have studied some example codes on ArrayObjects. Incorporating this with what I have learnt in class on OOP, I started with creating an animation of fish positioned in an array that are floating around within its array box in randomized speed. 
 
 **Creating Fish Animation**
 
@@ -57,11 +57,13 @@ I have studied some example codes on ArrayObjects. Incorporating this with what 
 
 As shown in the image above, I first made a sketch of Salmon using simple shapes like triangle, rectangle and ellipse. 
 
-When translating this to a script, i Coded everything based on the unit scale of Salmon body. For example, 
+When translating this to a script, I coded everything based on the unit scale of Salmon body. 
+
+For example, 
 
 triangle(x+SALMONBODYSIZE/2, y+SALMONBODYSIZE/2, x+SALMONBODYSIZE/2, y-SALMONBODYSIZE/2, x+SALMONBODYSIZE+SALMONBODYSIZE/2, y); 
 
-This way, when I want to change the scale of Salmon, I can simply change the SALMONBODYSIZE integer. 
+This way, when I want to change the scale of Salmon, I can simply change integer SALMONBODYSIZE. 
 
 **Creating Salmon Animation**
 Similar to Fish, I made Salmon to move around by assigning x,y position for Salmon and updating it by adding speed to the x,y poition, which makes Salmon moves around. The difference is that for Salmon, it can move around anywhere within the frame so it only change directions when it reaches the border of the background. 
@@ -69,20 +71,29 @@ Similar to Fish, I made Salmon to move around by assigning x,y position for Salm
 **Add Interactivity**
 (Adding Salmon)
 By default, there is one salmon in the animation. 
-By clicking mouse, users can add more Salmon.
-Salmon enters from randomized position. 
+To have one salmon by default, the int SalmonsInArray had to be set as 0;
+
+By pressing mouse, users can add more Salmon.
+
+Salmon enters from a randomized position. 
+
 Users can add up to 4 Salmons and when it reaches the limit, the processor prints out a notification that there is no more salmon in the ocean.
 
 ![](Image/thereisnomore.png)
 
 **Animation How to Erase Fish?**
 
-I wanted Fish to disappear but I couldn't find 
+To create an effect of Salmon eating fish, I explored different ways to eliminate fish from the screen. 
+However, I struggled finding function that eliminates fish. There was no erase() or disappear() function.
+Instead, I created my own function of erase() { by translating y value of an object off screen. I have set Y position of fish to -1000, in order to remove fish from the screen. 
+
+**Distance between Salmon and Fish**
+
+To craete an effect of Salmon eating fish, I had to set a function that when the distance between Salmon and fish is less than certain value, erase fish. Although it sounds simple in words, to find out x,y position for moving objects were difficult. Salmon's x,y position was more straightforward but finding x,y positions for fish that are located in array boxes were complicated since I had to add its offset value to its x,y position.
+
 
 **Color Random**
-Originally I set color scale to random to have variety of fish in the ocean. However, instead of colors were changing every frame. I have tried. Therefore, I ended up having unified color; white. 
-
-
+Originally I set color scale to random to have variety of fish solors. However, the issue was that colors are changing every frame, and it looked too frantic. I tried adjusting framerate but when I adjust framerate, it also slows down the movement speed. Therefore, I ended up having a uniform color the fish. 
 
 
 
