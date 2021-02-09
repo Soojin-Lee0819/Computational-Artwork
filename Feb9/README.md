@@ -56,7 +56,7 @@ I wanted Fish to disappear but I couldn't find
 
 
 Draw Salmon 
-![](Image/drawsalmon.jpg)
+![](Image/salmondraw.jpg)
 
 
 
