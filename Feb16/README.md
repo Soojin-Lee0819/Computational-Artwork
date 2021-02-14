@@ -41,43 +41,54 @@ This is an example of a reservation under a customer named Michael Shiloh on the
 
 Users can have a look at the menu and if he/she is unhappy with the choice of dishes, they can click the return arrow button to return the the landing page and make another reservation, which will give different options for the dishes. 
 
-### Challenges 
+### Process & Challenges 
 
 **Display user-input information**
 
-To allow users to input information, I had to create an empty string and assign events to the keyboard, where the string value changes based on what key is pressed. I created two strings "name" and "date". For string "name" it inputs the value when alphabet keys are pressed while for the string "date", it inputs the value when the number keys are pressed. 
+To allow users to input their names and date, I had to create two strings "name" and "day". I then assigned events to the keyboard, where the string value changes based on what key is pressed. For string "name" it inputs the value when alphabet keys are pressed while for the string "day", it inputs the value when the number keys are pressed.  
 
-As the user type-in, it shows on the page and the data is restored and it is shown on the Menu page as well. 
+As the user type-in, the value shows on the cover page and the same input is also shown on the Menu page. 
 
-**Display randomly chosen dishes from the csv.file**
-Although we have covered how to pick up data from the csv. file and display values, since I was unfamiliar with data visualization and 
-It uses the "Table" class to produce the string values from the.csv file. The file has a table with multiple columns and it randomly chooses a value (types of dishes). 
+**Display random dishes selected from the csv.file**
 
-**Adding Images**
+Although we have covered how to import csv data process it, since it is my first time processing data, everything was confusing in the beginnging and I didn't know where to start. Reading Daniel Shiffman's Tutorial on "Data and Manipulating Strings", I have revisioned the structure of data processing. 
 
-Since there are two pages, I wanted viewers to navigate through one 
-Setting a Boolean for each Class
+1. Load data in Table
+2. Create a string to the variables 
+3. Import random variables from the table to the string
+4. Display string in the form that you want (in this case, text)
 
-**Reverse/Delete**
-In order to delete the text, I used substring 
+I have created data in the form of Table using excel sheet. Once I have saved it as a csv cfile, on Processing, I created five strings on the Processing,horsdoeuvre_c;, appetizer_c;, salad_c;, main_c;, dessert_c;, one for each column. I then get data from the csv file (String horsdoeuvre[] = table.getStringColumn("horsdoeuvre") and used horsdoeuvre_c = horsdoeuvre[int(random(0, 6))]; to randomly choose a variable from the data. Finally, I displayed the data it in the form of text (text(horsdoeuvre_c, 440, 295);)
 
 **Assigning Keys**
-I have assigned number keys to "day" and assigned alphabet keys to "name". 
+To enable users to input names and date by typing-in information, I created void keyPressed and assigned keys to strings using if() statement. 
+Since users are expected to input two different types of informations; name and date, I have assigned number keys to "day" string, and assigned alphabet keys to "name" string. 
+
+One challenge I faced was finding the key name for space bar. I wanted to allow users to use spacebar to make a space between their first and last name but I couldn't find the appropriate name for this key. During the research I found out that there exists keyCode such as keyCode == 32 represents space bar. I also used these keyCodes as a shortcut to assign alphabets to name string. Instead of assigning each alphaet individually, I used (keyCode >= 65 && keyCode <= 90) to include al the alphabets. 
+
+**Reverse/Delete (using substring)**
+When users input the wrong information, I wanted them to use backspace key to delete the input. It was challenging learning how to do this. I used substring to reduce the string length by one when the BACKSPACE key was pressed. The issue that has not been solved yet is learning how to individually assign BACKSPACE for the string "Name" and the string "Day". When both are assigned with BACKSPACE, everytime when user press BACKSPACE, it reduces .length for both Name and Day. Since this is obviously not what I wanted, I ended up dedicating BACKSPACE for String name only. Therefore, when the BACKSPACE is pressed, it erases Name but users cannot erase number when he/she makes a mistake. 
+
+**Creating Button**
+
+I created a button using voidmouseClicked(). When the mouse is clicked within the range of the the shape of the button, it activates the event. The event is operated using Boolean of setting true or false for drawing pages. Therefore, buttons are used to navigates through two pages; the coverpage and the menu page. I initialized Boolean differently for each page so that when one page is displayed, the other page is not displayed. 
+
+**After Event, Allow Second Event**
+I wanted to have a system where useres can only press the reservation button book when they have made an entry of their name and reservation date
+
+**Adding Images**
+This was my first project adding images to the program. It was relatively a straightforward process and I have used tint(number value,number value) to adjust the transparency of the image.
 
 **Icon**
 I created a return icon on Figma. 
 
 ![alt-text](Images/arrow.jpg)
 
-**Procedure**
-I wanted to have a system where useres can only book when they have made an entry of their name and reservation date
 
 **Reset and restart**
 I wanted users to be able to make another reservation when users are not happy with the recommended dishes or if they want to make another booking.
 It was difficult to find out how to 
 
-### Interesting Lesson
-I see the potential of 
 
 
 
