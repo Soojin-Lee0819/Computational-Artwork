@@ -85,7 +85,7 @@ This was my first project adding images to the program. It was relatively a stra
 
 **Icon**
 
-I created a return icon on Figma. 
+I created an arrow icon to make a button that returns to the coverpage on Figma (https://www.figma.com).
 
 ![alt-text](Images/arrow.jpg)
 
