@@ -2,7 +2,12 @@
 
 ## Title: Special Five-Course Meal Reservation 
 
+### Ideation:
+
+Recently, I have been watching masterchef season 10 that I. Using Generative Text and function, I wanted to create today's five-course dish. 
+
 ### Overall Concept:
+
 This project generates a personalized five-course meal menu for the user whenever the code runs. In this program, user can make a reservation for a fine dining restaurant, and receive an invitation card with the list of five course meal menus that is determined randomly based on the different options listed in the table in the .csv file. The menu consists of five-courses that are: hours d'oeuvre, appetizer, salad, main, and dessert.   invitation  by writing down his/her name and type in the date on the landing page and click "make reservation". The name writtend down will be on the menu, that says "Welcome *NAME*" and . The dishes for the course meal are determined randlmly based on the different options listed in the table in the .csv file. This csv file is created by me. 
 
 
