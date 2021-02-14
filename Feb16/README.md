@@ -21,6 +21,12 @@ Image of the landing page is attached below:
 
 ![alt-text](Images/mainpage.png)
 
+Once Users have typed in their name, chose preferred date, and clicked Reserve Now Button, they will receive a WELCOME card with the five course meal menu.
+The welcome card includes these:
+- The name of the person who made a reservation ("Welcome **name**)
+- The date (Feb/**date**/2021)
+- The list of five-course dishes randomly chosen from the table in the csv file. 
+
 Image of the menu page is attached below:
 
 ![alt-text](Images/menupage.png)
