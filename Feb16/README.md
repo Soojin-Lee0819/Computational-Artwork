@@ -90,6 +90,7 @@ I created a return icon on Figma.
 ![alt-text](Images/arrow.jpg)
 
 **Reset and restart**
+
 I wanted users to be able to make another reservation when users are not happy with the recommended dishes or if they want to make another booking. The challenge was that when users click arrow button from the menu page to return to the coverpage, the entry they have made are still there. Also when the "Reserve Now" button is clicked for the second time, it does not run the random variable choice again, but rather shows the same random variable choices from berfore. Therefore, I wanted to find a way that resets and re-run the code when the buttons are pressed. I added setup(); function to the mouseClicked event and added  name = name.substring(0, name.length()-name.length()); to delete all the previous entry that were made by the user. 
 
 
