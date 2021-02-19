@@ -12,14 +12,15 @@ Following the instruction on creating a game project that includes shape, image,
 I collected a png image for the Items and I coded basic animation of Items falling from the sky and moving LP player left and right using keyPressed(; and keyReleased(); function. 
 
 It turned out to be like this:
+![alt-text](Images/18Feb2021midterm.gif)
 
-
-I added update background everytime to avoid this. 
 
 ### Feb19.2021
 
 Progress
-1. I fixed the issue by redrawing the background. 
+1. I fixed the issue by redrawing the background. I added update background everytime to avoid this. 
+
+![alt-text](Images/19Feb2021redrawbg.gif)
 
 How do I make sure two items are not falling from the same x coordinate?
 
@@ -28,6 +29,8 @@ How do I make sure two items are not falling from the same x coordinate?
 
 Issue: Timer is behind falling images
 Solutaion switch order of draw. Display Items and Record first then timer. Timer comes in front of images. 
+
+![alt-text](Images/19Feb2021timer.gif)
 
 
 ### Make Landing Page
