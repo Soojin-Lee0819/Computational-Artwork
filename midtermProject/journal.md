@@ -33,5 +33,13 @@ Solutaion switch order of draw. Display Items and Record first then timer. Timer
 ![alt-text](Images/19Feb2021timer.gif)
 
 
-### Make Landing Page
+3. Make Landing Page
+
+I added landing page with lp players displayed on wall. On mouseClick(); the game starts
+
+
+I started to design landingpage. I added song Album covers to each LP. When users hover on the LP, it shows the song and later when I learn how to embed audio file, the song starts to play. 
+
+Users can listen to and explore songs before the start the game.
+
 
