@@ -43,3 +43,4 @@ I started to design landingpage. I added song Album covers to each LP. When user
 Users can listen to and explore songs before the start the game.
 
 
+![alt-text](Images/19Feb2021musicalbum.gif)
