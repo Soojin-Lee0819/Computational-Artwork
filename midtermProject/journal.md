@@ -49,20 +49,67 @@ For this midterm project, I decided to work on the second idea.
 
 ### Feb18.2021
 
+**Progress** 
 - I collected a png image for the falling Items 
-- I coded basic animation of Items falling from the sky 
-- I animated LP player to move left and right using keyPressed(); and keyReleased(); function. 
+
+- I coded basic animation of Items falling from the sky using void fall() that changes y position with added speed and void collision() that checks item colliding with the ground height and looping it by make it go back to the sky when it reaches the ground. 
+  
+    void fall() {
+    itemCoordinatey=itemCoordinatey+itemSpeed; //To start Item falling Action
+  };
+
+  void collision() {
+    if (itemCoordinatey>=height-70) { // if item collides with the ground height - item size
+      itemCoordinatey=-100;// it goes back to the sky
+      itemCoordinatex=int(random(70, 830)); //reset x position a nd speed
+      itemSpeed=int(random(3, 13));
+    };
+  };
+
+
+- I also animated LP player to move left and right using keyPressed(); and keyReleased(); function and boolean. 
+
+void keyPressed() {
+  if (keyCode == LEFT) {
+    left=true;
+  };
+  if (keyCode == RIGHT) {
+    right=true;
+  };
+}
+
+
+void keyReleased() {
+  if (keyCode == LEFT) {
+    left=false;
+  };
+  if (keyCode == RIGHT) {
+    right=false;
+  };
+};
 
 It turned out to be like this:
+
 ![alt-text](Images/18Feb2021midterm.gif)
 
+**Issues**
+   - One issue is that icons are falling down but all of its positions are captured in the frame; the movements of each are saved and continuously visualized.
 
 ### Feb19.2021
 
-Progress
-1. I fixed the issue by redrawing the background. I added update background everytime to avoid this. 
+**Progress**
+
+1. I fixed the issue by redrawing the background. 
+
+void redrawbackground() { //redraw background every time the object is moving
+  image(background, 0, 0, width, height);
+
+so that new background is covered on top of previous frame to solve this problem. 
 
 ![alt-text](Images/19Feb2021redrawbg.gif)
+
+**Issue**
+After adding background and adding renewbackground(); 
 
 How do I make sure two items are not falling from the same x coordinate?
 
