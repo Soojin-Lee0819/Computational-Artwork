@@ -66,11 +66,12 @@ For this midterm project, I decided to work on the second idea.
       itemCoordinatex=int(random(70, 830)); //reset x position a nd speed
       itemSpeed=int(random(3, 13));
     };
-  }; ```
+  }; 
 
 
 - I also animated LP player to move left and right using keyPressed(); and keyReleased(); function and boolean. 
-
+- 
+```processing
 void keyPressed() {
   if (keyCode == LEFT) {
     left=true;
@@ -80,7 +81,6 @@ void keyPressed() {
   };
 }
 
-
 void keyReleased() {
   if (keyCode == LEFT) {
     left=false;
@@ -88,7 +88,8 @@ void keyReleased() {
   if (keyCode == RIGHT) {
     right=false;
   };
-};
+  };```
+
 
 It turned out to be like this:
 
