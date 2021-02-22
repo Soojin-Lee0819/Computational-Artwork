@@ -50,13 +50,15 @@ For this midterm project, I decided to work on the second idea.
 ### Feb18.2021
 
 **Progress** 
+<Collecting Image>
 - I collected a png image for the falling Items 
 
+<Falling Item Animation>
 - I coded basic animation of Items falling from the sky using void fall() that changes y position with added speed 
   and void collision() that checks item colliding with the ground height and looping it by make it go back to the sky when it reaches the ground. 
-  
-    ```processing
-    void fall() {
+   
+ ```Processing
+ void fall() {
     itemCoordinatey=itemCoordinatey+itemSpeed; //To start Item falling Action
   };
 
@@ -66,13 +68,15 @@ For this midterm project, I decided to work on the second idea.
       itemCoordinatex=int(random(70, 830)); //reset x position a nd speed
       itemSpeed=int(random(3, 13));
     };
-  }; 
+  };
+```
 
 
+<LP player Keyboard Move>
 - I also animated LP player to move left and right using keyPressed(); and keyReleased(); function and boolean. 
 
-```processing
-void keyPressed() {
+```Processing
+  void keyPressed() {
   if (keyCode == LEFT) {
     left=true;
   };
@@ -81,6 +85,7 @@ void keyPressed() {
   };
 }
 
+
 void keyReleased() {
   if (keyCode == LEFT) {
     left=false;
@@ -88,7 +93,7 @@ void keyReleased() {
   if (keyCode == RIGHT) {
     right=false;
   };
-  };
+};
 ```
 
 It turned out to be like this:
@@ -96,56 +101,71 @@ It turned out to be like this:
 ![alt-text](Images/18Feb2021midterm.gif)
 
 **Issues**
-   - One issue is that icons are falling down but all of its positions are captured in the frame; the movements of each are saved and continuously visualized.
+   - As intended, Icons are falling down but all of the movements of each frame are captured and continuously visualized.
 
 ### Feb19.2021
 
 **Progress**
 
-1. I fixed the issue by redrawing the background. 
-
+<Redrawing Background>
+- I fixed the issue of continuous visualization of imgages by redrawing the background. 
+``` processing
 void redrawbackground() { //redraw background every time the object is moving
   image(background, 0, 0, width, height);
-
-so that new background is covered on top of previous frame to solve this problem. 
+```
+so that new background is being drawn every frame and covering the previous frames
 
 ![alt-text](Images/19Feb2021redrawbg.gif)
 
 **Issue**
-After adding background and adding renewbackground(); 
 
-How do I make sure two items are not falling from the same x coordinate?
+- Movement of LP player is not completely smooth. The previous frames are shown for a second. 
 
+<Adding Timer>
+- I added Timer with a void countUp(), starting with Timer(0) that update the timer by counting up that begins with value 0.
 
-2. I added Timer 
+**Issue**
 
-Issue: Timer is behind falling images
-Solutaion switch order of draw. Display Items and Record first then timer. Timer comes in front of images. 
+Timer is behind the falling images
+
+**Solution**
+
+Switch the order of draw. Display Items and Record first, then timer. By doing so, Timer comes in front of images. 
 
 ![alt-text](Images/19Feb2021timer.gif)
 
 
-3. Make Landing Page
+<Landing Page>
+   - Making Landing page
 
-I added landing page with lp players displayed on wall. On mouseClick(); the game starts
+What I have made previously is the gamepage, which is displayed once the game has started. Before players actually begin the game, I wanted them to trigger some action, such as clciking a mouse start the game. 
 
+I started with desinging landpage. I designed a landing page with an iage of lp players displayed on wall. When users hover on the LP, it shows the album cover of the song. This is done so that players can listen to and explore the songs before they start the game. 
 
-I started to design landingpage. I added song Album covers to each LP. When users hover on the LP, it shows the song and later when I learn how to embed audio file, the song starts to play. 
-
-Users can listen to and explore songs before the start the game.
-
+Later when I learn how to embed audio files, I will add the feature of on hover, I would make the song to start to play.
 
 ![alt-text](Images/19Feb2021musicalbum.gif)
 
 ### Feb20.2021
 
-Redesigned background for game page. 
+I haven't made much progress today. Instead, I edited journals and redesigned background for the gamepage. I wanted to give an experience of players to feel like they are playing this game at a cozy cafe. Therefore, I changed the backgorund of the gamepage to an image of antique LP cafe.
+
 
 ### Feb21.2021
 
 Progress
-1. Added Button to start the game. 
+1. Added Button to start the game.
+   ```
+   void mouseClicked() {
+     if (mouseX >  650 && mouseX<  750 && 
+    mouseY > 700 && mouseY < 750) {
+    setup();
+    landPage = true;
+    startGame = false;
+    }```
+  
 2. Added Instruction text using string
+
 3. Add return button on game page for users to stop playing the game or to restart. 
    In order to restart, I have added setup(); to click (start) button so that everytime when user starts the game, it is a new game. 
  ![alt-text](Images/addTextAndStartButton.png)  
