@@ -44,3 +44,16 @@ Users can listen to and explore songs before the start the game.
 
 
 ![alt-text](Images/19Feb2021musicalbum.gif)
+
+### Feb20.2021
+
+Redesigned background for game page. 
+
+### Feb21.2021
+
+Progress
+1. Added Button to start the game. 
+2. Added Instruction text using string
+3. Add return button on game page for users to stop playing the game or to restart. 
+   In order to restart, I have added setup(); to click (start) button so that everytime when user starts the game, it is a new game. 
+ ![alt-text](Images/addTextAndStartButton.png)  
