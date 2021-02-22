@@ -52,8 +52,10 @@ For this midterm project, I decided to work on the second idea.
 **Progress** 
 - I collected a png image for the falling Items 
 
-- I coded basic animation of Items falling from the sky using void fall() that changes y position with added speed and void collision() that checks item colliding with the ground height and looping it by make it go back to the sky when it reaches the ground. 
+- I coded basic animation of Items falling from the sky using void fall() that changes y position with added speed 
+  and void collision() that checks item colliding with the ground height and looping it by make it go back to the sky when it reaches the ground. 
   
+    ```processing
     void fall() {
     itemCoordinatey=itemCoordinatey+itemSpeed; //To start Item falling Action
   };
@@ -64,7 +66,7 @@ For this midterm project, I decided to work on the second idea.
       itemCoordinatex=int(random(70, 830)); //reset x position a nd speed
       itemSpeed=int(random(3, 13));
     };
-  };
+  }; ```
 
 
 - I also animated LP player to move left and right using keyPressed(); and keyReleased(); function and boolean. 
