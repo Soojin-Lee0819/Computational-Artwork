@@ -70,7 +70,7 @@ For this midterm project, I decided to work on the second idea.
 
 
 - I also animated LP player to move left and right using keyPressed(); and keyReleased(); function and boolean. 
-- 
+
 ```processing
 void keyPressed() {
   if (keyCode == LEFT) {
@@ -88,8 +88,8 @@ void keyReleased() {
   if (keyCode == RIGHT) {
     right=false;
   };
-  };```
-
+  };
+```
 
 It turned out to be like this:
 
