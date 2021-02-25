@@ -169,3 +169,24 @@ Progress
 3. Add return button on game page for users to stop playing the game or to restart. 
    In order to restart, I have added setup(); to click (start) button so that everytime when user starts the game, it is a new game. 
  ![alt-text](Images/addTextAndStartButton.png)  
+ 
+ 
+### Feb22.2021
+
+1. Created ending page 
+
+### Feb 23.
+
+Issue!
+Stuck with not knowing how to match array of item image with song image. 
+
+The transparency is only changing when but once it is moved, transparency change back to . I originally had song images as an individual file; not as an array. I changed it to the array form but I still did not figure out how to make this happen. It was very frustrating and I felt like I have to 
+
+
+### Feb 24. 
+
+Progress
+1. Loaded sound 
+How to play only one sound file at a time. 
+
+I solved it by adding if file[].isPlaying() function. 
