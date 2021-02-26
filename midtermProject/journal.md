@@ -187,6 +187,68 @@ The transparency is only changing when but once it is moved, transparency change
 
 Progress
 1. Loaded sound 
-How to play only one sound file at a time. 
 
-I solved it by adding if file[].isPlaying() function. 
+For the landing page, when the player hover on the LP, since the action is triggered continuously, the music is played repetitively. I wanted a song to play once while the mouse is hovering on the LP. 
+
+I solved it by adding if() else () file[].isPlaying() function. 
+   ```
+    if (mouseX > 42 && mouseX < 230 && 
+      mouseY > 193 && mouseY < 383) {
+      displaySong1();
+      if (file[0].isPlaying()) {
+        println("File1is playing");
+      } else {
+        file[0].play();
+      }
+    } else {
+      file[0].stop();
+    }
+
+   ```
+   
+   So the program first checks if the song is being played. If the song is currently being played, it prints line that File is Playing and if nothing is playing, it starts to play the sound file. Then, if the mouse is no longer hovered on the LP, the file stops playing. 
+   
+ ### Feb 25
+ 
+(Iteration)
+It was a great challenge for me to figure out how to trigger a random song to play once the game starts, stop the song and play another song when the user succeed in catching the matching item of the song. 
+
+Therefore, I made an adjustment to the program. To make it a bit less complicated, instead of instead of playing a random song, I decided to load songs in order and the goal of the user is to successfully completing all five items without getting hit by the bomb. 
+
+(Progress)
+**light up Icon**
+By increasing the tint value of the album icon image, when the player successfully catch the item of the song, I added an animation that lights up the music album. 
+
+**Catch Icon Animation**
+Using this function
+   ```
+float touch = dist( Items[i].itemCoordinatex, Items[i].itemCoordinatey, record.x, record.y);
+(touch < 50) {
+          Items[0].erase();
+   ```
+of measuring the distance between the recorder and the falling item, I made an animation of catching item. For the function erase, I originally set speed to 0 and translate the item position off screen; x = 1000; y = 1000;
+This way, I could make an animation that makes player feel like the item is caught by deleting the item from the screen. However the issue was that I wanted the light to be on but it would only flicker and once the position is moved off screen, since the function touch() is no longer true; the distance between recorder and the icon is too far away, the light only flickers for a second and gets dim again. 
+   
+I found a way to let the light stay by instead of moving the position off screen, I set the erase(); 
+
+This took me almost the entire day to figure out but it turned out to be a very simple. 
+```
+  void erase() {
+    itemSpeed = 0;
+    itemSize = 1;
+    };
+  ```
+I learnt that sometimes I need to sit back and try to think about what are some other approches I can take to have the same result, effect. 
+
+****
+
+**Start game play sound**
+
+**When item is co**
+
+(Iteration)
+How to restart timer when the game restarts?
+
+ ### Feb 26
+ 
+ 
