@@ -210,7 +210,9 @@ I manipulated the image transparency and set the background black to make the im
 
 - For the function erase, I set the speed to 0 and translate the item position off screen, which by deleting the item, it makes player feel like they have captured the item.
 
-**Add Song Cover Album Image Icons to gamepage**
+**Add Song Image Icons to gamepage**
+
+ ![alt-text](Images/journalplaygame.png)  ![alt-text](Images/journallighton.png)
 
 - I added the song cover album icons to the side of the gamepage. 
 
@@ -246,41 +248,54 @@ I manipulated the image transparency and set the background black to make the im
      display();
 ```
 
- ![alt-text](Images/journalplaygame.png)  ![alt-text](Images/journallighton.png)
-
-
-
 ### Challenge 
 
 **Song image icon light up for one frame only**
 
-- After animating the song cover image to light up when the player catches the item, I was stuck with not knowing how to let that image lighted up for until the end of the game. 
+- After animating the song cover image to light up when the player catches the item, I was stuck with not knowing how to let that image lightened up until the end of the game. 
 
-- The light would flicker 
+- The issue was that the icon image becomes brighter for a second, when activated but then it goes back to original dark tint. 
 
+- I did not know why it does not stay in bright tint and I was stuck with this issue for almost an entire day. I thought it has to do something with the order of sequence which makes it go back to dark after animation.
 
-- However the issue was that I wanted the light to be on but it would only flicker and once the position is moved off screen, since the function touch() is no longer true; the distance between recorder and the icon is too far away, the light only flickers for a second and gets dim again. 
-   
-I found a way to let the light stay by instead of moving the position off screen, I set the erase(); 
+- However the issue was that I wanted the light to be on but it would only flicker and once the position is moved off screen, since the distance between recorder and the icon is too far away, the function touch() is no longer true; that the light only flickers for a second and gets dim again.
+ 
+- Therefore, instead of removing an item by changing the coordination I created the same effect of making icon disappear by reducing the size of the item to 1.
 
-This took me almost the entire day to figure out but it turned out to be a very simple. 
+- This way, since it does not affect the distance between the recorder and an item, the brightness of the song icon image did not go back to dim mode. 
+
 ```
   void erase() {
     itemSpeed = 0;
     itemSize = 1;
     };
   ```
-I learnt that sometimes I need to sit back and try to think about what are some other approches I can take to have the same result, effect. 
-
+When figuring this out, although it only required a simple trick, since I did not approach the issue from this direction, it took me a lot of time finding out how to solve this issue. Through this experience, I learnt that sometimes I need to sit back and try to think about what are some other approches I can take to solve rather than restricting myself on having one solution to solve a problem. 
 
 ## Feb 24. 
 
-Progress
-1. Loaded sound 
+### Progress
 
-For the landing page, when the player hover on the LP, since the action is triggered continuously, the music is played repetitively. I wanted a song to play once while the mouse is hovering on the LP. 
+**Loaded sound**
 
-I solved it by adding if() else () file[].isPlaying() function. 
+- After learning how to load soundfile on Processing, I added sound to the program by importing sound from the file and identifying soundfile by its name on setup();
+
+```
+  file = new SoundFile[numsounds];
+  for (int i = 0; i < numsounds; i++) {
+    file[i] = new SoundFile(this, (i+1) + ".mp3");
+  }
+```
+
+- I first added sound on the landing page where players can hover on the LP to listen to the song
+
+### Challenge 
+
+**play sound is triggered multiple times**
+
+- For the landing page, when the player hover on the LP, as long as the mouse is on the LP image the action hover() is triggered continuously that the song were repetitively played simultaneously. I wanted a song to play once while the mouse is hovering on the LP. 
+
+- I solved it by adding file[].isPlaying() function. 
    ```
     if (mouseX > 42 && mouseX < 230 && 
       mouseY > 193 && mouseY < 383) {
@@ -295,30 +310,74 @@ I solved it by adding if() else () file[].isPlaying() function.
     }
 
    ```
-   
-   So the program first checks if the song is being played. If the song is currently being played, it prints line that File is Playing and if nothing is playing, it starts to play the sound file. Then, if the mouse is no longer hovered on the LP, the file stops playing. 
+   - So the program first checks if the song is being played.
+   - If the song is currently being played, it prints line that File is Playing and does not play any more sound.
+   - If nothing is playing, it starts to play the sound file.
+   - Then, if the mouse is no longer hovering on the LP, the file stops playing. 
    
  ## Feb 25
  
-(Iteration)
-It was a great challenge for me to figure out how to trigger a random song to play once the game starts, stop the song and play another song when the user succeed in catching the matching item of the song. 
+### Iteration
+- It was a great challenge for me to figure out how to play a random song once the game starts, stop the song when the player catches the item, and play another song that is not the one that was played previously.
 
-Therefore, I made an adjustment to the program. To make it a bit less complicated, instead of instead of playing a random song, I decided to load songs in order and the goal of the user is to successfully completing all five items without getting hit by the bomb. 
+- One way to do this is to create an arraylist and eliminating the songs that were played and randomly choose from the songs that are only in the arraylist
+- However, given the scope of this project and my skills to code this was a bit too complicated.
 
-(Progress)
-**light up Icon**
-By increasing the tint value of the album icon image, when the player successfully catch the item of the song, I added an animation that lights up the music album. 
+- Therefore, I made an adjustment to the program. 
 
+- To make it a bit less complicated, instead of instead of playing a random song, I decided to load songs in order and the goal of the user is to successfully completing all five items without hitting the bomb. 
 
-****
+- This way, I don't have to worry about random selection of songs.
+
+### Progress
 
 **Start game play sound**
 
-**When item is co**
+- After making an iteration on the game, I added a feature where the file[0], the first song on the list to play as soon as the game starts. 
 
-(Iteration)
-How to restart timer when the game restarts?
+```
+   if (file[0].isPlaying() == false && file[1].isPlaying() == false &&  file[2].isPlaying() == false &&  file[3].isPlaying() == false &&  file[4].isPlaying() == false) {
+      file[0].play(); // if no sound file[] is playing, then play the first song file[0]
+      println("File1is playing"); //to check is the file is playing well
+    }
+```
+### Challenge
+
+**How to play next song when Player catches the item**
+
+- It was challenging to figure out how to automatically play the next song when the player catches the correct item. 
+- For this, I will do it tomorrow. 
 
  ## Feb 26
  
+ ### Progress
+ 
+ **Play next song on catch**
+ 
+ - I figured out how to let the next song to play when the item is caught.
+ 
+ - This is by using if() statement where when item is caughted, stop currently playing sound file and play the next sound file. 
+ ```
+  if (i == 0) { 
+        if (touch < 60) {
+          Items[0].erase(); //make corresponding item, item [0]disappear
+          Songs[0].displayBright(); //diaply song image with full opacity. Lights on!
+          file[0].stop();//stop sound file [0] to play another sound file
+          if (file[0].isPlaying() == false && file[1].isPlaying() == false &&  file[2].isPlaying() == false &&  file[3].isPlaying() == false &&  file[4].isPlaying() == false) {
+            file[1].play(); // if sound file [0] has stopped, start playing next sound file sound file [1]
+          }
+        }
+      }
+ ```
+ - I repeated this until the player reaches the last song. 
+ 
+  **Complete all 5 Songs, then display endpage**
+  
+  - Similarly, I added the [ endpg.display(); & startGame = true; ] for the last song.
+
+Below is the weird endpage where some items and left unerased.
+
+ ![alt-text](Images/endPageWeird.png)
+
+Therefore, I added to make the page clear before it moves to the endpage. 
  
