@@ -42,10 +42,12 @@ Below is the image of the screen half-way through them game when players have co
 
  ![alt-text](Images/lighton.png)  
  
- If the player accidently fails in avoiding bomb icon and catches bomb icon, the game automatically stops and returns to the landing page. 
- 
- When players have successfully caught all five songs, without hitting the bomb, the game ends and players are met with the endpage. 
+ If the player fails in avoiding bomb icon and  accidently catches bomb icon, the game automatically stops and returns to the landing page. 
  
  ### End Page
-When players have successfully finished the 
+ When players have successfully caught all five songs without hitting the bomb, the game ends and players are met with the endpage. 
+ 
+  ![alt-text](Images/endpage.png)  
+ 
+ Here, players will receive a contragulations message on winning the game by successfully collecting all five songs! They are also met with the instruction on how to listen to collected songs. Players are able to enjoy and listen to songs by clicking on the playlist and can stop the song by clicking it again. If tehy want to restart the game, they can click Restart button to play it once more! 
  
