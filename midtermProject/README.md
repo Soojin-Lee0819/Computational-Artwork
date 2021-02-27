@@ -50,4 +50,18 @@ Below is the image of the screen half-way through them game when players have co
   ![alt-text](Images/endpage.png)  
  
  Here, players will receive a contragulations message on winning the game by successfully collecting all five songs! They are also met with the instruction on how to listen to collected songs. Players are able to enjoy and listen to songs by clicking on the playlist and can stop the song by clicking it again. If tehy want to restart the game, they can click Restart button to play it once more! 
+
+Here is the list of songs available for Tune-in Catcher:
+
+ - Strawberries & Cigarettes by TroyeSivan
  
+ - Do You Want To Build a Snowman? by KristenAnderson-Lopez & Robert Lopez
+ 
+ - Counting Stars by OneRepublic
+ 
+ - A Whole New World by Zhavia Ward & Zayn Malik
+ 
+ - White Christmas by Bing Crosby
+
+
+
