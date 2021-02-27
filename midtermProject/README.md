@@ -9,10 +9,43 @@ Listening to music is one of the essential daily routine of mine. I listen to mu
 ## INSTRUCTIONS
 
 Below is the YouTube video of demonstrating how to play the game. 
+Click on the image to watch the demonstration video. 
+
+### Tune-in Catcher Demonstration Video 
 
 [![Watch the video](Images/YouTubevideo.png)](https://youtu.be/qE8WP0k1MyA)
 
+### Landing page 
 
-1) When players run the program, they are met with the landing page. 
+When players run the program, they are met with the landing page. 
 
  ![alt-text](Images/landingpage.png)  
+ 
+ On this landing page, players can find an instruction. Following the written insstruction, players are supposed to hover mouse on LP disks to listen to songs. Each LP contains different song album images and songs. When the mouse is hovered on LP disk, the song will start to play and continue to play until the player remove the mouse away from the LP disk. Explore all five songs and once the player is familiar with the songs, they can click **Start** to start playing the game. 
+ 
+### Game Page
+
+When the game starts, the song will play as well as the falling item animation. 
+
+ ![alt-text](Images/playgame.png)  
+
+Players job is to listen to music, identify the item that matches the song, and use keyboard to move the record player and catch the matching items.
+Players can use left and right direction keyboards to move around the record player. 
+Meanwhile, players also have to avoid touching bomb icon. 
+
+By clicking return button on top left corner, players can return to the landing page. Otherwise, players continue to play game. 
+
+Once the player catch the correct item, the light will be turned on for the song that they just catched and the music will change. 
+Players repeat this job until they catch icons for all five songs. 
+
+Below is the image of the screen half-way through them game when players have collected three songs (three lighted song images on the left side of the screen) and still have got two more songs to catch:
+
+ ![alt-text](Images/lighton.png)  
+ 
+ If the player accidently fails in avoiding bomb icon and catches bomb icon, the game automatically stops and returns to the landing page. 
+ 
+ When players have successfully caught all five songs, without hitting the bomb, the game ends and players are met with the endpage. 
+ 
+ ### End Page
+When players have successfully finished the 
+ 
