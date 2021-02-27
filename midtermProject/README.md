@@ -65,5 +65,5 @@ Here is the list of songs available for Tune-in Catcher:
 
 ## Process & Journal
 
-Please visit to read [link to section](.journal.md)
+Please visit to read [link to section](IntrotoIM.midtermProject.journal.md)
 
