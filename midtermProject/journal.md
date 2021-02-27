@@ -1,8 +1,8 @@
-## Tune-in Catcher Journal
+# Tune-in Catcher Journal
 
 Following is the digital journal on creating a Tune-in Catcher 
 
-### Feb17.2021
+## Feb17.2021
 Following the instruction to create a game that includes shape, image, sound, and on-screen text, I brainstormed on what game I want to produce. From the beginning, I wanted to create a game that is built around the music. For the game part, for the scope of this project, I wanted to creatively elaborate on the simple game like catching objects. 
 
 I had two ideas in mind:
@@ -14,7 +14,7 @@ I had two ideas in mind:
 For this midterm project, I decided to work on the second idea. 
 
 
-### Feb18.2021
+## Feb18.2021
 
 **Progress** 
 <Collecting Image>
@@ -70,7 +70,7 @@ It turned out to be like this:
 **Issues**
    - As intended, Icons are falling down but all of the movements of each frame are captured and continuously visualized.
 
-### Feb19.2021
+## Feb19.2021
 
 **Progress**
 
@@ -113,12 +113,12 @@ Later when I learn how to embed audio files, I will add the feature of on hover,
 
 ![alt-text](Images/19Feb2021musicalbum.gif)
 
-### Feb20.2021
+## Feb20.2021
 
 I haven't made much progress today. Instead, I edited journals and redesigned background for the gamepage. I wanted to give an experience of players to feel like they are playing this game at a cozy cafe. Therefore, I changed the backgorund of the gamepage to an image of antique LP cafe.
 
 
-### Feb21.2021
+## Feb21.2021
 
 Progress
 1. Added Button to start the game.
@@ -138,11 +138,11 @@ Progress
  ![alt-text](Images/addTextAndStartButton.png)  
  
  
-### Feb22.2021
+## Feb22.2021
 
 1. Created ending page 
 
-### Feb 23.
+## Feb 23.
 
 Issue!
 Stuck with not knowing how to match array of item image with song image. 
@@ -150,7 +150,7 @@ Stuck with not knowing how to match array of item image with song image.
 The transparency is only changing when but once it is moved, transparency change back to . I originally had song images as an individual file; not as an array. I changed it to the array form but I still did not figure out how to make this happen. It was very frustrating and I felt like I have to 
 
 
-### Feb 24. 
+## Feb 24. 
 
 Progress
 1. Loaded sound 
@@ -175,7 +175,7 @@ I solved it by adding if() else () file[].isPlaying() function.
    
    So the program first checks if the song is being played. If the song is currently being played, it prints line that File is Playing and if nothing is playing, it starts to play the sound file. Then, if the mouse is no longer hovered on the LP, the file stops playing. 
    
- ### Feb 25
+ ## Feb 25
  
 (Iteration)
 It was a great challenge for me to figure out how to trigger a random song to play once the game starts, stop the song and play another song when the user succeed in catching the matching item of the song. 
@@ -216,6 +216,6 @@ I learnt that sometimes I need to sit back and try to think about what are some 
 (Iteration)
 How to restart timer when the game restarts?
 
- ### Feb 26
+ ## Feb 26
  
  
