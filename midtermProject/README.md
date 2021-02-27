@@ -63,5 +63,7 @@ Here is the list of songs available for Tune-in Catcher:
  
  - White Christmas by Bing Crosby
 
+## Process & Journal
 
+Please visit to read [link to section](.midtermProject.journal.md)
 
