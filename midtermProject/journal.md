@@ -169,7 +169,7 @@ I manipulated the image transparency and set the background black to make the im
 - It was challenging to figure out how to restart the animation everytime user click the start button.
 - In order to restart, I have added setup(); to click (start) button so that everytime when user starts the game, it resets the setup, hence starting a new game. 
 
- ![alt-text](Images/addTextAndStartButton.png)  
+ ![alt-text](Images/22Feb2020return.gif)
  
  
 ## Feb22.2021
