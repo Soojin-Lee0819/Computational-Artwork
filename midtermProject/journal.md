@@ -1,39 +1,6 @@
-## Tune-in Catch Journal
+## Tune-in Catcher Journal
 
-### Idea & Project Description 
-
-Listening to music is one of hte essential daily routine of mine. It is a powerful tool that controls my emotion, companies me thorughout the day that I listen to music almost all the time; when I wake up, when I study, and even before I goto sleep. Therefore, for this project, as sound was one of the required feature, I decided to make a game that has music as an integral part of the game. 
-
-"Tune-in Catch"is an audio-visual multimedia game that requires players to interact with both image and sound. To briefly describe how this game works, it is similar to the oldschool "catch game" where players catch a falling object from the sky. The twist is that for the "Tune-in Catcher", users have to listen to the music and collect specific item that matches with the song that is currently being played. For instance, if the song "Do you want to build a snowman" from the movie Frozen is being played, among many items that are falling from the sky, player have to catch the snowman icon. The aim of this game for th players is to complete catching all five songs with the shortest time possible. Playing this game, I hope players have fun trying to catch matching items as well as simply enjoying listening to music. 
-
-Through this game I hoped to share some of my favorite songs with the users. Therefore, I incorporated some of my recent favorite playlist into the game. 
-
-In total, there are five songs loaded for this game: 
-
-- Strawberries & Cigarettes by TroyeSivan
-
-- Do You Want To Build a Snowman? by KristenAnderson-Lopez & Robert Lopez
-
-- Counting Stars by OneRepublic
-
-- A Whole New World by Zhavia Ward & Zayn Malik
-
-- White Christmas by Bing Crosby
-
-<This is the manual on how Tune-in Catch is structured>
-   
-1. Read Instruction and explore songs
-2. Click start button to start the game
-3. The game begins 
-4. The timer begins, items start to fall from the sky and the song randomly chose from the list starts to play
-5. Listen to the song and try to identify the matching icon that is related to the song
-6. Use direction keys to move LP recorder (basekt) and catch the icon that matches the song
-7. If an appropriate icon is collected, the song changes to the next one
-8. Repeat this until the player complete all five songs
-9. Once complete, players will receive a congratulations letter with a music playlist which they can click and listen to. 
-10. If player wish to replay, they can click restart button to replay the game. 
-
-Following is the digital journal on the work progress. 
+Following is the digital journal on creating a Tune-in Catcher 
 
 ### Feb17.2021
 Following the instruction to create a game that includes shape, image, sound, and on-screen text, I brainstormed on what game I want to produce. From the beginning, I wanted to create a game that is built around the music. For the game part, for the scope of this project, I wanted to creatively elaborate on the simple game like catching objects. 
