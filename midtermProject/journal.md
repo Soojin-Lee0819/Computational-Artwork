@@ -171,6 +171,7 @@ I manipulated the image transparency and set the background black to make the im
 
  ![alt-text](Images/22Feb2020return.gif)
  
+- Frames are not saved completely. Only some part of the display is saved as a gif file but this gif file still shows that whenever start button is pressed, it the animation resets and restarts the game. 
  
 ## Feb22.2021
 
