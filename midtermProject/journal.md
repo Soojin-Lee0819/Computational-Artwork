@@ -1,28 +1,33 @@
 # Tune-in Catcher Journal
 
-Following is the digital journal on creating a Tune-in Catcher 
+Following is the digital journal on creating a Tune-in Catcher. This page explains step by step progress and learning outcome on making this processing game. 
+It includes daily progress, challenges that I faced and iterations that I made. 
 
 ## Feb17.2021
-Following the instruction to create a game that includes shape, image, sound, and on-screen text, I brainstormed on what game I want to produce. From the beginning, I wanted to create a game that is built around the music. For the game part, for the scope of this project, I wanted to creatively elaborate on the simple game like catching objects. 
+
+### Brainstorm 
+Following the instruction to create a game that includes shape, image, sound, and on-screen text, I brainstormed on what game I want to create. From the beginning, I wanted to create a game that is built around the music. I wanted to creatively elaborate sound element on the simple game like catching objects. 
 
 I had two ideas in mind:
 
-1) First idea is called <Re-writing song> where players catch words that are falling from the sky and these collected words will be replaced with the lyrics of a song that will be played throughout the duration of the game. 
+1) First idea is the game called **Re-writing song** where players catch words that are falling from the sky and these collected words will be replaced with the lyrics of a song, hence players are rewriting a song.
    
-2) Another idea is <Tune-in Catcher> where players listen to the song and colelct matching icon that best expresses the song that is currently being played. 
+2) Another idea is the game called **Tune-in Catcher** where players listen to the song and colelct matching icon that represents the song that is being played. 
 
 For this midterm project, I decided to work on the second idea. 
 
 
 ## Feb18.2021
 
-**Progress** 
-<Collecting Image>
-- I collected a png image for the falling Items 
+### Progress 
 
-<Falling Item Animation>
-- I coded basic animation of Items falling from the sky using void fall() that changes y position with added speed 
-  and void collision() that checks item colliding with the ground height and looping it by make it go back to the sky when it reaches the ground. 
+**Collecting Image**
+- I collected png images for the falling Items. 
+
+**Falling Item Animation**
+- I coded basic animation of Items falling from the sky using void fall() that changes y position with added speed.
+- I used void collision() that checks item colliding with the ground height and once it reaches the ground, I made it to go back to the sky. 
+- I radomized the item speed to add some variation to the animation. 
    
  ```Processing
  void fall() {
@@ -39,8 +44,23 @@ For this midterm project, I decided to work on the second idea.
 ```
 
 
-<LP player Keyboard Move>
-- I also animated LP player to move left and right using keyPressed(); and keyReleased(); function and boolean. 
+**LP player Keyboard Move** 
+
+- I set a move function for the Recorder by changing recordCorrdinatex; where the x coordinate of record moves to the right by adding +10 and moves to the left by eliminating -10.
+
+```Processing
+  void move() {//controls the direction of the record from keyboard and restrict it from going out tf the window
+    if (left && x>0) {
+      x=x-10;
+      recordCoordinatex=x;
+    }
+    if (right && x<800) {
+      x=x+10;
+      recordCoordinatex=x;
+    }
+  };
+```
+- I animated LP player to move left or right using keyPressed(); and keyReleased(); function and boolean. 
 
 ```Processing
   void keyPressed() {
@@ -67,43 +87,33 @@ It turned out to be like this:
 
 ![alt-text](Images/18Feb2021midterm.gif)
 
-**Issues**
-   - As intended, Icons are falling down but all of the movements of each frame are captured and continuously visualized.
+**Challenge**
+   - Icons are falling but they are leaving the tracemarks. 
+   - Every movement is captured and continuously displayed on the screen. 
 
 ## Feb19.2021
 
-**Progress**
+### Progress
 
-<Redrawing Background>
-- I fixed the issue of continuous visualization of imgages by redrawing the background. 
+**Redrawing Background**
+
+- I fixed the issue of continuous visualization of the moving icon by redrawing the background 
+- In this way, new background is drawn every time the object is moving and covers the previous frames
+
 ``` processing
 void redrawbackground() { //redraw background every time the object is moving
   image(background, 0, 0, width, height);
 ```
-so that new background is being drawn every frame and covering the previous frames
 
 ![alt-text](Images/19Feb2021redrawbg.gif)
 
-**Issue**
 
-- Movement of LP player is not completely smooth. The previous frames are shown for a second. 
+**Adding Timer**
 
-<Adding Timer>
 - I added Timer with a void countUp(), starting with Timer(0) that update the timer by counting up that begins with value 0.
 
-**Issue**
+**Creating Landing Page**
 
-Timer is behind the falling images
-
-**Solution**
-
-Switch the order of draw. Display Items and Record first, then timer. By doing so, Timer comes in front of images. 
-
-![alt-text](Images/19Feb2021timer.gif)
-
-
-<Landing Page>
-   - Making Landing page
 
 What I have made previously is the gamepage, which is displayed once the game has started. Before players actually begin the game, I wanted them to trigger some action, such as clciking a mouse start the game. 
 
@@ -112,6 +122,18 @@ I started with desinging landpage. I designed a landing page with an iage of lp 
 Later when I learn how to embed audio files, I will add the feature of on hover, I would make the song to start to play.
 
 ![alt-text](Images/19Feb2021musicalbum.gif)
+
+### Challenges
+
+**Timer Position**
+
+- Timer is displayed behind the playgame page that it is invisible
+
+- To solve this issue, I switched the order of drawing. By displaying Items, Record and playgame page first, followed by Timer, timer is visible as it is displayed in front of the images. 
+
+![alt-text](Images/19Feb2021timer.gif)
+
+
 
 ## Feb20.2021
 
