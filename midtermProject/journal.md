@@ -175,14 +175,102 @@ I manipulated the image transparency and set the background black to make the im
  
 ## Feb22.2021
 
-1. Created ending page 
+### Progress
 
-## Feb 23.
+**Create EndPage**
+- I created an endpage
+- The challenge now is to have this endpage appear when the game is ended. I have not yet finished the gamepage functions. So I will do this later when I am done with the game page. 
 
-Issue!
-Stuck with not knowing how to match array of item image with song image. 
+ ![alt-text](Images/endpage.png)
 
-The transparency is only changing when but once it is moved, transparency change back to . I originally had song images as an individual file; not as an array. I changed it to the array form but I still did not figure out how to make this happen. It was very frustrating and I felt like I have to 
+## Feb 23.2021
+
+### Progress
+
+**Catch Icon Animation**
+
+- By creating a function that evaluates the distance between the falling item and the record, and trigger an event when the distance between the two are less than 50, an overlapping distance, I was able to create a catching Icon animation
+
+   ```float touch = dist( Items[i].itemCoordinatex, Items[i].itemCoordinatey, record.x, record.y);
+   (touch < 50) {
+          Items[0].erase();
+   ```
+
+- When Record catches the falling item, I want the image of the icon to be deleted from the display.
+- However "delete" or "remove" is not an available function on processing
+- Therefore, I manually created a function erase();
+
+```
+  void erase() {
+    itemSpeed = 0;
+    itemCoordinatex = 1000;
+    itemCoordinatey = 1000;
+    };
+  ```
+
+- For the function erase, I set the speed to 0 and translate the item position off screen, which by deleting the item, it makes player feel like they have captured the item.
+
+**Add Song Cover Album Image Icons to gamepage**
+
+- I added the song cover album icons to the side of the gamepage. 
+
+- This icon is added to indicate players what songs they have successfully collected the song. 
+
+- When the player successfully catches the icon falling from the sky that matches the song, the icon image of the song on the side will be lightened.
+
+- Originally, I did not have song album images in array() so all the images will be lightened up whenever the player cathes an icon.
+
+- I wanted to set in a way that when a specific item is caught, a specific icon to light up. 
+
+- Therefore I created an array list for the song album images. 
+```
+ Song (int num) {
+    songType=num+1;
+    songCoordinatex=0;
+    songCoordinatey=(num+1);
+    songSize=50;
+  }
+
+  void display() {
+    String Songimgname="img/Song"+str(songType)+".png";//generate img name for song
+    PImage Song;
+    Song=loadImage(Songimgname);
+    tint(255, tintValue);
+    image(Song, songCoordinatex+50, songCoordinatey*100, songSize, songSize); //load image for song
+  };
+```
+- For the image to light up, I made a function called displayBright(); and adjusted the tint value from int (100); that changes to tint = 255, maximum tint.
+ ```
+ void displayBright() {
+     tintValue = 255;
+     display();
+```
+
+ ![alt-text](Images/journalplaygame.png)  ![alt-text](Images/journallighton.png)
+
+
+
+### Challenge 
+
+**Song image icon light up for one frame only**
+
+- After animating the song cover image to light up when the player catches the item, I was stuck with not knowing how to let that image lighted up for until the end of the game. 
+
+- The light would flicker 
+
+
+- However the issue was that I wanted the light to be on but it would only flicker and once the position is moved off screen, since the function touch() is no longer true; the distance between recorder and the icon is too far away, the light only flickers for a second and gets dim again. 
+   
+I found a way to let the light stay by instead of moving the position off screen, I set the erase(); 
+
+This took me almost the entire day to figure out but it turned out to be a very simple. 
+```
+  void erase() {
+    itemSpeed = 0;
+    itemSize = 1;
+    };
+  ```
+I learnt that sometimes I need to sit back and try to think about what are some other approches I can take to have the same result, effect. 
 
 
 ## Feb 24. 
@@ -221,26 +309,6 @@ Therefore, I made an adjustment to the program. To make it a bit less complicate
 **light up Icon**
 By increasing the tint value of the album icon image, when the player successfully catch the item of the song, I added an animation that lights up the music album. 
 
-**Catch Icon Animation**
-Using this function
-   ```
-float touch = dist( Items[i].itemCoordinatex, Items[i].itemCoordinatey, record.x, record.y);
-(touch < 50) {
-          Items[0].erase();
-   ```
-of measuring the distance between the recorder and the falling item, I made an animation of catching item. For the function erase, I originally set speed to 0 and translate the item position off screen; x = 1000; y = 1000;
-This way, I could make an animation that makes player feel like the item is caught by deleting the item from the screen. However the issue was that I wanted the light to be on but it would only flicker and once the position is moved off screen, since the function touch() is no longer true; the distance between recorder and the icon is too far away, the light only flickers for a second and gets dim again. 
-   
-I found a way to let the light stay by instead of moving the position off screen, I set the erase(); 
-
-This took me almost the entire day to figure out but it turned out to be a very simple. 
-```
-  void erase() {
-    itemSpeed = 0;
-    itemSize = 1;
-    };
-  ```
-I learnt that sometimes I need to sit back and try to think about what are some other approches I can take to have the same result, effect. 
 
 ****
 
