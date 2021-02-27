@@ -10,8 +10,9 @@ Listening to music is one of the essential daily routine of mine. I listen to mu
 
 Below is the YouTube video of demonstrating how to play the game. 
 
+[![Watch the video](Images/YouTubevideo.png)](https://youtu.be/qE8WP0k1MyA)
 
 
 1) When players run the program, they are met with the landing page. 
 
- ![alt-text](Imageslandingpage.png)  
+ ![alt-text](Images/landingpage.png)  
