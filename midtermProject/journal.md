@@ -107,25 +107,23 @@ void redrawbackground() { //redraw background every time the object is moving
 
 ![alt-text](Images/19Feb2021redrawbg.gif)
 
-
-**Adding Timer**
-
-- I added Timer with a void countUp(), starting with Timer(0) that update the timer by counting up that begins with value 0.
-
 **Creating Landing Page**
 
-
-What I have made previously is the gamepage, which is displayed once the game has started. Before players actually begin the game, I wanted them to trigger some action, such as clciking a mouse start the game. 
-
-I started with desinging landpage. I designed a landing page with an iage of lp players displayed on wall. When users hover on the LP, it shows the album cover of the song. This is done so that players can listen to and explore the songs before they start the game. 
-
-Later when I learn how to embed audio files, I will add the feature of on hover, I would make the song to start to play.
+- So far I have created a gamepage, which is displayed once the game has started. 
+- Before players actually begin the game, I wanted them to trigger some action, such as clciking a mouse to start the game. 
+- I started with desinging landpage. 
+- I created a landing page with an image of LP players hung on wall. 
+- When users hover on the LP, it shows the album cover of the song. 
+- This is done so that players can listen to and explore the songs before they start the game. 
+- For now, it is only the image of the song but later when I learn how to embed audio files, I will add sound where on hover, the sound starts to play.
 
 ![alt-text](Images/19Feb2021musicalbum.gif)
 
 ### Challenges
 
-**Timer Position**
+**Make Timer Visible**
+
+- I added Timer with a void countUp(), starting with Timer(0) that update the timer by counting up that begins with value 0.
 
 - Timer is displayed behind the playgame page that it is invisible
 
@@ -134,16 +132,21 @@ Later when I learn how to embed audio files, I will add the feature of on hover,
 ![alt-text](Images/19Feb2021timer.gif)
 
 
-
 ## Feb20.2021
 
-I haven't made much progress today. Instead, I edited journals and redesigned background for the gamepage. I wanted to give an experience of players to feel like they are playing this game at a cozy cafe. Therefore, I changed the backgorund of the gamepage to an image of antique LP cafe.
+I haven't made much progress today. Instead, I edited journals and redesigned background for the gamepage. I wanted to give an experience of players to feel like they are playing this game at a cozy cafe. Therefore, I changed the backgorund of the gamepage to an image of an antique LP cafe.
+
+I manipulated the image transparency and set the background black to make the image become darker. 
 
 
 ## Feb21.2021
 
-Progress
-1. Added Button to start the game.
+### Progress
+
+**Add Start Button**
+
+-  Added Button to start the game.
+
    ```
    void mouseClicked() {
      if (mouseX >  650 && mouseX<  750 && 
@@ -153,10 +156,19 @@ Progress
     startGame = false;
     }```
   
-2. Added Instruction text using string
+**Add Instruction**
 
-3. Add return button on game page for users to stop playing the game or to restart. 
-   In order to restart, I have added setup(); to click (start) button so that everytime when user starts the game, it is a new game. 
+- Added written Instruction text using string. 
+
+**Add Return Button** 
+- Add return button on the gamepage for the users to stop playing the game and go back to the landpage. 
+
+### Challenge
+
+**Reset & Restart**
+- It was challenging to figure out how to restart the animation everytime user click the start button.
+- In order to restart, I have added setup(); to click (start) button so that everytime when user starts the game, it resets the setup, hence starting a new game. 
+
  ![alt-text](Images/addTextAndStartButton.png)  
  
  
