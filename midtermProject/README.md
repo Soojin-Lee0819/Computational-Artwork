@@ -65,5 +65,12 @@ Here is the list of songs available for Tune-in Catcher:
 
 ## Process & Journal
 
-Please visit to read [link to section](https://github.com/Soojin-Lee0819/IntrotoIM/edit/main/midtermProject/journal.md)
+To Read the process of making this game project that includes day by day progress, challenges and iterations,
 
+Please visit [link to section](https://github.com/Soojin-Lee0819/IntrotoIM/blob/main/midtermProject/journal.md)
+
+## Reflection & Evaluation 
+
+Working on this project, the biggest challenge was
+
+While previous projects were one dimensional, in a sense that there is one working page, this project is in layers where while one action is happening that will lead to another action and etcetera. 
