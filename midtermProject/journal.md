@@ -381,3 +381,11 @@ Below is the weird endpage where some items and left unerased.
 
 Therefore, I added to make the page clear before it moves to the endpage. 
  
+ ## Feb 27
+ 
+ I have finished this project!
+ 
+ Final version of this game is demonstrated in this youtube video down below:
+ 
+ [![Watch the video](Images/YouTubevideo.png)](https://youtu.be/qE8WP0k1MyA)
+ 
