@@ -383,7 +383,7 @@ Therefore, I added to make the page clear before it moves to the endpage.
  
  ## Feb 27
  
- I have finished this project!
+ I have finished the project!
  
  Final version of this game is demonstrated in this youtube video down below:
  
