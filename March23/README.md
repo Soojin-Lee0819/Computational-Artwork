@@ -18,6 +18,31 @@ In class, we learnt how to program on Arduino
 - When I press the button, the button responds to matching color LED
 - The light turns off after 500 delay
 
+
+````
+
+ if (digitalRead(yButton) == HIGH) {
+    digitalWrite(yLED, HIGH);
+    delay(500);
+    digitalWrite(yLED, LOW);
+
+  }
+
+  if (digitalRead(rButton) == HIGH) {
+    digitalWrite(rLED, HIGH);
+    delay(500);
+    digitalWrite(rLED, LOW);
+
+  }
+
+  if (digitalRead(bButton) == HIGH) {
+    digitalWrite(bLED, HIGH);
+    delay(500);
+    digitalWrite(bLED, LOW);
+
+  }
+````
+
 ### Challenge:
 I struggled with connecting switch with the light. 
 
