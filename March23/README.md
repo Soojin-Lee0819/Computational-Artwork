@@ -30,6 +30,16 @@ The build of the final schematic is below:
 
 ![alt-text](Images/lightgameshcematic.jpg)
 
+### Final Picture
+The build of the final breadboard is below:
+
+![alt-text](Images/cleangame1.jpg)
+
+### Final Game Demo
+The demonstration of the game is below: 
+
+![alt-text](Images/finalsetback.gif)
+
 ### Process
 
 1. First I built the setbacks
