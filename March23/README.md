@@ -26,12 +26,11 @@ It is confusing because your right brain tries to say the color but your left br
 5) Win the Game: Complete all five levels, then you win the game! (all the lights on the board will blink 3 times to congratulate you and restart the game)
 
 ## Schematic
-The build of the final schematic is below:
+The build of the schematic for this project is below:
 
 ![alt-text](Images/lightgameshcematic.jpg)
 
-## Final Picture
-The build of the final breadboard is below:
+## Final Product
 
 ![alt-text](Images/cleangame1.jpg)
 
@@ -42,26 +41,40 @@ Find the demonstration of the game below:
 
 1) Click BLUE, RED, and YELLOW buttons one by one to learn what color LED light each button represents.
 2) Click all three BLUE, RED, and YELLOW buttons simultaneously to start the game => Green light blinks!
-3) Yello light turns on => that means you have to click blue button
-4) Press Blue butto => Green light turns on to indicate it is correct.
-5) Continue game until you finish level 5
+3) Yellow light turns on => that means you have to click blue button (blue button corresponds to yellow LED)
+4) Press Blue button => Green light turns on to indicate it is correct.
+5) Continue the game until you finish level 5
 6) Once you finish level 5, all the lights on the breadboard blinks 3 time and restarts
 
 
-## Challenge:
+## Challenge & Process
 
-### Declare LED light as Output ###
-When I first made a simplet setback to test the program and to check if buttons are triggering output, I faced an issue of LED lights lighting up very dim.
-Although it was responding, 
-When I did not delcare LED lights as output, the lights were so dim.
-Once I declared lights as output, all LED lights were on with bright light. 
+### Build Simple program ###
+In class we learnt how to build switch and LED light on the breadboard and how to program it on Arduino to put Input (Button) and Output (LED lignt) in communication. However, once I tried to build a game from the scratch, I didn't know where to start. It was a little bit overwhelming. So instead of building a perfect physical program for the game, I first built a simple program that has three switches and three light where each switch corressponds to matching lights and 
+I made adjustments to this basic model. This was really helpful because I could regularly check if my code has an error or if it is working fine. 
 
-### Switch Connection ###
-I made a mistake on connecting the same leg button to both ground and the 5 volt supply. Since they were connected to the same leg, I could not use the button. I spent so much time trying to fix the code, yet I could not solve the issue!. Later it turned out that I could never solve it because essentailly, issue was at the breadboard itself. Unlike previous software-based processing process, for Arduino project that requires both physical and digital computing, it is challenging to figure out whether the issue is on the computer programming or the setup of the arduino physical product. 
+### Dim LED Light ###
+When I first built a simple program that turns on the light when the buttons are pressed, I faced an issue of LED lights lightening up, but the lights were very dim. This was because I did not declare LED lights as ouput. I declared lights as output in void setup(). Once I declared them as an output, the LED lights got so much brighter. 
 
-From this experience, I learnt a lesson that it is important to check both the code and instead of  recognize the source of the issue before trying to
+````
+void setup() {
+  //Declaring LED lights as output of button
+  pinMode(10, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(2, OUTPUT);
+````
 
-### Learning New Languages ###
+
+### Button Wrong Wire Connection ###
+I made a mistake on connecting the same leg button to both ground and the 5 volt supply. Since they were connected to the same leg (same row), the button was not working. However, not knowing this hardware mistake, I spent so much time on trying to fix this issue by fixing the digital code. Later I found out that it is not the issue of computer coding but the issue was on the breadboard itself. 
+
+Unlike previous software-based Processing projects, for Arduino project, it requires both the physical and the digital programming that it is challenging to figure out whether the issue is on the computer digital programming or the setup of the hardware. 
+
+From this experience, I learnt a lesson that it is important to check both the software program and the hardware program instead of making a impedient judgement on where the issue might be in. 
+
+### Learning New Language ###
+
 Although it was very similar to Processing language, it took me a while to learn Arduino Program Language.
 I learnt new function, variable and structural languages like 
 - digitalRead()
