@@ -66,7 +66,7 @@ void setup() {
 ````
 
 
-### Button Wrong Wire Connection ###
+### Wrong Wire Connection for Button ###
 I made a mistake on connecting the same leg button to both ground and the 5 volt supply. Since they were connected to the same leg (same row), the button was not working. However, not knowing this hardware mistake, I spent so much time on trying to fix this issue by fixing the digital code. Later I found out that it is not the issue of computer coding but the issue was on the breadboard itself. 
 
 Unlike previous software-based Processing projects, for Arduino project, it requires both the physical and the digital programming that it is challenging to figure out whether the issue is on the computer digital programming or the setup of the hardware. 
