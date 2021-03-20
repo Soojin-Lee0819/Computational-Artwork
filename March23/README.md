@@ -6,7 +6,7 @@ For this week's assignment we were instructed to use at least three momentary sw
 ### Ideation 
 When I tried to make a game with LED lights with different colors, one game came to my mind. It is the game that you have to look at the chart and say the COLOR not the word. 
 
-![alt-text](Image/namecolor.png)
+![alt-text](Images/namecolor.png)
 
 It is confusing because your right brain tries to say the color but your left brain insists on reading the word. Inspired by this game, I decided to add a confusing element in the game to make the game more fun to play. Hence, I added a twist where players have to press matching button, not the button with the same color with the light.  
 
