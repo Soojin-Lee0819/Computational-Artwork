@@ -10,27 +10,27 @@ When I tried to make a game with LED lights with different colors, one game came
 
 It is confusing because your right brain tries to say the color but your left brain insists on reading the word. Inspired by this game, I decided to add a confusing element in the game to make the game more fun to play. Hence, I added a twist where players have to press matching button, not the button with the same color with the light.  
 
-### Instruction 
+### Game Instruction 
 1) Start the Program
+
 2) Learn colors: Click buttons to learn what color does each button represents
-2) Click all three buttons simultaneously: Once you are confident that you have learnt what button corresponds to what color light, press all three button simultaneously to start the game
-//             3) Start playing Game: See the light pattern and press the corresponding button that will light up the same pattern
-//                           If you press the correct button, green light will turn on and proceed to next level.
-//             4) Win the Game: If you finish all five levels, you win the game! (all lights will blink 3 times and restart the game)
 
+   - Blue Button => Yellow LED
+   - Red Button => Blue LED
+   - Yellow Button => Red LED
+   
+3) Start Game: Once you are confident that you have learnt what color button corresponds to what color light, press all three button simultaneously to start the game. Green LED Light will blink to indicate that the game is starting. 
 
+4) Playing Game: See the light pattern and press the corresponding button that will light up the same pattern. If you press the correct button, green light will blink and proceed to next level.
 
+5) Win the Game: Complete all five levels, then you win the game! (all the lights on the board will blink 3 times to congratulate you and restart the game)
 
+### Schematic
+The build of the final schematic is below:
 
-In class, we learnt how to program on Arduino 
+![alt-text](Images/lightgameshcematic.jpg)
 
-
-1. To start the game, press any button
-2. Once the game starts, four lights will light up 
-3. 
-4. 
-
-## Process
+### Process
 
 1. First I built the setbacks
 - When I press the button, the button responds to matching color LED
