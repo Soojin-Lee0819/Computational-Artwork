@@ -38,7 +38,7 @@ The build of the final breadboard is below:
 ### Final Game Demo
 The demonstration of the game is below: 
 
-[![Watch the video](Image/lastgamefinalimage.jpg)](https://youtu.be/LDsbpfi08Vc)
+[![Watch the video](Images/lastgamefinalimage.jpg)](https://youtu.be/LDsbpfi08Vc)
 
 ### Process
 
