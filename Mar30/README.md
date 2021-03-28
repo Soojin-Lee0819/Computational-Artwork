@@ -1,24 +1,25 @@
-# Arduino Assignment 1: Analog VS. Digital(Dial to Fill in the Blanks!)
+# Arduino Assignment 1: Analog VS. Digital(Dial to Fill in the Missing Parts of the Story!)
 
 ## Description 
-For This week, I was instructed to build Arduino Project that gets information from at least one analog sensor and at least one digital sensor, and use this information to control LEDs, in some creative way. Following this instruction, I made a fun challenge where you find a missing words for a story. To find the missing words, you need to dial potentiometer and solve a pattern to get an answer. Here is an instruction!
+For This week, I was instructed to build Arduino Project that gets information from at least one analog sensor and at least one digital sensor, and use this information to control LEDs, in some creative way. Following the instruction, I made a fun challenge where you dial potentiometer and solve a light pattern puzzle find missing words for a story. Follow the instruction below! 
 
-**Instruction:
+**Instruction:**
 
 1) Run the program
-2) Dial the potentiometer clockwise to receive a light pattern (There are four patterns in total). 
-3) For each pattern, find the light that blinks slower than the rest.
+2) Dial the potentiometer clockwise to receive clues; light patterns (There are four patterns in total). 
+3) For each pattern, identify the light that blinks slower than the rest. (The color of the light is the answer)
 4) When you know the answer, press the matching color button to check if it is correct.
 5) If you press the correct button, the green light on the top left corner will light up.
-6) Find the answer for all four patterns, and fill in the blank with those answers to finish Soojin's story.
-7) Below is Soojin's Story with missing parts.
+6) Find the answer for all four patterns, and fill in the blank with those answers to help Soojin finish her story.
+
+**Below is Soojin's Story with missing words**
 
 
-**I had a very weird day yesterday. I woke up, opened the window and the sky was (--- First Pattern Answer
+*I had a very weird day yesterday. I woke up, opened the window and the sky was (--- First Pattern Answer
   ----) and all the cars on the street were (---Second Pattern Answer---). I wore my favorite (--- Third Pattern Answer ----) sweater and left my home.
-  On the way to school, I saw such a beautiful bird with (---Fourth Pattern Answer---) feathers. What a day!
+  On the way to school, I saw such a beautiful bird with (---Fourth Pattern Answer---) feathers. What a day!*
 
-For analog, I used potentiometer that makes four different patterns of light by turning on a specific LED with fast or slow blink on the value you turn it to, and for digital, there are four buttons that you can use to check your answer. 
+For analog, I used potentiometer that makes four different patterns of light by turning on a specific LED with fast or slow blink on the value you turn it to, and for digital, there are four buttons that you can press to check your answer. 
 
 ## Schematic
 The schematic for this project is below:
@@ -39,7 +40,7 @@ They are in order of the answer.
 
 ## Try it Yourself!!
 
-Can you find which light is the answer? It is not easy but if you look carefully, you will be able to find a light that is blinking at a different rate from the rest. Look carefully and you will see the odd one out! 
+Can you find which light is the answer? It is not easy but if you look carefully, you will be able to find a light that is blinking at a different rate from the rest. Observe carefully :)) 
 
 ### YELLOW blink fast
 
@@ -59,7 +60,7 @@ Can you find which light is the answer? It is not easy but if you look carefully
 ## Challenge & Process Explanation 
 
 ### Draw Schematic First
-Following Professor Michael Shiloh's advice, for this project, I started with schematic. I first draw the schematic and start building the circuit. Once I had a profound idea on what function I want my circuit to have, drawing schematic without a physical circuit was not as challenging as I thought it would be. Since it was my first time using potentiometer, I didn't know symbol is used to represent potentiometer on schematic. There were different symbols used for potentiometer, slightly different from one another. I ended up using a potentiometer symbol from https://qxf2.com/blog/arduino-tutorials-for-testers-light-dimmer/ this website. When drawing a schematic, I made sure I assign Potentiometer (Analog Input) to A0-A5 and LED Lights to six PWM pins (3, 5, 6, 9, 10, and 11), in case I use lights for Analog Outputs.
+Following Professor Michael Shiloh's advice, for this project, I started with drawing schematic, then I built the circuit. Since I had a profound idea on what functions I want my circuit to have, drawing schematic without a physical circuit was not as challenging as I thought it would be. However, because it was my first time using potentiometer, I didn't know the symbol of potentiometer for schematic. When I searched on Google, there were different symbols used for potentiometer, each symbol slightly different from one another. I ended up using a potentiometer symbol from https://qxf2.com/blog/arduino-tutorials-for-testers-light-dimmer/ this website. When drawing a schematic, I made sure I assign Potentiometer (Analog Input) to A0-A5, and LED Lights to six PWM pins (3, 5, 6, 9, 10, and 11), in case I use lights for Analog Outputs.
 
 ### Build & Rebuild Circuit
 When I start building the circuit, I focused on the functionality of the circuit. I wanted to build it in a way that it is easy for users to press button, dial potentiometer and be able to see LED lights without being blocked by wires or the resistors. It was challenging because for this project, I use a lot of inputs and outputs; five lights, four buttons, and a potentiometer. I built a circuit and I had to completely remove everything and rebuild it several times to build a circuit that I was satisfied with. The key thing that helped me to build a clean circuit was to understand the electricity flow on the breadboard.
