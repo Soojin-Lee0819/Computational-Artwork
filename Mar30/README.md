@@ -78,4 +78,4 @@ I wanted four lights to blink individually at their own rate. When I use delay()
 
 ## Answer / Complete Story
 
-**I had a very weird day yesterday. I woke up, opened the window and the sky was YELLOW and all the cars on the street were RED. I wore my favorite GREEN sweater and left my home. On the way to school, I saw such a beautiful bird with BLUE feathers. What a day!
+**I had a very weird day yesterday. I woke up, opened the window and the sky was YELLOW and all the cars on the street were RED. I wore my favorite GREEN sweater and left my home. On the way to school, I saw such a beautiful bird with BLUE feathers. What a day!**
