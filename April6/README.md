@@ -1,15 +1,15 @@
-# Arduino Sound Assignment: Epic Birthday Celebration! 
+# Arduino Sound Assignment: Cute Birthday Celebration! 
 
 ## Description 
-For this weeek, I was instructed to make a music instrument using both digital and analog sensors. Following an instruction, I created an all-in-one birthday celebration kit that you can use to not only play a birthday song but also wish your friend, family, or beloved ones a happy birthday with cute surprises. 
+For this weeek, I was instructed to make a music instrument using both digital and analog sensors. Following an instruction, I made an all-in-one birthday celebration kit that you can use not only to play a birthday song but also to wish your friend, family, or beloved ones a happy birthday with a cute surpris that includes Heart-shaped Fairy Light, a gift and a birthday cake with a candle!
 
 ![alt-text](Images/birthday.jpg)
 
-The month April is a special month for my family. Last week, I celebrated both my parents' birthday and their anniversary. Since I live far away from my parents, although I wanted to physically be there with them to celebrate their birthday, all I could do was to give them a video call and wish them a happiest birthday. Therefore, using Arduino, I made a creative birthday kit that I can use to wish them a happy birthday. Apart from creating a speaker that plays a birthday song, I tried to simulate the birthday celebration using Arduino devices; the experience of turning off the room light, lighting up the candle, singing a happy birthday song, decorating room cute with heart fairy lights, blowing the candle, and even gifting a birthday present. 
+The month April is a very special month for my family. Last week, I celebrated both my parents' birthday and their anniversary. Since I live far away from them, although I wanted to physically be there with my parents to celebrate their birthday, all I could do was to give them a video call and wish them a happy birthday. Therefore, using Arduino, I made a birthday kit that I can use to wish them a happy birthday in a creative way. Apart from the speaker that plays a birthday song, I tried to simulate the usual birthday celebration. I tried to simulate the experience of turning off the room light, lighting up the candle, singing a happy birthday song, decorating room cute with heart fairy lights, blowing the candle, and even gifting a birthday present; all using Arduino devices.
 
 ### Instruction:
 
-This device has four main components. A Birthday Gift, Birthday Song, Candle, and a Heart shaped fairy light. 
+It has four main components: A Birthday Gift, Birthday Song, Candle, and a Heart shaped fairy light. 
 
 1. Make the room dark to light up the candle (Cover photoresistor with your finger)
 2. If the room is dark, the candle will light up. (Yellow LED light will turn on)
@@ -17,14 +17,15 @@ This device has four main components. A Birthday Gift, Birthday Song, Candle, an
 4. The 'Happy Birthday' song Will play, Heart Shaped Fairy Light will turn on and the Gift box will rotate
 5. Once the song is over, unpress the Green Button to stop the song
 6. Make a wish, and blow the candle (Uncover photoresistor to let the light in) 
-7. Present a gift (open a gift box)
+7. Present a gift to the Birthday Person (open a gift box)
 
 
 ## Demonstration 
 
-A complete guidance to celebrate the most epic birthday with this arduino birthday kit is demonstrated in the video below:
+A complete guidance to celebrate a cute birthday using Ardunio is demonstrated in the video below:
 
 [![Watch the video](Images/youtube.jpg)](https://youtu.be/p1_w7RVucHg)
+
 
 ### Heart Fairy Light
 
@@ -114,12 +115,12 @@ I tried to find an alternative, but it is the quintessential part of my project,
 
 From this experience, I learnt that I will need to take care of kits better and put it in and out of the breadboard more gently because 'You can't build a project when you destroy your device!'
 
-but I also learnt a lesson that 'You can always find a solution!' Thanks to a peer colleage I got my piezo buzzer replaced by professor Michael Shiloh. 
+but I also learnt a lesson that 'You can always find a solution!' Thanks to professor Michael Shiloh, I was able to get the Piezzo Buzzer replaced to a new one. 
 
 
-### No Resistor for the Buzzer
+### Unnecessary use of Resistor
 
-During the process of rebuilding the circuit, I accidently added a 330 ohm resistor for the buzzer. Therefore, when I run the program, I could not hear the sound clearly. Although the sound was there, it was too quiet for me to hear. So I thought the buzzer was not working and tried to fix the code. After a while, I found out that I accidently added a resistor. 
+During the process of rebuilding the circuit, I accidently used a 330 ohm resistor for the buzzer, while buzzer does not require a resistor. Therefore, when I run the program, the output of the sound from the buzzer was so faint that I could not hear it. So I thought the buzzer was not working and tried to fix the code. Later, I found out that the sound was coming from the buzzer but since the resistor restrict the amount of current that flows into the buzzer, the level of the sound was too low. 
 
 ### Assigning Pins to Appropriate Number
 
@@ -128,7 +129,4 @@ For this project, I used almost all the pins available that it was crucial for m
 - tone() function interfere with PWM output on pins 3 & 11
 - Servo.write() function interfere with PWM output on pins 9 & 10
 
-I also avoided using Pins 13/0/1 as Digital Input because they may create some issues like blinking at the start start of the program. 
-
-
-### 
+I also avoided using Pins 13/0/1 as Digital Input because they may create some issues like blinking at the start start of the program.
