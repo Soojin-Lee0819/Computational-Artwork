@@ -9,7 +9,7 @@ The month April is a special month for my family. Last week, I celebrated both m
 
 ### Instruction:
 
-This device has four components. A Birthday Gift, Birthday Song, Candle, and a Heart shaped fairy light. 
+This device has four main components. A Birthday Gift, Birthday Song, Candle, and a Heart shaped fairy light. 
 
 1. Make the room dark to light up the candle (Cover photoresistor with your finger)
 2. If the room is dark, the candle will light up. (Yellow LED light will turn on)
@@ -25,6 +25,19 @@ This device has four components. A Birthday Gift, Birthday Song, Candle, and a H
 A complete guidance to celebrate the most epic birthday with this arduino birthday kit is demonstrated in the video below:
 
 [![Watch the video](Images/youtube.jpg)](https://youtu.be/p1_w7RVucHg)
+
+### Heart Fairy Light
+
+![alt-text](Images/heartlight.gif)
+
+
+### Gift Presentation
+
+![alt-text](Images/present.gif)
+
+### Light up Candle 
+
+![alt-text](Images/candle.gif)
 
 
 ## Final Circuit
@@ -82,11 +95,17 @@ The schematic for this project is below:
 
 There are some of the efforts I put to make the schematics more readable. However, I still feel like it is a bit cramped. I want to learn from my peer colleagues on how draw a well ordered and organized schematics
 
+
+
 ## Challenges & Process Explanation 
 
-### Build circuit with 9 lights, 1 button, 1 photoresisotr, 1 servo motor on small breadboard
+### Building heart-shaped LED light
 
-Since I used a lot of LED lights and other INPUT/OUTPUT sources for this project, it was
+Since I had limited space on the breadboard, it was difficult to create a pefect heart shape. I tried to use using minimum number of LED lights. I had to tilt a
+
+### Build circuit with 9 lights, 1 button, 1 photoresisotr, 1 servo motor on a SMALL breadboard
+
+Since I used a lot of LED lights and other INPUT/OUTPUT sources for this project, it was 
 
 
 ### Assigning Pins to Appropriate Number
