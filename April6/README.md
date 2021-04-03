@@ -5,11 +5,24 @@ For this weeek, I was instructed to  made a birthday song and more to celebrate 
 
 ## Schematic
 
+The schematic for this project is below:
+![alt-text](Images/schematic.jpg)
 
+### Tips on Schematic
+
+- I tried to balance out left and right side of the schematic. Since I use a lot of LEDlight (output) for this project, I put photoresistor, which can be positioned either side on the left. 
+
+- I labelled inputs/outputs with red to make it easier for you to read the schematic
+
+
+- I filled in the hole for the closed circuit that are and just  circle for a switch that is not closed.  
 
 ## Final Circuit
+![alt-text](Images/circuit.jpg)
 
 ## Final Game Demo
+
+[![Watch the video](Images/youtube.jpg)](https://youtu.be/p1_w7RVucHg)
 
 ## Challenges & Process Explanation 
 
