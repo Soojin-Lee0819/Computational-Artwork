@@ -3,6 +3,8 @@
 ## Description 
 For this weeek, I was instructed to make a music instrument using both digital and analog sensors. Following an instruction, I created an all-in-one birthday celebration kit that you can use to not only play a birthday song but also wish your friend, family, or beloved ones with cute surprises. 
 
+![alt-text](Images/birthday.jpg)
+
 The month April is a special month for my family. Last week, I celebrated both my parents' birthday and their anniversary. Since I live far away from my parents, although I wanted to physically be there with them to celebrate their birthday, all I could do was to give them a video call and wish them a happiest birthday. Therefore, using Arduino, I made a creative birthday kit that I can use to wish them a happy birthday. Apart from creating a speaker that plays a birthday song, I tried to simulate the birthday celebration using Arduino devices; the experience of turning off the room light, lighting up the candle, singing a happy birthday song, decorating room cute with heart fairy lights, blowing the candle, and even gifting a birthday present. 
 
 ### Instruction:
@@ -18,7 +20,7 @@ This device has four components. A Birthday Gift, Birthday Song, Candle, and a H
 7. Present a gift (open a gift box)
 
 
-## Final Game Demo
+## Demonstration 
 
 A complete guidance to celebrate the most epic birthday with this arduino birthday kit is demonstrated in the video below:
 
@@ -78,11 +80,7 @@ The schematic for this project is below:
 
 - When the two lines intersect, I added a semicircle curve to reduce any confusion of two lines being connected
 
-There are some of the efforts I put to make the schematics more readable. However, I still feel like it is a bit cramped. I want to learn some more TIPs on drawing well ordered and organized schematics
-
-**Feel Free to Write down your TIPS on drawing Schematics Here:**
-
-
+There are some of the efforts I put to make the schematics more readable. However, I still feel like it is a bit cramped. I want to learn from my peer colleagues on how draw a well ordered and organized schematics
 
 ## Challenges & Process Explanation 
 
