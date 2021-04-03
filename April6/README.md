@@ -24,7 +24,7 @@ The schematic for this project is below:
 
 ![alt-text](Images/circuit3.jpg)
 
-![alt-text](circuit4.jpg .png)
+![alt-text](circuit4.png)
 
 ## Final Game Demo
 
