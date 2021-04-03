@@ -18,7 +18,13 @@ The schematic for this project is below:
 - I filled in the hole for the closed circuit that are and just  circle for a switch that is not closed.  
 
 ## Final Circuit
-![alt-text](Images/circuit.jpg)
+![alt-text](Images/circuit1.jpg)
+
+![alt-text](Images/circuit2.jpg)
+
+![alt-text](Images/circuit3.jpg)
+
+![alt-text](Images/circuit4.jpg)
 
 ## Final Game Demo
 
