@@ -1,7 +1,7 @@
 # Arduino Sound Assignment: Epic Birthday Celebration! 
 
 ## Description 
-For this weeek, I was instructed to make a music instrument using both digital and analog sensors. Following an instruction, I created an all-in-one birthday celebration kit that you can use to not only play a birthday song but also wish your friend, family, or beloved ones with cute surprises. 
+For this weeek, I was instructed to make a music instrument using both digital and analog sensors. Following an instruction, I created an all-in-one birthday celebration kit that you can use to not only play a birthday song but also wish your friend, family, or beloved ones a happy birthday with cute surprises. 
 
 ![alt-text](Images/birthday.jpg)
 
@@ -101,12 +101,25 @@ There are some of the efforts I put to make the schematics more readable. Howeve
 
 ### Building heart-shaped LED light
 
-Since I had limited space on the breadboard, it was difficult to create a pefect heart shape. I tried to use using minimum number of LED lights. I had to tilt a
+Since I had a limited space on the breadboard, it was difficult creating a pefect heart shape. I tried to make a decent heart-shape using minimum number of LED lights. I ended up using 8 LED lights for a heart shape. In order to create this shape, I had to position LED light legs in specific spots to make a symmetrical shape. It was also tricky remembering which leg is the shorter leg. I had to pull out the legs and put them back in to find out which row should be connected to the GND (the shorter leg).
 
-### Build circuit with 9 lights, 1 button, 1 photoresisotr, 1 servo motor on a SMALL breadboard
 
-Since I used a lot of LED lights and other INPUT/OUTPUT sources for this project, it was 
+### Destroy Piezzo Buzzer Leg
 
+As soon as I start building the circuit, I faced the major challenge. As I tried to build a circuit for the piezzo buzzer, I found out that one leg of the piezzo buzzer was broken.
+
+![alt-text](Images/brokenbuzzer.png)
+
+I tried to find an alternative, but it is the quintessential part of my project, I couldn't replace the buzzer with another component. I use bluetag and super glue to stick the leg back, but despite my effort, the buzzer did not work. 
+
+From this experience, I learnt that I will need to take care of kits better and put it in and out of the breadboard more gently because 'You can't build a project when you destroy your device!'
+
+but I also learnt a lesson that 'You can always find a solution!' Thanks to a peer colleage I got my piezo buzzer replaced by professor Michael Shiloh. 
+
+
+### No Resistor for the Buzzer
+
+During the process of rebuilding the circuit, I accidently added a 330 ohm resistor for the buzzer. Therefore, when I run the program, I could not hear the sound clearly. Although the sound was there, it was too quiet for me to hear. So I thought the buzzer was not working and tried to fix the code. After a while, I found out that I accidently added a resistor. 
 
 ### Assigning Pins to Appropriate Number
 
@@ -117,17 +130,5 @@ For this project, I used almost all the pins available that it was crucial for m
 
 I also avoided using Pins 13/0/1 as Digital Input because they may create some issues like blinking at the start start of the program. 
 
-### Destroyed Piezzo Buzzer Leg
 
-As soon as I start building the physical circuit, I faced the challenge. 
-
-The lesson learnt from this experience is that 'You can't build it when you destroy your device!'
-
-but I also learnt a lesson that 'You can always find a solution!'
-
-I broke the leg of the lesson learnt here is that I will need to be more careful with the equipments. I tried to fix it by using bluetag to hold the leg but it was not very stable. 
-
-Meanwhile, I started to build heart shape 
-
-I got my piezo buzzer replaced by professor Michael Shiloh. 
 ### 
