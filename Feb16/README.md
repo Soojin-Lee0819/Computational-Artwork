@@ -18,7 +18,7 @@ I have demonstrated making a reservation under the name of "Michael" and "Oliver
 
 Pay attention to how the dishes change for the two differnet reservations. 
 
-![alt-text](Images/reservationDemo.gif)
+![alt-text](Images/demo.gif)
 
 
 ### Description 
