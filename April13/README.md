@@ -39,7 +39,11 @@ Click below to see the Korea flag Drawing Game Demonstration.
 
 ## Demo GIF  
 
-Below is the demonstration of coloring in GIF file. 
+Below is the quick look of starting game using potentiometer:
+
+![alt-text](Images/start.gif)
+
+Below is the quick look of coloring using mouse press and button press:
 
 ![alt-text](Images/color.gif)
 
