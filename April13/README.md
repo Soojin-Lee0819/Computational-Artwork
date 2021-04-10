@@ -14,7 +14,10 @@ My inspiration for this game was the coloring book. Coloring book is a type of b
 
 ![alt-text](Images/KoreanFlagImage.png)
 
-As a child, I remember learning how to draw Korean flag by tracing and painting the flag over and over again. By drawing it myself, I was able to learn how to draw and and deeply appreciate the beauty of Korean flag. As a Korean, I personally love South Korea flag. Especially since each element of the flag has a meaningful background . [You can read more about Korean flag here](https://theculturetrip.com/asia/south-korea/articles/a-brief-history-of-the-south-korean-flag/)
+As a child, I remember learning how to draw Korean flag by tracing and painting the flag over and over again. By drawing it myself, I was able to learn how to draw and and deeply appreciate the beauty of Korean flag. As a Korean, I personally love South Korea flag. Especially since each element of the flag has a meaningful background . 
+
+[You can read more about Korean flag here.](https://theculturetrip.com/asia/south-korea/articles/a-brief-history-of-the-south-korean-flag/)
+
 Apart from the meaning of the flag, it is simply aesthetically pleasing to look at. The white spaces combined with the blue, red and black color shceme makes its simplicity stand out. As Korean, I love Korean flag, and I wanted to share this beautiful flag with more people, hence I created a fun game where you can learn how to draw Korean flag while listening to Korean Anthem. 
 
 ## Schematic 
