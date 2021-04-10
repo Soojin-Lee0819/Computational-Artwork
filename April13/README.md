@@ -39,4 +39,20 @@ Click below to see the Korea flag Drawing Game Demonstration.
 
 ## Demo GIF  
 
+Below is the demonstration of coloring in GIF file. 
+
 ![alt-text](Images/color.gif)
+
+## Challenge & Process
+
+For this project, the difficulty was not in building the physical circuit, but on coding Arduino and Processing in a way that they communicate with one another. 
+It was also my first time building a game, that allows players to draw on Processing, it was challenging finding out how to develop this game. Since last few weeks we have been focusing on Arduino, I had to brush off my processing skills. 
+
+### Continuous Drawing
+
+### 
+
+## Interesting Findings
+
+One interesting thing that I found out is that Arduino has much cleaner, visually comfortable interface to work with. I did not notice this when I was working on them separately, but now that I put them side by side and working on both programs at the same time, I realized that the design and layout of the Arduino is much more user friendly. 
+
