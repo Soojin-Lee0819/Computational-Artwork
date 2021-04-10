@@ -87,15 +87,14 @@ When mapping I added the Buffer value because when I set it as 1023, the receivi
 
 ### Connecting Arduino to Processing 
 
-Getting Arduino and processing to communicate to each other was challenging. It was emperial to understand the concept and the mechanism of the communication of 'how it works' to connect the two. To understand the concept, along with the class material I used this website that helped me to guide me through step-by-step instruction on how to put the two programs into communicaiton:
-
-https://learn.sparkfun.com/tutorials/connecting-arduino-to-processing/all
-
-Toggling between two pages were inconvinient. 
+Getting Arduino and processing to communicate each other was challenging. It was crucial to have a profound understanding of the concept and the mechanism of the  how the communication works between the two. Therefore, along with the class material, I used this website (
+https://learn.sparkfun.com/tutorials/connecting-arduino-to-processing/all), which helped me immensely with the step-by-step instruction on how to put the two programs into communicaiton. 
 
 ## Interesting Findings
 
-One interesting thing that I found out is that Arduino has much cleaner, visually comfortable interface to work with. I did not notice this when I was working on them separately, but now that I put them side by side and working on both programs at the same time, I realized that the design and layout of the Arduino is much more user friendly. 
+![alt-text](Images/processingvsarduino.png)
+
+One interesting thing that I found out is that Arduino has much cleaner, visually comfortable interface to work. I did not notice this when I was working on them individually, but now that I work on both programs simultaneously, I found out that the design and the layout of the Arduino is much more user-friendly. I wonder if this is a personal preference or the heuristic design aspect of the Arduino that makes it easier for user to use. 
 
 ## Evaluation
 I am happy with the outcome of this highly personal and creative project. For this project, I didn't put the interactivity of Processing sending data to Arduino to trigger some action. For this final project, building on this, I woudld like to have the interaction going on the both side, Processing triggering an event on Arduino and vise-versa. 
