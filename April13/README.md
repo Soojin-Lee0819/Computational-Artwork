@@ -112,7 +112,7 @@ I needed buttons for red, blue and black colors. I had blue and red buttons, but
 Getting Arduino and processing to communicate each other was challenging. Without a profound understanding of the concept and the mechanism of how the communication works between the two, I couldn't adapt the class example to my project. Therefore, along with the class material, I used this website (
 https://learn.sparkfun.com/tutorials/connecting-arduino-to-processing/all), to understand the concept and step-by-step procedure on putting the two programs into communicaiton. 
 
-## Interesting Findings
+## Interesting Finding
 
 ![alt-text](Images/processingvsarduino.png)
 
