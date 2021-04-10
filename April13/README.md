@@ -7,3 +7,5 @@ Fort his week, I was instructed to make a simple game that involves some kind of
 2. Once the game start, you will receive the Korean flag sketch and the Korean Anthem will start to play.
 3. Press the button on the Arduino to pick the colors and press mouse to start coloring the Korean flag. 
 
+## Inspiration
+![alt-text](Images/coloringbook.jpg)
