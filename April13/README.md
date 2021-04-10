@@ -22,4 +22,6 @@ Apart from the meaning of the flag, it is simply aesthetically pleasing to look 
 
 ## Schematic 
 
+The schematic of this idea is below, which is very simple compared to previous Arduino assignments. It uses one potentiometer and three buzzers.
+
 ![alt-text](Images/schematic.jpg)
