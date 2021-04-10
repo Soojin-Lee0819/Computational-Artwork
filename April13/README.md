@@ -28,3 +28,9 @@ The schematic of this idea is below, which is very simple compared to previous A
 
 ## Final Circuit
 ![alt-text](Images/circuit.png)
+
+## Game Demonstration Video 
+
+Click below to see the Korea flag Drawing Game Demonstration. 
+
+
