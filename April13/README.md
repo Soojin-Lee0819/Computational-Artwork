@@ -49,14 +49,11 @@ Below is the quick look of coloring using mouse press and button press:
 
 ## Challenge & Process
 
-For this project, the difficulty was not in building the physical circuit, but to code the Arduino and Processing in a way that they communicate with one another was challenging. Apart from that I created a game that is completely different from previous exercises; to allow players to draw on Processing using Arduino, which made it more challenging. However, it was fun working on this project. It was almost like piecing a puzzle together, trying to code using bits of informations I have got and and skills I have acuiqred in the past exercises. Since I have been only working on Arduino projects for the last few weeks, I had to brush off my processing skills. 
+For this project, the difficulty was not in building the physical circuit, but to code the Arduino and Processing in a way that they communicate with each other.  I also created a game that is completely different from previous exercises, a drawing game, which added an extra challenge to the project. I have been working on Arduino projects only for the last few weeks that I had to brush off my Processing skills. However, despite all these difficulties, I had a lot of fun working on this project. It was like piecing a puzzle together; now that I have worked on many projects, I tried to code with bits of informations I have got from here and there, and tried to make the best use of the skills that I have acuiqred so far. 
 
 ### Continuous Line Drawing
 
-To draw a continuous line using mouse was surpringly easy. You need to use pmouseX and pmouseY. 
-pmouseX basically contains the horizontal position of the mouse in the frame previous to the current frame, which is perfect for the purpose of my game, allowing players to draw the shape. 
-
-It was simply this:
+I had the idea of using mouse to paint/draw on Processing but I didn't know how to code this. In a way, drawing is an act of drawing a continuous line. Therefore, I searched on how to draw a continuous line on Processing. Using pmouseX variable, drawing a continuous line was surprisingly easy to code. However, without knowing this variable, it was so difficult. Basically, pmouseX and pmouseY variables store the mouse values from the previous frame, which creates a "drawing" effect. 
 
 ````
 
@@ -74,11 +71,11 @@ void draw() {
 
 ````
 
-but I approached this in a rather complicated way by trying to store the data using millis();
+### Background that blocks Drawing
 
-I wanted players to use mouse to draw. 
+When I had background for the class, the continuous line d
 
-I wanted the
+
 
 ## Interesting Findings
 
