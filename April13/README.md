@@ -72,8 +72,16 @@ void draw() {
 ````
 
 ### Can't Draw Continuous Line on the Image
-The continuous line could were not visible on the. Therefore, I drew created a png file of a Korea flag line sketch
+The continuous line could were not visible on the. Therefore, I drew created a png file of a Korea flag line sketch:
 
+![alt-text](Images/KoreanFlagImage.png)
+
+Since it is a png file, which supports the transparency, I could draw on it. 
+
+Another issue was the background. When I had background in the void drawing(), the drawings created by the continuous lines were masked by the background that it was not visible, just like how jpg image that blocks the drawing. 
+
+### Buffer 
+When mapping I added the Buffer value because when I set it as 1023, the receiving was very unstable. 
 
 
 
