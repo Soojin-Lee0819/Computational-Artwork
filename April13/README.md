@@ -71,13 +71,24 @@ void draw() {
 
 ````
 
-### Background that blocks Drawing
+### Background that blocks the Drawing
 
-When I had background for the class, the continuous line d
+When I had background for the class, the continuous line that players draw were not visible. 
 
 
+### Connecting Arduino to Processing 
+
+Getting Arduino and processing to communicate to each other was challenging. It was emperial to understand the concept and the mechanism of the communication of 'how it works' to connect the two. To understand the concept, along with the class material I used this website that helped me to guide me through step-by-step instruction on how to put the two programs into communicaiton:
+
+https://learn.sparkfun.com/tutorials/connecting-arduino-to-processing/all
+
+Toggling between two pages were inconvinient. 
 
 ## Interesting Findings
 
 One interesting thing that I found out is that Arduino has much cleaner, visually comfortable interface to work with. I did not notice this when I was working on them separately, but now that I put them side by side and working on both programs at the same time, I realized that the design and layout of the Arduino is much more user friendly. 
+
+## Moving Forward
+For this project, processing is receiving 
+For my final project,
 
