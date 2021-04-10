@@ -74,7 +74,7 @@ void draw() {
 ### Can't Draw Continuous Line on the Image
 The continuous line could were not visible on the. Therefore, I drew created a png file of a Korea flag line sketch:
 
-![alt-text](Images/KoreanFlagImage.png)
+![alt-text](Images/KoreanFlagSketch.png)
 
 Since it is a png file, which supports the transparency, I could draw on it. 
 
