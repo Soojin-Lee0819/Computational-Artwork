@@ -22,3 +22,4 @@ Apart from the meaning of the flag, it is simply aesthetically pleasing to look 
 
 ## Schematic 
 
+![alt-text](Images/schematic.jpg)
