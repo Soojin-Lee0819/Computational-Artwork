@@ -38,3 +38,5 @@ Click below to see the Korea flag Drawing Game Demonstration.
 [![Watch the video](Images/youtubeimage.png)](https://youtu.be/A0OAqD5EGqc)
 
 ## Demo GIF  
+
+![alt-text](Images/color.gif)
