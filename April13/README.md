@@ -71,8 +71,8 @@ void draw() {
 
 ````
 
-### JPG file that masks the Drawing
-Once I tried to use the code above to draw continuous line on the Korea flag sketch, the continuous line was not visible. When I run the code on the separate empty pde file, it works but if it was to apply on my project, it didn't work. It turned out that the line being made, but it is not visible since the jpg image is blocking the drawing. Therefore, as a solution to this problem, I created a png file of a Korea flag line sketch using Adobe Photoshop:
+### JPG Image Masking Continuous Drawing
+Once I tried to use the code above to draw continuous line on the Korea flag sketch, the continuous line was not visible. When I run the code on the separate empty pde file, it works but if it was to apply on my project, it didn't work. It turned out that the line being made, but it is not visible since the jpg image is blocking the drawing. I tried to rearrange the order, but I could not change the order around. Therefore, as a solution to this problem, I created a png file of a Korea flag line sketch using Adobe Photoshop:
 
 ![alt-text](Images/KoreanFlagSketch.png)
 
