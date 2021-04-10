@@ -72,7 +72,7 @@ void draw() {
 ````
 
 ### Can't Draw Continuous Line on the Image
-The continuous line could were not visible on the. Therefore, I drew created a png file of a Korea flag line sketch:
+The continuous line could were not visible on the. Therefore, I drew created a png file of a Korea flag line sketch using Adobe Photoshop:
 
 ![alt-text](Images/KoreanFlagSketch.png)
 
@@ -97,7 +97,6 @@ Toggling between two pages were inconvinient.
 
 One interesting thing that I found out is that Arduino has much cleaner, visually comfortable interface to work with. I did not notice this when I was working on them separately, but now that I put them side by side and working on both programs at the same time, I realized that the design and layout of the Arduino is much more user friendly. 
 
-## Moving Forward
-For this project, processing is receiving 
-For my final project,
+## Evaluation
+I am happy with the outcome of this highly personal and creative project. For this project, I didn't put the interactivity of Processing sending data to Arduino to trigger some action. For this final project, building on this, I woudld like to have the interaction going on the both side, Processing triggering an event on Arduino and vise-versa. 
 
