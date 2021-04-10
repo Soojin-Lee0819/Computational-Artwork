@@ -51,9 +51,34 @@ Below is the quick look of coloring using mouse press and button press:
 
 For this project, the difficulty was not in building the physical circuit, but to code the Arduino and Processing in a way that they communicate with one another was challenging. Apart from that I created a game that is completely different from previous exercises; to allow players to draw on Processing using Arduino, which made it more challenging. However, it was fun working on this project. It was almost like piecing a puzzle together, trying to code using bits of informations I have got and and skills I have acuiqred in the past exercises. Since I have been only working on Arduino projects for the last few weeks, I had to brush off my processing skills. 
 
-### Continuous Drawing
+### Continuous Line Drawing
 
-### 
+To draw a continuous line using mouse was surpringly easy. You need to use pmouseX and pmouseY. 
+pmouseX basically contains the horizontal position of the mouse in the frame previous to the current frame, which is perfect for the purpose of my game, allowing players to draw the shape. 
+
+It was simply this:
+
+````
+
+void setup() {
+  size(640, 360);
+  background(102);
+}
+
+void draw() {
+  stroke(255);
+  if (mousePressed == true) {
+    line(mouseX, mouseY, pmouseX, pmouseY);
+  }
+}
+
+````
+
+but I approached this in a rather complicated way by trying to store the data using millis();
+
+I wanted players to use mouse to draw. 
+
+I wanted the
 
 ## Interesting Findings
 
