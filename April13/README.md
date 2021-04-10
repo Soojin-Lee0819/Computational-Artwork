@@ -9,3 +9,9 @@ Fort his week, I was instructed to make a simple game that involves some kind of
 
 ## Inspiration
 ![alt-text](Images/coloringbook.jpg)
+
+My inspiration for this product was my past time activity, the coloring book. Coloring the has certain relaxation and it is simply fun to do!. I wanted to produce this using arduino and processing. The colors of the buttons and inspired me to use button as a color of the paint.
+
+![alt-text](Images/KoreanFlagImage.png)
+
+As a child, I remember learning how to draw Korean flat by tracing and painting the flag many times. As Korean, I love Korean flag and I wanted to share this beautiful flag with others, hence I created a fun game where you can learn how to draw Korean falg. 
