@@ -14,7 +14,7 @@ My inspiration for this game was the coloring book. Coloring book is a type of b
 
 ![alt-text](Images/KoreanFlagImage.png)
 
-As a child, I remember learning how to draw Korean flag by tracing and painting the flag over and over again. By drawing it myself, I was able to learn how to draw and and deeply appreciate the beauty of Korean flag. As a Korean, I personally love South Korea flag. Especially since each element of the flag has a meaningful background . 
+As a child, I remember learning how to draw Korean flag by tracing and painting the flag over and over again. By drawing it myself, I was able to learn how to draw and and deeply appreciate the beauty of Korean flag. As a Korean, I love South Korea flag. Especially since each element of the flag has a meaningful background . 
 
 [You can read more about Korean flag here.](https://theculturetrip.com/asia/south-korea/articles/a-brief-history-of-the-south-korean-flag/)
 
@@ -49,7 +49,7 @@ Below is the quick look of coloring using mouse press and button press:
 
 ## Challenge & Process
 
-For this project, the difficulty was not in building the physical circuit, but to code the Arduino and Processing in a way that they communicate with each other.  I also created a game that is completely different from previous exercises, a drawing game, which added an extra challenge to the project. I have been working on Arduino projects only for the last few weeks that I had to brush off my Processing skills. However, despite all these difficulties, I had a lot of fun working on this project. It was like piecing a puzzle together; now that I have worked on many projects, I tried to code with bits of informations I have got from here and there, and tried to make the best use of the skills that I have acuiqred so far. 
+For this project, the difficulty was not in building the physical circuit, but to code the Arduino and Processing in a way that they communicate with each other.  I also created a game that is completely different from previous exercises, a drawing game, which added an extra challenge to the project. I have been working on Arduino projects only for the last few weeks that I had to brush off my Processing skills. For example, I had to revise on how to import the sound files and to create Class. I used my previous work as a reference point. However, despite all these difficulties, I had a lot of fun working on this project. It was like piecing a puzzle together; now that I have worked on many projects, I tried to code with bits of informations I have got from here and there, and tried to make the best use of the skills that I have acuiqred so far. 
 
 ### Continuous Line Drawing
 
@@ -71,9 +71,10 @@ void draw() {
 
 ````
 
-### Background that blocks the Drawing
+### Can't Draw Continuous Line on the Image
+The continuous line could were not visible on the. Therefore, I drew created a png file of a Korea flag line sketch
 
-When I had background for the class, the continuous line that players draw were not visible. 
+
 
 
 ### Connecting Arduino to Processing 
