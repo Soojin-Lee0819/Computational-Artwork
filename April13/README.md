@@ -33,4 +33,8 @@ The schematic of this idea is below, which is very simple compared to previous A
 
 Click below to see the Korea flag Drawing Game Demonstration. 
 
+**I say turn the potentiometer to left but it is a mistake. Turn the potentiometer to right instead!!!**
 
+[![Watch the video](Images/youtubeimage.png)](https://youtu.be/A0OAqD5EGqc)
+
+## Demo GIF  
