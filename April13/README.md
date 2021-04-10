@@ -71,12 +71,12 @@ void draw() {
 
 ````
 
-### Can't Draw Continuous Line on the Image
-The continuous line could were not visible on the. Therefore, I drew created a png file of a Korea flag line sketch using Adobe Photoshop:
+### JPG file that masks the Drawing
+Once I tried to use the code above to draw continuous line on the Korea flag sketch, the continuous line was not visible. When I run the code on the separate empty pde file, it works but if it was to apply on my project, it didn't work. It turned out that the line being made, but it is not visible since the jpg image is blocking the drawing. Therefore, as a solution to this problem, I created a png file of a Korea flag line sketch using Adobe Photoshop:
 
 ![alt-text](Images/KoreanFlagSketch.png)
 
-Since it is a png file, which supports the transparency, I could draw on it. 
+Since it is a png file, which supports the transparency, I could draw the continuous line without being masked by the image file. 
 
 Another issue was the background. When I had background in the void drawing(), the drawings created by the continuous lines were masked by the background that it was not visible, just like how jpg image that blocks the drawing. 
 
