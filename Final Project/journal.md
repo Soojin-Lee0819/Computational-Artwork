@@ -31,7 +31,9 @@ Setting a cozy, welcoming and comfortable environment for cafe is a key. I plan 
 
 ### Getting Order
 
-I plan to add a pin and make a spinning wheel with a list of 
+I plan to add a pin and make a spinning wheel with a list of menues and servo motor will spin to choose what is the task.
+
+![alt-text](Images/spin.png) ![alt-text](Images/spinningwheel.jpg) 
 
 ### Set a Cafe Music
 
