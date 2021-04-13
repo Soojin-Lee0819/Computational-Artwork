@@ -22,7 +22,7 @@ Here are some of the challenges that I have in mind as of now.
 
 Setting a cozy, welcoming and comfortable environment for cafe is a key. I plan to use potentiometer, LED light pins and that allow players to adjust the lighting of the cafe.
 
-![alt-text](Images/light.jpg) 
+![alt-text](Images/light.jpg) ![alt-text](Images/cafelight2.jpg) 
 
 ### Latte Art
 
