@@ -4,15 +4,13 @@
 
 ### Preliminary concept for my final project 
 
-I love cafe. I do love drinking coffee, eating sweets but apart from that, I love cafe for its vibe, the atmosphere, the people, the smell, and the aesthetics and the experience I get all-together. One of my wish list is to own a coffee shop. Why not own a cafe now? So for my final project, using Arduino and Processing, I will design a Soojin cafe and make my dream come true. 
+I love cafe. I do love drinking coffee and eating delicious cakes from the cafe but apart from that, I also going to cafe for its vibe, the atmosphere, the people, the smell, the aesthetics and the experience I get all-together. One of my bucket list is to own a coffee shop. So for my final project, using Arduino and Processing, I want to produce a fun and relaxing cafe game and make my dream come true albiet virtually. 
 
 ![alt-text](Images/cafe.jpg)
 
-This will be a cafe-barista game where you will need to complete certain tasks, challenges in order to win this game. Due to the nature of this game, it won't be a "competitive" game, but more like a relaxing game where you follow the instructions to enjoy completing certain tasks and enjoy while playing it. 
+This is not a competitive game. It will be a fun and relaxing game where you follow the instructions to enjoy completing certain tasks and enjoy while playing it.  
 
-I plan incorporate different execises that I have done so far throughout the semester to come up with interesting tasks and performances that players have to take. 
-
-For now, considering the scope of this project, I envision this game to involve 4-5 different challenges/tasks. Each task will involve some sort of communication between arduino and processing and I plan to make it very creative and engaging.
+For now, considering the scope of this project, I plan to have 4-5 different challenges/tasks. Each task will involve the use of arduino and processing and I plan to make it very creative and engaging.
 
 Here are some of the challenges that I have in mind as of now.
 
@@ -20,24 +18,30 @@ Here are some of the challenges that I have in mind as of now.
 
 ### Setting up light 
 
-Setting a cozy, welcoming and comfortable environment for cafe is a key. I plan to use potentiometer, LED light pins and that allow players to adjust the lighting of the cafe. Players will be given an image of lighting with some clues. Then it is their task to adjust lighting that matches the image. 
+Setting a cozy, welcoming, and comfortable environment for cafe is a key. Players will be given an image of the lighting of the cafe with some clues. Then it is their task to find a way to adjust the lighting of the cafe and set up a light in a way that matches the image. Photoresistor and LED lights will be needed for this challenge.
 
 ![alt-text](Images/light.jpg) ![alt-text](Images/cafelight2.jpg) 
 
+### Set a Cafe Music
+
+Another importnat aspect a cafe is its "music" choice. For this section, players can use potentiometer to choose the background music of the cafe.
+
 ### Getting Order
 
-I plan to add a pin and make a spinning wheel with a list of menues and servo motor will spin to choose what is the task.
+I plan to add a pin to the servo motor and make a spinning wheel with a list of request from the customers for the latte art. Servo motor will spin and whatever it stops on will be the task for the next challenge. 
 
 ![alt-text](Images/spin.png) ![alt-text](Images/spinningwheel.jpg) 
 
 ### Latte Art
 
-Latte art. Players will use buttons and keyboards on the key to draw a Latte Art. They 
+Based on the sketch design (order) that was chosen by previous challenge, you need to draw a latte art. You will use keyboard and buttons for this challenge. 
 
 ![alt-text](Images/latteart.jpg) ![alt-text](Images/latteart2.jpg) 
 
+### Motor
+I want to incorporate motor for my final project but as of now I didn't learn how to use motor. After learning how to use motor on Thursday, if applicable, I may add one more challenge that incorporates motor. 
 
-### Set a Cafe Music
+
 
 
 
