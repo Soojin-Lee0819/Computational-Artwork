@@ -14,8 +14,13 @@ Usually, escape rooms are done in but in admist of this global pandemic, being c
 
 For now, considering the scope of this project, I envision this game to involve 34-5 different quests/challenges/tasks. Each task will involve some sort of communication between arduino and processing and I plan to make it very creative and engaging.
 
+Instead of "Escape Room", which is inherently spooky and scary, I want to make challenges that are joyful and fun. 
+
 Here are some of the challenges that I have in mind as of now.
 
 Drawing Challenge: 
+
+### Design
+Interms of design aspect, I plan to create a fairy-tale-like theme using a lot of pastel-tone colors. 
 
 
