@@ -20,20 +20,22 @@ Here are some of the challenges that I have in mind as of now.
 
 ### Setting up light 
 
-Setting a cozy, welcoming and comfortable environment for cafe is a key. I plan to use potentiometer, LED light pins and that allow players to adjust the lighting of the cafe.
+Setting a cozy, welcoming and comfortable environment for cafe is a key. I plan to use potentiometer, LED light pins and that allow players to adjust the lighting of the cafe. Players will be given an image of lighting with some clues. Then it is their task to adjust lighting that matches the image. 
 
 ![alt-text](Images/light.jpg) ![alt-text](Images/cafelight2.jpg) 
-
-### Latte Art
-
-![alt-text](Images/latteart.jpg) ![alt-text](Images/latteart2.jpg) 
-
 
 ### Getting Order
 
 I plan to add a pin and make a spinning wheel with a list of menues and servo motor will spin to choose what is the task.
 
 ![alt-text](Images/spin.png) ![alt-text](Images/spinningwheel.jpg) 
+
+### Latte Art
+
+Latte art. Players will use buttons and keyboards on the key to draw a Latte Art. They 
+
+![alt-text](Images/latteart.jpg) ![alt-text](Images/latteart2.jpg) 
+
 
 ### Set a Cafe Music
 
