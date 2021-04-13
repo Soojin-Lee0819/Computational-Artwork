@@ -18,12 +18,23 @@ Here are some of the challenges that I have in mind as of now.
 
 ## Task Ideas
 
+### Setting up light 
+
+Setting a cozy, welcoming and comfortable environment for cafe is a key. I plan to use potentiometer, LED light pins and that allow players to adjust the lighting of the cafe.
+
+![alt-text](Images/light.jpg) 
+
 ### Latte Art
 
 ![alt-text](Images/latteart.jpg) ![alt-text](Images/latteart2.jpg) 
 
 
-### Design
-Interms of design aspect, I plan to create a fairy-tale-like theme using a lot of pastel-tone colors. 
+### Getting Order
+
+I plan to add a pin and make a spinning wheel with a list of 
+
+### Set a Cafe Music
+
+
 
 
