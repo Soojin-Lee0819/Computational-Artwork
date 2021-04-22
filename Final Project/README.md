@@ -52,5 +52,9 @@ Click below to see the end result of my final project!
 [![Watch the video](Images/youtubeimage.png)](https://youtu.be/8zPUVFaiePk)
 
 
+## Demo GIF 
+
+Below is the quick look of adjusting light!
+
 
 
