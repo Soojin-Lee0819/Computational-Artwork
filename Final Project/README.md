@@ -2,7 +2,7 @@
 
 ## Inspiration
 
-![alt-text](Images/cafe.jpg)
+![alt-text](Images/shanghai.jpg)
 
 I love going to cafe. I love drinking coffee and eating cakes, but apart from that I also love cafe for its vibe, its atmosphere, the people in it, and the aesthetics; it is the whole experience I get all-together. One of my bucket list is to own a coffee shop. So for my final project, using Arduino and Processing, I decided to produce a fun, relaxing cafe game and make my dream come-true!!
 
