@@ -85,8 +85,34 @@ I realized that for my previous project, I was able to successfully connect Ardu
 ## 19 April 2021
 ##### day-7
 
+I used Adobe Photoshop to make a file with transparent 
+
 ## 20 April 2021
 ##### day-8
+
+Today my goal was to fix and complete the "Drawing_Page". From the experience, I found out that the previous page freezes, and you can add another page with empty background to. Therefore, instead of having on the same page, I made a separate page, just for drawing. By doing this, I could allow the brushstroke to be visible and  I ended up making separate page for 
+
+This was th I could not 
+
+I also installed the second potentiometer to adjust the brush storke size. 
+
+### Arduino
+
+   //read the value of the potentiometer for brush stroke size(ANALOG)
+  int pmsensor2Value = analogRead (potentiometer2Pin);
+  byte brushSize = map(pmsensor2Value, 0, 1023, 3, 10);
+
+### Processing 
+
+if ((int)(values[2]) >2) {
+          allowDraw = true;
+          brushSize = float (values[2]);
+        } else {
+          allowDraw = false;
+        }
+
+I wanted the read value of the 2nd potentiometer to be directly assigned as a brushSize. I originally assigned the brushSize brushSize = int (values[2]); with an integer of the read value, which led to an error. I later found out that this is because the value should be read as a float
+
 
 ## 21 April 2021
 ##### day-9
