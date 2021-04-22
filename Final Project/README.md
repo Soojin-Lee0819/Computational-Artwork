@@ -1,14 +1,14 @@
-# Intro to IM Final Projec: Dream Cafe!
+# Intro to IM Final Project: Dream Cafe!
 
 ## Inspiration
 
 ![alt-text](Images/cafe.jpg)
 
-I love going to cafe. I love drinking coffee and eating cakes, but apart from that I also love going to cafe for its vibe, its atmosphere, the people in it, and the aesthetics; it is the whole experience I get all-together. One of my bucket list is to own a coffee shop. So for my final project, using Arduino and Processing, I decided to produce a fun and relaxing cafe game and make my dream come-true!!
+I love going to cafe. I love drinking coffee and eating cakes, but apart from that I also love cafe for its vibe, its atmosphere, the people in it, and the aesthetics; it is the whole experience I get all-together. One of my bucket list is to own a coffee shop. So for my final project, using Arduino and Processing, I decided to produce a fun, relaxing cafe game and make my dream come-true!!
 
 ## Description
 
-"Dream Cafe" is a fun and relaxing game for those of who want to have an experience of opening a cafe. You will be able to have a holistic experience of opening a cafe from choosing a locaiton, setting up the cafe environment, receiving orders, making latte art, and serving coffee to the customers. Please follow the instruction below carefully to enjoy this game. 
+"Dream Cafe" is a fun and relaxing game for those who want to have an experience of opening a cafe. By playing "Dream Cafe", you will be able to have a holistic experience of opening a cafe from choosing a locaiton, setting up the cafe environment, receiving orders, making latte art, and serving coffee to the customers. Please follow the instruction below carefully to enjoy this game. 
 
 ### Instruction:
 
@@ -28,6 +28,31 @@ I love going to cafe. I love drinking coffee and eating cakes, but apart from th
       //Dial PINK potentiometer to adjust the brush stroke size
 // 7) Once you finish making coffee, press READY to serve the coffee to the customer. 
 // 8) Press RESTART to restart the game!
+
+## Schematic 
+
+The schematic of this idea is below. One thing to be careful of is to use two bread board. All the lights goes to one bread board and the rest goes to the other bread board. 
+
+![alt-text](Images/schematic.jpg)
+
+## Final Circuit
+
+This is an original circuit without any ornaments on the board
+
+![alt-text](Images/circuit2.png)
+
+This is the final circuit with a world map and the spinner attached
+
+![alt-text](Images/circuit1.png)
+
+## Game Demonstration Video 
+
+Click below to see the Korea flag Drawing Game Demonstration. 
+
+**In the video I say turn the potentiometer to LEFT but it is a mistake. Instead, turn the potentiometer to the RIGHT !!!**
+
+[![Watch the video](Images/youtubeimage.png)](https://youtu.be/A0OAqD5EGqc)
+
 
 
 
