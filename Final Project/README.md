@@ -4,7 +4,7 @@
 
 ![alt-text](Images/shanghai.jpg)
 
-I love going to cafe. I love drinking coffee and eating cakes, but apart from that I also love cafe for its vibe, its atmosphere, the people in it, and the aesthetics; it is the whole experience I get all-together. One of my bucket list is to own a coffee shop. So for my final project, using Arduino and Processing, I decided to produce a fun, relaxing cafe game and make my dream come-true!!
+I love going to cafe. I love drinking coffee, eating cakes, but apart from that I also love cafe for its vibe, its atmosphere, the people in it, and the aesthetics; it is the whole experience I get all-together. One of my bucket list is to own a coffee shop. So for my final project, using Arduino and Processing, I decided to produce a fun, relaxing cafe game and make my dream come-true!!
 
 ## Description
 
@@ -47,11 +47,9 @@ This is the final circuit with a world map and the spinner attached.
 
 ## Game Demonstration Video 
 
-Click below to see the Korea flag Drawing Game Demonstration. 
+Click below to see the end result of my final project!
 
-**In the video I say turn the potentiometer to LEFT but it is a mistake. Instead, turn the potentiometer to the RIGHT !!!**
-
-[![Watch the video](Images/youtubeimage.png)](https://youtu.be/A0OAqD5EGqc)
+[![Watch the video](Images/youtubeimage.png)](https://youtu.be/8zPUVFaiePk)
 
 
 
