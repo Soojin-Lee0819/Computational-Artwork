@@ -2,6 +2,9 @@
 
 ## 13 April 2021
 
+## SHORTCUTS
+[Day 1](journal.md#day-1), [Day 2](journal.md#day-2), [Day 3](journal.md#day-3), [Day 4](journal.md#day-4), [Day 5](journal.md#day-5), [Day 6](journal.md#day-6), [Day 7](journal.md#day-7), [Day 8](journal.md#day-8), [Day 9](journal.md#day-9), [Day 10](journal.md#day-10)
+
 ### Preliminary concept for my final project 
 
 I love cafe. I do love drinking coffee and eating delicious cakes from the cafe but apart from that, I also going to cafe for its vibe, the atmosphere, the people, the smell, the aesthetics and the experience I get all-together. One of my bucket list is to own a coffee shop. So for my final project, using Arduino and Processing, I want to produce a fun and relaxing cafe game and make my dream come true albiet virtually. 
