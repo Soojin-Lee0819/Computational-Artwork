@@ -37,11 +37,11 @@ The schematic of this idea is below. One thing to be careful of is to use two br
 
 ## Final Circuit
 
-This is an original circuit without any ornaments on the board
+This is an original circuit without any ornaments on the board. It has two breadboards and a servo motor. One bread board has four LED lights and another bread board has 2 potentiometers, one yellow button and one one photoresistor. 
 
 ![alt-text](Images/circuit2.png)
 
-This is the final circuit with a world map and the spinner attached
+This is the final circuit with a world map and the spinner attached.
 
 ![alt-text](Images/circuit1.png)
 
