@@ -70,6 +70,34 @@ Below is the quick look of pressing button to activate spinner
 
 ![alt-text](Images/spinner.gif)
 
+## Resources & Credit 
+
+### Songs
+Songs that I used for this project:
+
+1) Heather by Conan Gray (https://www.youtube.com/watch?v=GPUg7n8-M6o)
+
+2) Canada by Lauv (https://www.youtube.com/watch?v=hb_p3bKrK84)
+
+3) Lego House by Ed Sheeran (https://www.youtube.com/watch?v=c4BLVznuWnU)
+
+4) New Day by Paul Kim (https://www.youtube.com/watch?v=hGFKxgpa3fc)
+
+
+### Images
+
+Images I used for this project:
+
+Starbucks image Shanghai / Starbucks image Tokyo / Starbucks New York City (https://www.starbucksreserve.com/en-us/visit)
+
+Cafe 302 Abu Dhabi img (https://www.zomato.com/abudhabi/cafe-302-al-maha-arjaan-by-rotana-al-markaziya)
+
+Customer img (https://pixabay.com/it/illustrations/viso-uomo-cartone-animato-umano-4005302/)
+
+Latte art hand close up img (https://computerbackgroundimages.com/)
+
+Latte art coffe img (https://www.vectorstock.com/royalty-free-vector/latte-art-set-vector-20772198)
+
 
 
 
