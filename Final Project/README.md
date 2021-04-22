@@ -31,7 +31,7 @@ I love going to cafe. I love drinking coffee, eating cakes, but apart from that 
 
 ## Schematic 
 
-The schematic of this idea is below. One thing to be careful of is to use two bread board. All the lights goes to one bread board and the rest goes to the other bread board. 
+The schematic of this idea is below. One thing to be careful is that it uses two bread boards. All the lights goes to one bread board and the rest goes to the other bread board. 
 
 ![alt-text](Images/schematic.jpg)
 
@@ -72,7 +72,7 @@ Below is the quick look of pressing button to activate spinner
 
 ## Challenges & Process
 
-### Override boolean across Class
+### Override boolean across the Classes
 
 ### reset() Impossible
 
@@ -80,7 +80,11 @@ Below is the quick look of pressing button to activate spinner
 
 ### Weak accuracy of the potentiometer value 
 
-### 
+### Allow Drawing by freezing Frame
+
+### Processing - Arduino Communication
+
+Once I started this project, I found out that 
 
 
 
