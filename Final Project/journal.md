@@ -97,9 +97,25 @@ Positioning lights to the map was challenging. I had to crook the legs of the LE
 
 ![alt-text](Images/circuit4.png) ![alt-text](Images/circuit3.png).
 
-I made the final page on processing. 
+I made the final_page on processing.
 
 ![alt-text](Images/finalpage.png)
+
+ I used saved data (what was typed for the order) to have the image appear on the screen as a final result. For instances, if the order was Panda, the completed latte art of panda will appear on the screen as a final page. 
+ 
+ ````
+ 
+     if  (saved.equals (panda) == true) {
+      image(pandacoffeeimg, 620, 65, 500, 500);
+    } 
+    if  (saved.equals (leaves) == true) {
+      image(leavecoffeeimg, 620, 65, 500, 500);
+    }
+    if  (saved.equals (sun) == true) {
+      image(suncoffeeimg, 620, 65, 500, 500);
+    }
+ 
+ ````
 
 ## 22 April 2021
 ##### day-10
