@@ -54,7 +54,19 @@ Click below to see the end result of my final project!
 
 ## Demo GIF 
 
-Below is the quick look of adjusting light!
+Below is the quick look of map that lights up according to your hover
+
+![alt-text](Images/lightmap.gif)
+
+Below is the quick look of turning the lamp on to shed a light to the photoresistor and to light up the cafe
+
+![alt-text](Images/turnlight.gif)
+
+Below is the quick look of drawing latte art and adjusting the brush size using potentiometer
+
+![alt-text](Images/draw.gif)
+
+
 
 
 
