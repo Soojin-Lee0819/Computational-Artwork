@@ -91,9 +91,9 @@ I realized that for my previous project, I was able to successfully connect Ardu
 ## 21 April 2021
 ##### day-9
 
-Today I finally installed ornaments to Arduino. I added a map and the spinning wheel to the arduino. 
+Today I finally installed the ornaments to Arduino circuit. I added a map and the spinning wheel to the arduino. I added these at the end when I was sure that everything is working well because once I install them, it is difficult to move the pins and chips around. 
 
-Positioning lights to the map was challenging. I had to crook the legs of the LED lights to adjust the angle and the position of the light. 
+When installing the map, positioning lights to the right position was challenging. I had to crook the legs of the LED lights to adjust the angle and the position of the light. 
 
 ![alt-text](Images/circuit4.png) ![alt-text](Images/circuit3.png).
 
@@ -101,7 +101,20 @@ I made the final_page on processing.
 
 ![alt-text](Images/finalpage.png)
 
- I used saved data (what was typed for the order) to have the image appear on the screen as a final result. For instances, if the order was Panda, the completed latte art of panda will appear on the screen as a final page. 
+ I used saved data (what was typed for the order, String order="") to have the image appear on the screen as a final result. To do this, I had to add an extra String, String saved=""; that saves what was typed until the player hits the ENTER button and store it as a data.
+
+````
+   if (keyCode == ENTER) { // confirm the order and start making the order
+    Draw_Page = true;
+    delay(2);
+    latte_page = true;
+    game_page = false;
+    saved = order;
+    order = "";
+  }
+````
+
+For instances, if the order was Panda, and the player typed in "panda", for the final page, the completed latte art of panda will appear on the screen.
  
  ````
  
@@ -117,7 +130,7 @@ I made the final_page on processing.
  
  ````
  
- I added RESTART button to allow players to replay. When I had the RESTART button at the same position as READY button, when I click READY button, although I coded
+ I added RESTART button to allow players to replay. When I had the RESTART button positioned at the same location as the READY button on the draw_page, when I click READY button, although I coded like this
  
   ````
    if (Draw_Page && mouseX >1070 && mouseX < 1170 && mouseY > 570 && mouseY < 610 ) { // return to Start Screen
@@ -134,7 +147,9 @@ I made the final_page on processing.
   
   ![alt-text](Images/returnerror.gif)
   
-  for some reason, the program restarts (open the start
+  for some reason, when I clicked READY on the Draw_Page, it did not move from the Draw_Page to the Final_Page, but instead it automatically moved to the start_screen.
+  
+  To solve this issue, I repositioned RESTART button to top right corner. 
 
 ## 22 April 2021
 ##### day-10
