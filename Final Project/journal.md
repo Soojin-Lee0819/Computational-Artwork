@@ -91,7 +91,7 @@ I realized that for my previous project, I was able to successfully connect Ardu
 ## 21 April 2021
 ##### day-9
 
-Installing ornaments to arduino. I added a map and the spinning wheel to the arduino. 
+Today I finally installed ornaments to Arduino. I added a map and the spinning wheel to the arduino. 
 
 Positioning lights to the map was challenging. I had to crook the legs of the LED lights to adjust the angle and the position of the light. 
 
@@ -116,11 +116,34 @@ I made the final_page on processing.
     }
  
  ````
+ 
+ I added RESTART button to allow players to replay. When I had the RESTART button at the same position as READY button, when I click READY button, although I coded
+ 
+  ````
+   if (Draw_Page && mouseX >1070 && mouseX < 1170 && mouseY > 570 && mouseY < 610 ) { // return to Start Screen
+    Final_Page = true;
+    Draw_Page = false;
+  } 
+
+  if (Final_Page && mouseX >1070 && mouseX < 1170 && mouseY > 570 && mouseY < 610 ) { // return to Start Screen
+    Final_Page = false;
+    start_screen = true;
+    
+  }
+  ````
+  
+  ![alt-text](Images/returnerror.gif)
+  
+  for some reason, the program restarts (open the start
 
 ## 22 April 2021
 ##### day-10
 
 Hurrah! I finished the project much earlier than the deadline! I was able to finish it this early because I started working on it much earlier. Today, I worked on finalizing journaling and the documentation. Today, I filmmed the demo video, uploaded it to the YouTube and wrote down the challenges/process. 
+
+I also drew the schematic. 
+
+![alt-text](Images/schematic.jpg)
 
 What do I want to change? 
 
