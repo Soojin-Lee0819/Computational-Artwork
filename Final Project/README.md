@@ -70,7 +70,22 @@ Below is the quick look of pressing button to activate spinner
 
 ![alt-text](Images/spinner.gif)
 
-## Resources & Credit 
+## Challenges & Process
+
+### Override boolean across Class
+
+### reset() Impossible
+
+### LED light not bright enough 
+
+### Weak accuracy of the potentiometer value 
+
+### 
+
+
+
+
+## Sources & Credit 
 
 ### Songs
 Songs that I used for this project:
