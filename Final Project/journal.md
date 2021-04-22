@@ -149,7 +149,8 @@ For instances, if the order was Panda, and the player typed in "panda", for the 
   
   for some reason, when I clicked READY on the Draw_Page, it did not move from the Draw_Page to the Final_Page, but instead it automatically moved to the start_screen.
   
-  To solve this issue, I repositioned RESTART button to top right corner. 
+  To solve this issue, I repositioned RESTART button to top right corner so the button positions do not coincide. 
+  
 
 ## 22 April 2021
 ##### day-10
