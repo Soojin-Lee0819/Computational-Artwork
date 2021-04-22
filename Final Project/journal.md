@@ -93,9 +93,13 @@ I realized that for my previous project, I was able to successfully connect Ardu
 
 Installing ornaments to arduino. I added a map and the spinning wheel to the arduino. 
 
-Positioning lights to the map was challenging. I had to crook the legs of the LED lights to position it on the map. 
+Positioning lights to the map was challenging. I had to crook the legs of the LED lights to adjust the angle and the position of the light. 
 
-![alt-text](Images/circuit4.png) ![alt-text](Images/circuit3.png) 
+![alt-text](Images/circuit4.png) ![alt-text](Images/circuit3.png).
+
+I made the final page on processing. 
+
+![alt-text](Images/finalpage.png)
 
 ## 22 April 2021
 ##### day-10
