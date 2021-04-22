@@ -1,9 +1,14 @@
 # Final Project Journal
 
-## 13 April 2021
 
 ## SHORTCUTS
 [Day 1](journal.md#day-1), [Day 2](journal.md#day-2), [Day 3](journal.md#day-3), [Day 4](journal.md#day-4), [Day 5](journal.md#day-5), [Day 6](journal.md#day-6), [Day 7](journal.md#day-7), [Day 8](journal.md#day-8), [Day 9](journal.md#day-9), [Day 10](journal.md#day-10)
+
+## JOURNAL ENTRIES
+
+##### day-1
+
+## 13 April 2021
 
 ### Preliminary concept for my final project 
 
@@ -44,7 +49,7 @@ Based on the sketch design (order) that was chosen by previous challenge, you ne
 ### Motor
 I want to incorporate motor for my final project but as of now I didn't learn how to use motor. After learning how to use motor on Thursday, if applicable, I may add one more challenge that incorporates motor. 
 
-
+## 14 April 2021
 
 
 
