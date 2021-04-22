@@ -66,6 +66,9 @@ Below is the quick look of drawing latte art and adjusting the brush size using 
 
 ![alt-text](Images/draw.gif)
 
+Below is the quick look of pressing button to activate spinner 
+
+![alt-text](Images/spinner.gif)
 
 
 
