@@ -95,7 +95,7 @@ Installing ornaments to arduino. I added a map and the spinning wheel to the ard
 
 Positioning lights to the map was challenging. I had to crook the legs of the LED lights to position it on the map. 
 
-![alt-text](Images/circuit3.png) ![alt-text](Images/circuit4.png) 
+![alt-text](Images/circuit4.png) ![alt-text](Images/circuit3.png) 
 
 ## 22 April 2021
 ##### day-10
