@@ -76,7 +76,11 @@ Below is the quick look of pressing button to activate spinner
 
 For my project, I have many classes. 
 
+![alt-text](Images/circuit1.png)
+
 ### reset() Impossible
+
+![alt-text](Images/reset.png)
 
 ### LED light not bright enough 
 
