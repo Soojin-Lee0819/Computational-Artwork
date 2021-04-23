@@ -76,7 +76,10 @@ Below is the quick look of pressing button to activate spinner
 
 For my project, I have many classes. 
 
-![alt-text](Images/circuit1.png)
+![alt-text](Images/classes.png)
+
+![alt-text](Images/cafe3.png)
+![alt-text](Images/cafe2.png)
 
 ### reset() Impossible
 
