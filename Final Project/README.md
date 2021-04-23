@@ -85,7 +85,46 @@ In total, I have one main project file with five different pages.
 
 Creating a class was not a difficult part since I practiced it several times already. However, I faced an issue when I tried to pass boolean from one class to another. For example, for the StartScreen I wanted the image opacity to change on hover (image on the left), and on click, it moves to next page, which is categorized as GamePage (image on the right). Originally when I declared the boolean at the StartScreen page, the boolean only worked within the Class. I could not pass the boolean to another Class. 
 
-Therefore, I declared the booleans on the main project file as a public boolean. This way, the boolean were applicable throughout all the classes. 
+Therefore, I declared the booleans on the main project file as a public boolean. This way, the boolean were applicable throughout all five classes. 
+
+### Processing - Arduino Communication
+
+Once I started this project, I found out that 
+
+### LED light not bright enough 
+
+Once I secured the communication between Arduino and Processing, I 
+
+Second step was to make the LED lights light-up on hover. 
+
+````
+ if (overShanghai) {
+      myPort.write('1');
+      image(shanghai, 600, 0, width/2, height/2);
+    } else {
+      myPort.write ('0');
+    }
+    if (overTokyo) {
+      myPort.write('2');
+      image(tokyo, 0, 0, width/2, height/2);
+    } else {
+      myPort.write ('0');
+    } 
+    if (overNewyork) {
+      myPort.write('3');
+      image(newyork, 600, 325, width/2, height/2);
+    } else {
+      myPort.write ('0');
+    }
+    if (overAbudhabi) {
+      myPort.write('4');
+      image(abudhabi, 0, 325, width/2, height/2);
+    } else {
+      myPort.write ('0');
+    }
+  }
+````
+
 
 ### reset() Impossible
 
@@ -97,9 +136,7 @@ Therefore, I declared the booleans on the main project file as a public boolean.
 
 ### Allow Drawing by freezing Frame
 
-### Processing - Arduino Communication
 
-Once I started this project, I found out that 
 
 
 ## Interesting Findings 
