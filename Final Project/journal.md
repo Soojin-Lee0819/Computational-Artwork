@@ -1,6 +1,6 @@
 # Final Project Journal
 
-### SHORTCUTS
+### Shortcuts
 [Day 1](journal.md#day-1), [Day 2](journal.md#day-2), [Day 3](journal.md#day-3), [Day 4](journal.md#day-4), [Day 5](journal.md#day-5), [Day 6](journal.md#day-6), [Day 7](journal.md#day-7), [Day 8](journal.md#day-8), [Day 9](journal.md#day-9), [Day 10](journal.md#day-10)
 
 ## JOURNAL ENTRIES
@@ -50,7 +50,7 @@ I want to incorporate motor for my final project but as of now I didn't learn ho
 
 ### Designing landing page for Processing 
 
-I started on this projecct early becasue I did notwant to rush through the project. I started with desinging a landing page on Processing. For the landing page, I wanted players to be able to choose where they are going to open up a cafe and view it on the map. I carefully chose the images of cafes around the world that has a good resolution. When choosing cafe images, it was difficult to ignore my "perfectionist" mindset. I have spent around 2 hours choosing "perfect" images when the logical part of my brain was telling me that I should be spending more time first getting the technical parts done, and work on the details if I have more time. 
+I started on this projecct early becasue I did not want to rush through the project. I started with desinging a landing page on Processing. For the landing page, I wanted players to be able to choose where they are going to open up a cafe and view it on the map. I carefully chose the images of cafes around the world that has a good resolution. When choosing cafe images, it was difficult to ignore my "perfectionist" mindset. I have spent around 2 hours choosing "perfect" images when the logical part of my brain was telling me that I should be spending more time first getting the technical parts done, and work on the details if I have more time. 
 
 ![alt-text](Images/cafehover.jpg)
 
@@ -187,8 +187,6 @@ I also drew the schematic.
 
 ![alt-text](Images/schematic.jpg)
 
-What do I want to change? 
 
-For my next project, I want to 
 
 
