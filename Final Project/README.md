@@ -72,7 +72,9 @@ Below is the quick look of pressing button to activate spinner
 
 ## Challenges & Process
 
-### Override boolean across the Classes
+### Pass boolean from one class to another 
+
+For my project, I have many classes. 
 
 ### reset() Impossible
 
@@ -87,7 +89,18 @@ Below is the quick look of pressing button to activate spinner
 Once I started this project, I found out that 
 
 
+## Interesting Findings 
 
+I found out that arduino pins are actually very 
+
+## Evaluation 
+
+Overall, I am very happy with the outcome of this project. From the beginning, I wanted to make an original and creative game that is different from the ones that are already available. This was difficult because unlike adapting the existing game that has a reference point I can follow, for this one, I had to come up with everything from the structure, the organization, and the coding part of the game. Therefore, knowing that this project will take a lot of time, I started to work on this project earlier than what was expected. As I started early, I was able to finish early as well. I am proud that I was able to get the project done much early on time so that I don't have to rush. Instead, I was able to take enough time to improve on the designs, aesthetics, details and documentation of the process. I tried to add many interactive features for this project; the communication  between Processing and Arduino, between Processing and the player, and between Arduino and the player. 
+
+## How I can Improve?
+
+For every project, I have a growth and development but also I always end up finding something that I want to try for the future project. One thing that I want to for my next project is that I want to make a game that allows multiple players. I want to create a game that allows people to play together, have fun and make cute memories. Another thing is I wonder if I can make the coding more efficient. I want to write a code that will improve the data processing and make the loading faster. I found out that the data processing of this game was very slow. It not only takes a long time to load the game, but on the mouseClick as well. This was an expected result because when I was writing a code for this project, I didn't consider the efficiency of the code at all. I would like to know if it is possible to write a code that will fasten the loading/reaction speed, and if so, I want to learn how to write such a code. 
+ 
 
 ## Sources & Credit 
 
