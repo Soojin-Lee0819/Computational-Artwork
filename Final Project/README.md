@@ -74,12 +74,18 @@ Below is the quick look of pressing button to activate spinner
 
 ### Pass boolean from one class to another 
 
-For my project, I have many classes. 
+The dream "Dream cafe" has many pages and functions that players get to navitage. In order to organize these layers of pages and sequence of tasks that players have to complete, I constructed several classes in category of task or the layers of task. 
 
 ![alt-text](Images/classes.png)
 
+In total, I have one main project file with five different pages. 
+
 ![alt-text](Images/cafe3.png)
 ![alt-text](Images/cafe2.png)
+
+Creating a class was not a difficult part since I practiced it several times already. However, I faced an issue when I tried to pass boolean from one class to another. For example, for the StartScreen I wanted the image opacity to change on hover (image on the left), and on click, it moves to next page, which is categorized as GamePage (image on the right). Originally when I declared the boolean at the StartScreen page, the boolean only worked within the Class. I could not pass the boolean to another Class. 
+
+Therefore, I declared the booleans on the main project file as a public boolean. This way, the boolean were applicable throughout all the classes. 
 
 ### reset() Impossible
 
