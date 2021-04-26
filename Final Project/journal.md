@@ -50,24 +50,25 @@ I want to incorporate motor for my final project but as of now I didn't learn ho
 
 ### Designing landing page for Processing 
 
-I started on this projecct early becasue I did not want to rush through the project. I started with desinging a landing page on Processing. For the landing page, I wanted players to be able to choose where they are going to open up a cafe and view it on the map. I carefully chose the images of cafes around the world that has a good resolution. When choosing cafe images, it was difficult to ignore my "perfectionist" mindset. I have spent around 2 hours choosing "perfect" images when the logical part of my brain was telling me that I should be spending more time first getting the technical parts done, and work on the details if I have more time. 
+I started with desinging landing_page on Processing. For the landing_page, I wanted players to be able to choose where they are going to open up a cafe, and have it viewed on the map by having Arduino LED lights to light up. I carefully chose the images of cafes around the world with a good resolution. When choosing cafe images, it was difficult to ignore my "perfectionist" mindset. I spent around 2 hours choosing the "perfect" images when the logical part of me was telling me that I should be spending more time getting the technical parts done, and work on the details later if I have more time. 
 
 ![alt-text](Images/cafehover.jpg)
 
-There were two things that I wanted this page to do.
+I focused on two functions:
 
-First, when the player hover the mouse on the image,the opacity of the image changes and reveals how the cafe looks. Another thing is when the image is clicked, I wanted that clicked image to be the background image of the next page. 
+First, when the player hover mouse on the image,the opacity of the image changes and shows how cafe looks; revealing the cafe. Another thing is when the image is clicked, I wanted the image that was clicked on to be the background image of the next page, the GamePage. 
 
-Initially, I just assigned mouse to track and change the opacity of the image when the mouse is hovered on that image. This worked for the first part, but when I tried to implement the second part, since there is no data recorded to make what image should be on the background, it was tricky. Therefore, I redid the 
+Initially, I just assigned mouse to track where it is on the screen and wrote a function for it to change the opacity of the image when the mouse is hovered. This had no issue with the first part but when I tried to implement the second part, since there is no data recorded to make what image to be set as a background, I couldn't execute the second part. 
 
-I have set each image as boolean because it not only
+Setting each box of the image as a boolean and record the data. 
+
 
 ## 18 April 2021
 ##### day-3
 
 ### Arduino-Processing handshake 
 
-I realized that for my previous project, I was able to successfully connect Arduino to Processing but without a handshake. Since I 
+I realized that for my previous project, I was able to successfully connect Arduino to Processing but without a handshake. For this project, I made sure I make a proper handshake before I put two programs in communication. Since I 
 
 ## 19 April 2021
 ##### day-4
