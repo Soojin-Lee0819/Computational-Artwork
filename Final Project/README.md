@@ -141,7 +141,10 @@ Second step was to make the LED lights light-up on hover.
 
 ## Interesting Findings 
 
-I found out that arduino pins are actually very 
+- Consistency is the Key!! Somedays you don't make less progress than the other day. But don't get frustrated and continue working everyday. When you look back, you have made so much progress already. 
+
+
+- 
 
 ## Evaluation 
 
