@@ -62,35 +62,40 @@ Initially, I just assigned mouse to track and change the opacity of the image wh
 
 I have set each image as boolean because it not only
 
-## 15 April 2021
+## 18 April 2021
 ##### day-3
 
 ### Arduino-Processing handshake 
 
 I realized that for my previous project, I was able to successfully connect Arduino to Processing but without a handshake. Since I 
 
-## 16 April 2021
+## 19 April 2021
 ##### day-4
 
 ### Lighting up map 
 
 
-## 17 April 2021
+## 20 April 2021
 ##### day-5
 
 
-## 18 April 2021
+## 21 April 2021
 ##### day-6
 
-## 19 April 2021
+## 22 April 2021
 ##### day-7
 
 I used Adobe Photoshop to make a file with transparent 
 
-## 20 April 2021
+## 23 April 2021
 ##### day-8
 
-Today my goal was to fix and complete the "Drawing_Page". From the experience, I found out that the previous page freezes, and you can add another page with empty background to. Therefore, instead of having on the same page, I made a separate page, just for drawing. By doing this, I could allow the brushstroke to be visible and  I ended up making separate page for 
+Today my goal was to fix and complete the "Drawing_Page". I had to figure out how to draw continuous line on the background or the image. With background color or an image, although the function void drawLatte() is correctly written and is executed, because the background is also continuously being drawn, the lines are not visible on the screen.
+
+
+
+
+on From the experience, I found out that the previous page freezes, and you can add another page with empty background to. Therefore, instead of having on the same page, I made a separate page, just for drawing. By doing this, I could allow the brushstroke to be visible and  I ended up making separate page for 
 
 This was th I could not 
 
@@ -114,10 +119,10 @@ if ((int)(values[2]) >2) {
 I wanted the read value of the 2nd potentiometer to be directly assigned as a brushSize. I originally assigned the brushSize brushSize = int (values[2]); with an integer of the read value, which led to an error. I later found out that this is because the value should be read as a float
 
 
-## 21 April 2021
+## 24 April 2021
 ##### day-9
 
-Today I finally installed the ornaments to Arduino circuit. I added a map and the spinning wheel to the arduino. I added these at the end when I was sure that everything is working well because once I install them, it is difficult to move the pins and chips around. 
+Today I finally installed ornaments to the Arduino circuit. I added a map and the spinning wheel to the Arduino. I added these at the end when I was sure that everything is working well because once I install the ornaments, it is difficult to move the pins and the resistors around. 
 
 When installing the map, positioning lights to the right position was challenging. I had to crook the legs of the LED lights to adjust the angle and the position of the light. 
 
@@ -178,14 +183,16 @@ For instances, if the order was Panda, and the player typed in "panda", for the 
   To solve this issue, I repositioned RESTART button to top right corner so the button positions do not coincide. 
   
 
-## 22 April 2021
+## 25 April 2021
 ##### day-10
 
-Hurrah! I finished the project much earlier than the deadline! I was able to finish it this early because I started working on it much earlier. Today, I worked on finalizing journaling and the documentation. Today, I filmmed the demo video, uploaded it to the YouTube and wrote down the challenges/process. 
+Hurrah! I finished the project much earlier than the deadline! I was able to finish it much early because I started early. One big take away from working on coding projects is the importance of consistency and time management. Somedays I get stuck and I only make a small progress. However, when I work consistently, these small progresses pile up, and eventually when I look back, I have made a big progress. For today, I worked on finalizing journaling and the documentation. Today, I filmmed the demo video and uploaded it to the YouTube.
 
 I also drew the schematic. 
 
 ![alt-text](Images/schematic.jpg)
+
+I wonder if I need to specify that I used two breadboards on the schematic. If so how do I show? I asked on the discord regarding this question.
 
 
 
