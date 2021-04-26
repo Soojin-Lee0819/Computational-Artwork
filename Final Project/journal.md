@@ -87,10 +87,9 @@ I realized that for my previous project, I was able to successfully connect Ardu
 
 I start working on drawing latte art page. 
 
-I wanted to provide players with a sketch to paint on. Using Adobe Photoshop, I drew a few images of with transparent background. 
+I wanted to provide players with a sketch to paint on; the outline for panda, sun, and leaves latte art. Using Adobe Photoshop, I created a cup of coffee with the sketch and the transparent background. 
 
-
-I used Adobe Photoshop to make a file with transparent 
+![alt-text](Images/photoshop.jpeg)
 
 ## 23 April 2021
 ##### day-8
