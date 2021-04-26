@@ -92,14 +92,67 @@ I used Adobe Photoshop to make a file with transparent
 
 Today my goal was to fix and complete the "Drawing_Page". I had to figure out how to draw continuous line on the background or the image. With background color or an image, although the function void drawLatte() is correctly written and is executed, because the background is also continuously being drawn, the lines are not visible on the screen.
 
+````
+class LatteArtPage { 
+  void displayLattePage() {
+    background(255);
+    fill(0);
+    textSize(13);
+    image(artlatte, 0, 0, 530, 650);
 
+    text("To start drawing Latte Art, press the mouse.\nDial PINK potentiometer to adjust the brush size. \nOnce you have finished drawing, press READY to serve", 650, 575);
+    if  (saved.equals (panda) == true) {
+      image(pandaimg, 620, 40, 500, 500);
+    } 
+    if  (saved.equals (leaves) == true) {
+      image(leaveimg, 620, 40, 500, 500);
+    }
+    if  (saved.equals (sun) == true) {
+      image(sunimg, 620, 40, 500, 500);
+    }
+    noStroke();
+    rect(1070,570,100,40, 10);
+    fill(255);
+    textSize(18);
+    text("READY",1095, 595);
+  }
+  
+    void drawLatte(){
+   // Paint & draw with Blue Brush by pressing the mouse
+    strokeWeight (brushSize);
+    stroke(221,138, 60);
 
+    if ((mousePressed == true) && (allowDraw)) {
+      line(mouseX, mouseY, pmouseX, pmouseY);
+    }
+  }
+}
+````
+![alt-text](Images/noDraw.gif)
 
-on From the experience, I found out that the previous page freezes, and you can add another page with empty background to. Therefore, instead of having on the same page, I made a separate page, just for drawing. By doing this, I could allow the brushstroke to be visible and  I ended up making separate page for 
+First solution that came to my mind was obviously to get rid of the background. However, the issue was that when there is no background, I can draw continouous line on the page but the images from the previous page, the GamePage, is visible underneath. Therefore, I had to find another solution. 
 
-This was th I could not 
+But this trouble give me a source of inspiration. Turning this trouble, the fact that the previous page is shown underneath, into my own advantage, I found the solution. Basically, I separated drawing page into two separate pages; one page that contains the background and images needed for this latte art; the LatteArtPage and another page that only contains the funciton of drawing the continuous line, the Draw Page. So once the drawing starts, the LatteArtPage is displayed and with 2 milliseconds of delay, 
+
+````
+ if (keyCode == ENTER) { // confirm the order and start doing the latte art
+    Draw_Page = true;
+    delay(2);
+    latte_page = true;
+````
+
+it moves to DrawPage. This allows players to draw on the transparent backgorund with the previous page, the exact page that is intended for the latte art. 
+
+[Adjusting Brush Stroke]
 
 I also installed the second potentiometer to adjust the brush storke size. 
+
+To use potentiometer to adjust the brush size, I mapped the value of the AnalogRead (0,1023) to (3,10) as I wanted the brush size to be between 3-10.
+
+````
+  int pmsensor2Value = analogRead (potentiometer2Pin);
+  byte brushSize = map(pmsensor2Value, 0, 1023, 3, 10);
+  ````
 
 ### Arduino
 
