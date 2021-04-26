@@ -58,9 +58,9 @@ I focused on two functions:
 
 First, when the player hover mouse on the image,the opacity of the image changes and shows how cafe looks; revealing the cafe. Another thing is when the image is clicked, I wanted the image that was clicked on to be the background image of the next page, the GamePage. 
 
-Initially, I just assigned mouse to track where it is on the screen and wrote a function for it to change the opacity of the image when the mouse is hovered. This had no issue with the first part but when I tried to implement the second part, since there is no data recorded to make what image to be set as a background, I couldn't execute the second part. 
+Initially, I just assigned mouse to track where it is on the screen and wrote a function for it to change the opacity of the image when the mouse is hovered. This had no issue with the first part but when I tried to implement the second part, since there is no data recorded, I couldn't execute the second part to set a clicked image to be the background image of the GamePage. 
 
-Setting each box of the image as a boolean and record the data. 
+Therefore, I set each image as a boolean, and when when the mouse was clicked at that boolean, it makes the boolean (cafeTokyo true for example, so that I can set that clicked image to be the background of the GamePage.
 
 
 ## 18 April 2021
@@ -78,6 +78,11 @@ I realized that for my previous project, I was able to successfully connect Ardu
 
 ## 20 April 2021
 ##### day-5
+
+### Set Light of Cafe using Photoresistor
+
+### Set cafe music using Potentiometer 
+
 
 
 ## 21 April 2021
