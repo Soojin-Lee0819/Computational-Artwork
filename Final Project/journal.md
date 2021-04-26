@@ -60,21 +60,74 @@ First, when the player hover mouse on the image,the opacity of the image changes
 
 Initially, I just assigned mouse to track where it is on the screen and wrote a function for it to change the opacity of the image when the mouse is hovered. This had no issue with the first part but when I tried to implement the second part, since there is no data recorded, I couldn't execute the second part to set a clicked image to be the background image of the GamePage. 
 
-Therefore, I set each image as a boolean, and when when the mouse was clicked at that boolean, it makes the boolean (cafeTokyo true for example, so that I can set that clicked image to be the background of the GamePage.
+Therefore, I set each image as a boolean, and when the mouse is clicked within that boolean, it makes the boolean true. For instance, when I have my mouse hover over the parameter of Shanghai cafe image, 
 
+````
+ boolean shanghaiOver (int x, int y, int width, int height) {
+    if (mouseX >= x && mouseX <= x+width && 
+      mouseY >= y && mouseY <= y+height) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  ````
+  it returns the shanghaiOver TRUE
+  
+  and if shanghaiOverr is TRUE, I assigned overShanghai to be true, which allows the storing data for the click of an image. 
+  
+  ````
+   if ( shanghaiOver (ShanghaiX, ShanghaiY, imageWidth, imageHeight)) {
+      overShanghai = true;
+  ````
+  
+  For the function mouseClick(), when the mouse is clicked when the mouse is hovering over the shanghai cafe image, it turns the boolean cafeShanghai TRUE. 
+  
+  ````
+   if (start_screen  && overShanghai ) { // when click Shanghai
+    game_page = true;
+    cafeReady = false;
+    start_screen = false;
+    cafeShanghai = true;
+  } else {
+    cafeShanghai = false;
+  }
+  ````
+
+By doing so, I created a communication channel where click of certain image leads to having that certain image to be a backgroudn of the following page. 
 
 ## 18 April 2021
 ##### day-3
 
 ### Arduino-Processing handshake 
 
-I realized that for my previous project, I was able to successfully connect Arduino to Processing but without a handshake. For this project, I made sure I make a proper handshake before I put two programs in communication. Since I 
+I realized that for my previous project, I was able to successfully connect Arduino to Processing but without a handshake. For this project, I made sure I make a proper handshake before I put two programs in communication. 
+
+````
+ if (firstContact == false) {
+      if (val.equals("A")) {
+        myPort.clear();
+        firstContact = true;
+        myPort.write("A");
+        println("contact");
+      }
+    } else { //if we've already established contact, keep getting and parsing data
+
+      println(val); //receiving data
+````
+
+I struggled in the beginning with clearing the port. Without myPort.clear(); Processing was continuously receiving "A" from Arduino that it never reads the value of the value that Aruino is sending after the first contact. 
 
 ## 19 April 2021
 ##### day-4
 
 ### Lighting up map 
 
+I made the communication from Processing to Arduino. I programmed this in a way that when an image is hovered the corresponding LED lights up. 
+
+![alt-text](Images/blueLight.gif)
+
+I set myPort.write ('0'); value 0 as no light on, and set the rest 1-4 to four blueLED each. 
 
 ## 20 April 2021
 ##### day-5
@@ -82,6 +135,9 @@ I realized that for my previous project, I was able to successfully connect Ardu
 ### Set Light of Cafe using Photoresistor
 
 ### Set cafe music using Potentiometer 
+
+### Designing & Building Game Page
+
 
 
 
