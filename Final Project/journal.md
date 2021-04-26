@@ -132,9 +132,41 @@ I set myPort.write ('0'); value 0 as no light on, and set the rest 1-4 to four b
 ## 20 April 2021
 ##### day-5
 
-### Set Light of Cafe using Photoresistor
+I started to develop the task where playeres have to shed the light to the photoresistor to light up the cafe and dial the potentiometer to choose the right song for the cafe. Only when they have successfully set up the light and the sound for the cafe, they proceed to the next part of the game where the customer arrives and they can start taking the order. 
+
+I first designed two Game_pages. The first one that appears before the player adjust the light and sound. And the second one that appears when the players follow the instruction given on the first page. 
+
+![alt-text](Images/beforeSetup.png) ![alt-text](Images/aftersetup.png) 
+
+
+### Set up Photoresistor as a tool to adjust the lighting of the cafe
+
+For Arduino, I built the circuit for the photoresistor and mapped the reading of its value between 0-2
+
+````
+  //read the value of the photoresistor (ANALOG)
+  int photoValue = analogRead (photoresistorPin);
+  byte chooseLighting = map(photoValue, 0, 1023, 0, 2);
+
+````
+The for Processing, I set it in a way that when the value read is 0, there is noLight, which is a variable set as an image with lower opacity and for the value that are read as 1 or 2, it allows brightLight, which is an image set with a full opacity. 
+
+````
+  if ((int)(values[1]) == 0) {
+          noLight = true;
+        } else {
+          noLight = false;
+        }
+        if ((int)(values[1]) == 1 || (int)(values[1]) == 2) {
+          brightLight = true;
+        } else {
+          brightLight = false;
+        }
+````
 
 ### Set cafe music using Potentiometer 
+
+I selected four songs in total and as the player dial the potentiometer, 
 
 ### Designing & Building Game Page
 
