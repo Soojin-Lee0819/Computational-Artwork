@@ -52,7 +52,7 @@ I want to incorporate motor for my final project but as of now I didn't learn ho
 
 I started with desinging landing_page on Processing. For the landing_page, I wanted players to be able to choose where they are going to open up a cafe, and have it viewed on the map by having Arduino LED lights to light up. I carefully chose the images of cafes around the world with a good resolution. When choosing cafe images, it was difficult to ignore my "perfectionist" mindset. I spent around 2 hours choosing the "perfect" images when the logical part of me was telling me that I should be spending more time getting the technical parts done, and work on the details later if I have more time. 
 
-![alt-text](Images/cafehover.jpg)
+![alt-text](Images/cafehover.png)
 
 I focused on two functions:
 
