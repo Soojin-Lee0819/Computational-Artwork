@@ -8,13 +8,13 @@
 ## 13 April 2021
 ##### day-1
 
-### Developing preliminary concept 
+### Developing Concept 
 
 For my final project, using Arduino and Processing, I want to produce a fun and relaxing cafe game.
 
 ![alt-text](Images/cafe.jpg)
 
-This is not a competitive game. It will be a chill relaxing game where you follow the instructions and enjoy completing certain tasks. For now, considering the scope of this project, I plan to have 4-5 different challenges/tasks. Each task will involve the use of arduino, processing or both. I plan to make it very creative and engaging.
+This is not a competitive game. It will be a chill and relaxing game where you follow the instructions and enjoy completing certain tasks. For now, considering the scope of this project, I plan to have 4-5 different challenges/tasks. Each task will involve the use of arduino, processing or both. I plan to make it very creative and engaging.
 
 Here are some of the challenges that I have in mind as of now.
 
@@ -50,20 +50,22 @@ I want to incorporate motor for my final project but as of now I didn't learn ho
 
 ### Designing landing page for Processing 
 
-I started with desinging landing_page on Processing. For the landing_page, I wanted players to be able to choose where they are going to open up a cafe, and have it viewed on the map by having Arduino LED lights to light up. I carefully chose the images of cafes around the world with a good resolution. When choosing cafe images, it was difficult to ignore my "perfectionist" mindset. I spent around 2 hours choosing the "perfect" images when the logical part of me was telling me that I should be spending more time getting the technical parts done, and work on the details later if I have more time. 
+I started with desinging landing_page on Processing. For the landing_page, I wanted players to be able to choose where they want to open up a cafe, and have it viewed on the map by having Arduino LED lights to light up. I carefully chose the images of cafes around the world with a good resolution. When choosing cafe images, it was difficult to ignore my "perfectionist" mindset. I spent around 2 hours choosing the "perfect" images when the logical part of me was telling me that I should be spending more time getting the technical parts done, and work on the details later if I have more time. 
 
 ![alt-text](Images/cafehover.png)
 
 I focused on two functions:
 
-First, when the player hover mouse on the image,the opacity of the image changes and shows how cafe looks; revealing the cafe. Another thing is when the image is clicked, I wanted the image that was clicked on to be the background image of the next page, the GamePage. 
+First, when the player hover mouse on the image,the opacity of the image changes; revealing the cafe. 
 
-Initially, I just assigned mouse to track where it is on the screen and wrote a function for it to change the opacity of the image when the mouse is hovered. This had no issue with the first part but when I tried to implement the second part, since there is no data recorded, I couldn't execute the second part to set a clicked image to be the background image of the GamePage. 
+Second, when the image is clicked, the clicked image will be the background of the next page, the GamePage. 
 
-Therefore, I set each image as a boolean, and when the mouse is clicked within that boolean, it makes the boolean true. For instance, when I have my mouse hover over the parameter of Shanghai cafe image, 
+Initially, for the class StartScreen, I just simply assigned to track the mouse and wrote a code for it to change the opacity of the image when the mouse is hovered on the image. With this, changing the opacity of the image was not an issue, but since there is no data recorded regarding which image is clicked on, I couldn't execute the second part; to set a clicked image to be the background image of the GamePage. 
+
+Therefore, I redid the first part and set each image as a boolean. 
 
 ````
- boolean shanghaiOver (int x, int y, int width, int height) {
+boolean shanghaiOver (int x, int y, int width, int height) {
     if (mouseX >= x && mouseX <= x+width && 
       mouseY >= y && mouseY <= y+height) {
       return true;
@@ -71,17 +73,17 @@ Therefore, I set each image as a boolean, and when the mouse is clicked within t
       return false;
     }
   }
-  ````
-  it returns the shanghaiOver TRUE
-  
-  and if shanghaiOverr is TRUE, I assigned overShanghai to be true, which allows the storing data for the click of an image. 
-  
-  ````
-   if ( shanghaiOver (ShanghaiX, ShanghaiY, imageWidth, imageHeight)) {
+````
+and set the function; when the mouse is hovered on the image, it makes the boolean true. For instance, when I have my mouse hover on the parameter of Shanghai cafe image, 
+
+````
+void update(int x, int y) {
+    if ( shanghaiOver (ShanghaiX, ShanghaiY, imageWidth, imageHeight)) {
       overShanghai = true;
   ````
+  it returns the overShanghai TRUE
   
-  For the function mouseClick(), when the mouse is clicked when the mouse is hovering over the shanghai cafe image, it turns the boolean cafeShanghai TRUE. 
+And on the main project page, I set for the function mouseClick(), when the mouse is clicked when overShanghai is ture, it turns the boolean cafeShanghai TRUE;
   
   ````
    if (start_screen  && overShanghai ) { // when click Shanghai
@@ -94,14 +96,16 @@ Therefore, I set each image as a boolean, and when the mouse is clicked within t
   }
   ````
 
-By doing so, I created a communication channel where click of certain image leads to having that certain image to be a backgroudn of the following page. 
+which allows me to create a channel of communication where the click of certain image leads to having that image to be the background of the following page. 
 
 ## 18 April 2021
 ##### day-3
 
 ### Arduino-Processing handshake 
 
-I realized that for my previous project, I was able to successfully connect Arduino to Processing but without a handshake. For this project, I made sure I make a proper handshake before I put two programs in communication. 
+Today my goal was to connect Aruino, Processing and make the LED light up when the mouse is hovered on the image. I referenced the code that I used for my previous project "Draw Korean Flag" to initiate the contact between Processing and Aruino. I realized that for my previous project, I did make a communication between Arduino and Processing but without a handshake. For this time, I made sure I make a proper handshake before I put the two programs in communication. 
+
+
 
 ````
  if (firstContact == false) {
@@ -116,32 +120,65 @@ I realized that for my previous project, I was able to successfully connect Ardu
       println(val); //receiving data
 ````
 
-I struggled in the beginning with clearing the port. Without myPort.clear(); Processing was continuously receiving "A" from Arduino that it never reads the value of the value that Aruino is sending after the first contact. 
+I struggled making Arduino to stop sending "A" when the first contact is completed. I enabled this by setting a boolean firstContact as false by default and when the Processing reads the handshake value "A", it clears the port and changes the firstContact to be true. This way, once the first contact is complete, they can read data values needed to run the program. 
+
 
 ## 19 April 2021
 ##### day-4
 
 ### Lighting up map 
 
-I made the communication from Processing to Arduino. I programmed this in a way that when an image is hovered the corresponding LED lights up. 
+I set up the Arduino circuit with four blue LED lights and coded Processing to send the number value when the mouse is hovered on the specific image (for example Shanghai), 
 
+**Processing**
+````
+ if (overShanghai) {
+      myPort.write('1');
+      image(shanghai, 600, 0, width/2, height/2);
+    } else {
+      myPort.write ('0');
+    }
+````
+
+and coded Arduino to turn on the LED light when it reads those assigned values;
+
+**Arduino**
+
+````
+ if (val == '1') { //tokyo light on
+      digitalWrite(shanghaiLEDPin , HIGH);
+    } else {
+      digitalWrite(shanghaiLEDPin , LOW);
+    }
+   
+    if (val == '0') { //no light on
+      digitalWrite(tokyoLEDPin , LOW);
+      digitalWrite(shanghaiLEDPin , LOW);
+      digitalWrite(newyorkLEDPin , LOW);
+      digitalWrite(abudhabiLEDPin , LOW);
+    }
+````
 ![alt-text](Images/blueLight.gif)
 
-I set myPort.write ('0'); value 0 as no light on, and set the rest 1-4 to four blueLED each. 
+and if the mouse is not hovered on the images, the Processing sends the value (0), and when the Arduino receives the value '0' it digitalWrites all the pins to be LOW; turning off all the lights.
+
+I was surprised to find out how fast the interaction between Processing and Arduino could be. When I moved the mouse from one image to another, the Arduino light changed immediately without a delay. 
 
 ## 20 April 2021
 ##### day-5
 
-I started to develop the task where playeres have to shed the light to the photoresistor to light up the cafe and dial the potentiometer to choose the right song for the cafe. Only when they have successfully set up the light and the sound for the cafe, they proceed to the next part of the game where the customer arrives and they can start taking the order. 
+I started to develop the tasks for the GamePage. I made two tasks. First, the player has to shed the light to the photoresistor to make the cafe brighter and second, dial the potentiometer to choose the right song for the cafe. Only when the player has successfully set up the light and the sound for the cafe, he/she can proceed to the next part of the game.
 
-I first designed two Game_pages. The first one that appears before the player adjust the light and sound. And the second one that appears when the players follow the instruction given on the first page. 
+### Designing & Building Game Page
+
+I first designed the Game_page. The default design of the Game_page is the image on the left; a dark cafe with an instruction on how to set up the light and the music. Once the player successfully complete the given tasks, they meet a new page with a customer and a new instruction
 
 ![alt-text](Images/beforeSetup.png) ![alt-text](Images/aftersetup.png) 
 
 
 ### Set up Photoresistor as a tool to adjust the lighting of the cafe
 
-For Arduino, I built the circuit for the photoresistor and mapped the reading of its value between 0-2
+I built the photoresistor to Arduino circuit and mapped the reading of its value between 0-2
 
 ````
   //read the value of the photoresistor (ANALOG)
@@ -149,7 +186,11 @@ For Arduino, I built the circuit for the photoresistor and mapped the reading of
   byte chooseLighting = map(photoValue, 0, 1023, 0, 2);
 
 ````
-The for Processing, I set it in a way that when the value read is 0, there is noLight, which is a variable set as an image with lower opacity and for the value that are read as 1 or 2, it allows brightLight, which is an image set with a full opacity. 
+These values are then sent to the Processing.
+
+Processing receives these values. When it receives 0, it makes the boolean noLight TRUE, and when it receives 1 or 2, it makes the boolean brightLight true. 
+When noLight is true, the opacity of cafe image is set to tint (255,50), which makes the cafe dark. When brightLight is true, the opacity of the image is set to full opacity tint(255, 255), which makes the cafe bright. 
+
 
 ````
   if ((int)(values[1]) == 0) {
@@ -166,15 +207,68 @@ The for Processing, I set it in a way that when the value read is 0, there is no
 
 ### Set cafe music using Potentiometer 
 
-I selected four songs in total and as the player dial the potentiometer, 
+I selected four songs in total. I chose the songs that I enjoy listening to : 1. Heather 2. Canada 3. Lego House 4. NewDay
 
-### Designing & Building Game Page
+I built the potentiometer to Arduino circuit and mapped the readings of its value between 0-5.
 
+````
+ //read the value of the potentiometer for choosing music (ANALOG)
+  int pmsensorValue = analogRead (potentiometerPin);
+  byte chooseSong = map(pmsensorValue, 0, 1023, 0, 5);
+````
 
+Arduino sends the value, and Processing reads the value. 
 
+Since both the potentiometer and photoresistor values are received simultaneously, I used a split to process the data by category.
+
+````
+  println(val); //receiving data
+      int values [] = int(split(val, ',')); //split values by category
+````
+
+When the processing receives 0 or 5 from the potentiometer value, it plays noSong, and when it receives the the value between 1-4, it plays the corresponding song. 
+
+I made the buffer value 0 and 5 so that when the potentiometer is not dialed, there is no song in the cafe. 
+
+### When Sound and Light are set, Receive the order
+
+````
+   if ((int)(values[0]) == 0 || (int)(values[0]) ==5 && (int)(values[1]) == 0) {
+          cafeReady = false;
+        } else {
+          cafeReady = true;
+        }
+ ````
+ 
+ I made a boolean cafeReady. When the light and music are on, cafe is ready. If the cafe is ready, the GamePage will show the image of customer and another instruction for the players to follow. 
 
 ## 21 April 2021
 ##### day-6
+
+### Installing Servomotor for order 
+
+I continued working on the GamePage. I built the yellow button and the servo motor to the circuit. I plan to add the spinning wheel to the servo motor but for now, I focused on getting done with the funtional part. 
+
+### Players Type-in the order
+
+I added the feature where the players can type in order and having it appear on the screen. 
+
+````
+void keyPressed() {
+  //Type in Order
+  if (keyCode >= 65 && keyCode <= 90) {
+    //keyCode >= 65 && keyCode <= 90 is all the alphabets 
+    order = order + key;
+  }
+
+  if (key == BACKSPACE) { // allow deleting the input
+    if (order.length() > 0) {
+      order = order.substring(0, order.length()-1);
+    }
+  }
+ ````
+I even added the delete function to allow mistake. When they type a wrong letter, they can erase by pressing a BACKSPACE. I enabled this by using substring and order.length. 
+
 
 ## 22 April 2021
 ##### day-7
