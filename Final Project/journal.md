@@ -269,6 +269,8 @@ void keyPressed() {
  ````
 I even added the delete function to allow mistake. When they type a wrong letter, they can erase by pressing a BACKSPACE. I enabled this by using substring and order.length. 
 
+![alt-text](Images/write.gif)
+
 
 ## 22 April 2021
 ##### day-7
