@@ -269,17 +269,62 @@ void keyPressed() {
  ````
 I even added the delete function to allow mistake. When they type a wrong letter, they can erase by pressing a BACKSPACE. I enabled this by using substring and order.length. 
 
-![alt-text](Images/write.gif)
+![alt-text](Images/write.gif
 
+And on ENTER, 
+
+````
+if (keyCode == ENTER) { // confirm the order and start doing the latte art
+    latte_page = true;
+    game_page = false;
+````
+
+the order is made, and it moves to the next section of the game; the latte_page. 
+
+For today, I just made the arbitrary latte_page and ended the work here. 
 
 ## 22 April 2021
 ##### day-7
 
-I start working on drawing latte art page. 
+Picking up from yesterday, I started to work on the drawing latte art page. 
 
-I wanted to provide players with a sketch to paint on; the outline for panda, sun, and leaves latte art. Using Adobe Photoshop, I created a cup of coffee with the sketch and the transparent background. 
+I wanted to provide players with a sketch to draw on; the outline of the panda, the sun, and the leaves as the bases of the latte art. Using Adobe Photoshop, I created a cup of coffee with the sketch and the transparent background. 
 
 ![alt-text](Images/photoshop.jpeg)
+
+Once I made these outlined images, I wanted these images to pop-up according to the order the players have typed-in, in the previous page. For example, if the player typed "panda" and pressed enter, I wanted the outline sketch of "panda" to show up. 
+
+To do this, I revisited the code for void KeyPressed()
+
+````
+void keyPressed() {
+if (keyCode == ENTER) { // confirm the order and start doing the latte art
+    Draw_Page = true;
+    delay(2);
+    latte_page = true;
+    game_page = false;
+    saved = order;
+    order = "";
+  }
+  }
+  ````
+  
+ To do this, I saved the order as a string, and for the latte_art page, I wrote a code that checks the "saved" and displays the image accordingly.
+ If the player makes a mistake and types in a wrong order, no image will show. 
+ 
+ ````
+  if  (saved.equals (panda) == true) {
+      image(pandaimg, 620, 40, 500, 500);
+    } 
+    if  (saved.equals (leaves) == true) {
+      image(leaveimg, 620, 40, 500, 500);
+    }
+    if  (saved.equals (sun) == true) {
+      image(sunimg, 620, 40, 500, 500);
+    }
+  ````
+ 
+I will work on "drawing" function tomorrow. 
 
 ## 23 April 2021
 ##### day-8
@@ -439,8 +484,18 @@ I also drew the schematic.
 
 ![alt-text](Images/schematic.jpg)
 
-I wonder if I need to specify that I used two breadboards on the schematic. If so how do I show? I asked on the discord regarding this question.
+I wonder if I need to specify that I used two breadboards on the schematic. If so, how do I show? I asked on the discord regarding this question.
 
 
 
+## 26 April 2021
+##### day-11
 
+As I thought, the professor replied me that it is not necessary to specify using two breadboards on the schematic because schematic doesn't show the breadboard at all. The schematic only shows 
+
+1) which components I've used and
+2) the conncections between the components.
+
+Nothing about how those connections are made belong in the schematic. 
+
+So I did not have to make any changes on my shematics! 
