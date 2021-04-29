@@ -4,15 +4,15 @@
 
 ![alt-text](Images/shanghai.jpg)
 
-I love going to cafe. I love drinking coffee, eating cakes, but apart from that I also love cafe for its vibe, its atmosphere, the people in it, and the aesthetics; it is the whole experience I get all-together. One of my bucket list is to own a coffee shop. So for my final project, using Arduino and Processing, I decided to produce a fun, relaxing cafe game and make my dream come-true!!
+I love going to cafe. I love drinking coffee, eating cakes, but apart from that I also love cafe for its vibe, its atmosphere, people I meet there, and the aesthetics of it; it is the whole experience I get all-together. One of my bucket list is to have my own coffee shop. So for my final project, using Arduino and Processing, I decided to produce a fun, relaxing cafe game and have my dream come-true!!
 
 ## Description
 
-"Dream Cafe" is a fun and relaxing game for those who want to have an experience of opening a cafe. By playing "Dream Cafe", you will be able to have a holistic experience of opening a cafe from choosing a locaiton, setting up the cafe environment, receiving orders, making latte art, and serving coffee to the customers. Please follow the instruction below carefully to enjoy this game. 
+"Dream Cafe" is a fun and relaxing game for those who want to have an experience of opening a cafe. By playing "Dream Cafe", you will be able to have a holistic experience of opening a cafe from choosing a locaiton, setting up the cafe environment, receiving orders, making latte art, and serving coffee to the customers. Please follow the instruction below to enjoy this game. 
 
 ### Instruction:
 
-1) Choose a city where you want to open a cafe (On hover, the city will light up on the map!)
+1) Choose a city where you want to open a cafe (On hover, that city will light up on the map!)
 
 2) Turn on the light and set the music of your choice
 
@@ -21,9 +21,9 @@ I love going to cafe. I love drinking coffee, eating cakes, but apart from that 
 
 3) Once you set up the light and the music, customers will start to come. 
 
-4) Press yellow button to receive an order. (Press the button until your friend says "STOP")
+4) Press yellow button to receive an order (Press the button until your friend says "STOP").
 
-5) Type in the order that the spinning wheel indicates and press ENTER
+5) Type-in the order that spinning wheel indicates and press ENTER
 // 6) Start drawing Latte Art and make coffee for the customer 
       //Dial PINK potentiometer to adjust the brush stroke size
 // 7) Once you finish making coffee, press READY to serve the coffee to the customer. 
@@ -31,17 +31,17 @@ I love going to cafe. I love drinking coffee, eating cakes, but apart from that 
 
 ## Schematic 
 
-The schematic of this idea is below. One thing to be careful is that it uses two bread boards. All the lights goes to one bread board and the rest goes to the other bread board. 
+The schematic for this project is below. 
 
 ![alt-text](Images/schematic.jpg)
 
 ## Final Circuit
 
-This is an original circuit without any ornaments on the board. It has two breadboards and a servo motor. One bread board has four LED lights and another bread board has 2 potentiometers, one yellow button and one one photoresistor. 
+This is an original circuit without any ornaments on the board. It has two breadboards and a servo motor. One bread board has four LED lights and another bread board has 2 potentiometers, one yellow button, and one photoresistor. 
 
 ![alt-text](Images/circuit2.png)
 
-This is the final circuit with a world map and the spinner attached.
+This is the final circuit with a world map attached to LED breadboard, and the spinner attached to the servo-motor.
 
 ![alt-text](Images/circuit1.png)
 
@@ -54,19 +54,19 @@ Click below to see the end result of my final project!
 
 ## Demo GIF 
 
-Below is the quick look of map that lights up according to your hover
+LED light on the map lights up according to your hover on the image 
 
 ![alt-text](Images/lightmap.gif)
 
-Below is the quick look of turning the lamp on to shed a light to the photoresistor and to light up the cafe
+Turn on the lamp to shed a light to the photoresistor and to light up the cafe
 
 ![alt-text](Images/turnlight.gif)
 
-Below is the quick look of drawing latte art and adjusting the brush size using potentiometer
+Drawing latte art and adjusting the brush size using potentiometer
 
 ![alt-text](Images/draw.gif)
 
-Below is the quick look of pressing button to activate spinner 
+Press the button to activate spinner 
 
 ![alt-text](Images/spinner.gif)
 
@@ -74,7 +74,7 @@ Below is the quick look of pressing button to activate spinner
 
 ### Pass boolean from one class to another 
 
-The dream "Dream cafe" has many pages and functions that players get to navitage. In order to organize these layers of pages and sequence of tasks that players have to complete, I constructed several classes in category of task or the layers of task. 
+The game "Dream cafe" has multiple pages and tasks that players have to navigate through and complete. In order to organize these layers of pages and sequence of tasks, I organized them in classes. 
 
 ![alt-text](Images/classes.png)
 
@@ -83,7 +83,7 @@ In total, I have one main project file with five different pages.
 ![alt-text](Images/cafe3.png)
 ![alt-text](Images/cafe2.png)
 
-Creating a class was not a difficult part since I practiced it several times already. However, I faced an issue when I tried to pass boolean from one class to another. For example, for the StartScreen I wanted the image opacity to change on hover (image on the left), and on click, it moves to next page, which is categorized as GamePage (image on the right). Originally when I declared the boolean at the StartScreen page, the boolean only worked within the Class. I could not pass the boolean to another Class. 
+Creating a class was not a difficult part since I practiced it several times already. However, I faced an issue when I tried to pass boolean from one class to another. For example, initially, I declared the boolean at 
 
 Therefore, I declared the booleans on the main project file as a public boolean. This way, the boolean were applicable throughout all five classes. 
 
@@ -95,7 +95,7 @@ Once I started this project, I found out that
 
 Once I secured the communication between Arduino and Processing, I 
 
-Second step was to make the LED lights light-up on hover. 
+Second step was to make LED lights to light-up on hover. 
 
 ````
  if (overShanghai) {
@@ -130,19 +130,74 @@ Second step was to make the LED lights light-up on hover.
 
 ![alt-text](Images/reset.png)
 
-### LED light not bright enough 
+When I tried to 
+
+Unlike previous project, where it only 
+
 
 ### Weak accuracy of the potentiometer value 
 
+The accuracy of potentiometer was not great. Although I dial the potentiometer to the far right, the furthest I can go, it was only reading a value between 950-980. Hypothetically, the value should be 1023 when I turn the potentiometer to the furthest. In the beginning when I set the 4th song to be the value between 1023, the song was not being played because the value was not reached. Although I turn the 
+
 ### Allow Drawing by freezing Frame
 
+Coding a "drawing" function was a challenge. Drawing a continuous line was not challenging, but to draw a continuous line on the background/images was difficult.With background color or an image, although the function void drawLatte() is correctly written and is executed, because the background is also continuously being drawn, the lines are not visible on the screen.
 
+````
+class LatteArtPage { 
+  void displayLattePage() {
+    background(255);
+    fill(0);
+    textSize(13);
+    image(artlatte, 0, 0, 530, 650);
+
+    text("To start drawing Latte Art, press the mouse.\nDial PINK potentiometer to adjust the brush size. \nOnce you have finished drawing, press READY to serve", 650, 575);
+    if  (saved.equals (panda) == true) {
+      image(pandaimg, 620, 40, 500, 500);
+    } 
+    if  (saved.equals (leaves) == true) {
+      image(leaveimg, 620, 40, 500, 500);
+    }
+    if  (saved.equals (sun) == true) {
+      image(sunimg, 620, 40, 500, 500);
+    }
+    noStroke();
+    rect(1070,570,100,40, 10);
+    fill(255);
+    textSize(18);
+    text("READY",1095, 595);
+  }
+  
+    void drawLatte(){
+   // Paint & draw with Blue Brush by pressing the mouse
+    strokeWeight (brushSize);
+    stroke(221,138, 60);
+
+    if ((mousePressed == true) && (allowDraw)) {
+      line(mouseX, mouseY, pmouseX, pmouseY);
+    }
+  }
+}
+````
+![alt-text](Images/noDraw.gif)
+
+First solution that came to my mind was obviously to get rid of the background. However, the issue was that when there is no background, I can draw continouous line on the page but the images from the previous page, the GamePage, is visible underneath. Therefore, I had to find another solution. 
+
+But this trouble give me a source of inspiration. Turning this trouble, the fact that the previous page is shown underneath, into my own advantage, I found the solution. Basically, I separated drawing page into two separate pages; one page that contains the background and images needed for this latte art; the LatteArtPage and another page that only contains the funciton of drawing the continuous line, the Draw Page. So once the drawing starts, the LatteArtPage is displayed and with 2 milliseconds of delay, 
+
+````
+ if (keyCode == ENTER) { // confirm the order and start doing the latte art
+    Draw_Page = true;
+    delay(2);
+    latte_page = true;
+````
+
+it moves to DrawPage. This allows players to draw on the transparent backgorund with the previous page, the exact page that is intended for the latte art. 
 
 
 ## Interesting Findings 
 
 - Consistency is the Key!! Somedays you don't make less progress than the other day. But don't get frustrated and continue working everyday. When you look back, you have made so much progress already. 
-
 
 - 
 
