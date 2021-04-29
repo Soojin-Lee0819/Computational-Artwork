@@ -74,23 +74,30 @@ Press the button to activate spinner
 
 ### Pass boolean from one class to another 
 
-The game "Dream cafe" has multiple pages and tasks that players have to navigate through and complete. So to write down everything in one project file was too complicated  In order to organize these layers of pages and sequence of tasks, I organized them in classes. 
+The game "Dream cafe" Processing file is composed of a multiple pages for the players to navigate through and a number of tasks for them to complete. So instead of cramming everything in one pde file, I made multiple tabs and organized the code in classes. 
 
 ![alt-text](Images/classes.png)
 
-In total, I have one main project file with five different pages. 
+In total, I have one main project file with five different class pages. 
 
 ![alt-text](Images/cafe3.png)
 ![alt-text](Images/cafe2.png)
 
-Creating a class was not a difficult part since I practiced it several times already. However, I faced an issue when I tried to pass boolean from one class to another. For example, initially, I declared the boolean at 
+Creating a new class tab was not a difficult part. However, I faced an issue when I tried to pass boolean from one tab to another. For example, initially, I declared the boolean variables like this in the StartScreen Tab
 
-Therefore, I declared the booleans on the main project file as a public boolean. This way, the booleans were applicable throughout all five classes. 
+````
+boolean overTokyo = false;
+````
+This is a boolean variable that identifies mouse over images. However, when I tried to bring this boolean at the main project file for mouseClicked() function, there was an error with a message that the boolean is not found. After some research, I found out that the boolean should be declared as a "public" to be able to pass over the different tabs, and the boolean that is declared on the main project file is read by other tabs. Therefore, when declaring boolean, I used public boolean like this
+
+````
+public boolean overTokyo = false;
+````
+and to be extra safe, I started to declare all the booleans on the main project file. 
 
 ### Processing - Arduino Communication
 
-Once I started this project, I found out that for my previous project, I did make a communication between Arduino and Processing but without a handshake. For this time, I made sure I make a proper handshake before I put the two programs in communication. 
-
+Once I started this project, I found out that for my previous project, I didn't make a handshake between Processing and Aruino. So to find out how to make a proper handshake was a challenge.
 
 
 ````
@@ -115,7 +122,11 @@ I struggled making Arduino to stop sending "A" when the first contact is complet
 
 When I tried to 
 
-Unlike previous project, where it only 
+For my midterm project that is based on Processing only, I added the reset function to enable players to reStart the game. 
+
+I simply had to write rese();
+
+Unlike previous project, for this project, where it only used Processing or Arduino, 
 
 
 ### Weak accuracy of the potentiometer value 
