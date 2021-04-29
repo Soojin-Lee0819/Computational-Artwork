@@ -190,7 +190,7 @@ please visit [link to section](https://github.com/Soojin-Lee0819/IntrotoIM/blob/
 
 - Consistency is the Key!! Somedays you don't make less progress than the other day. But don't get frustrated and continue working everyday. When you look back, you have made so much progress already. 
 
-- Schematic does not tell you how to build the breadboard. This was my first time using more than breadboard for a project. When I was using only one breadboard, it was not necesarry to indicate how to build the circuit. However, since this project uses more than one breadboard, the image of the circuit was necessary for people to understand how this circuit is built. For example, if I build LED lights and potentiometer or photoresistor on the same breadboard, the players will face difficulty adjusting them because it will be covered by a map. 
+- I reminded myself that Schematic does not tell you how to build the breadboard. This was my first time using more than breadboard for a project. When I was using only one breadboard, it was not necesarry to indicate how to build the circuit. However, since this project uses more than one breadboard, the image of the circuit was necessary for people to understand how this circuit is built. For example, if I build LED lights and potentiometer or photoresistor on the same breadboard, the players will face difficulty adjusting them because it will be covered by a map. 
 
 
 ## Evaluation 
