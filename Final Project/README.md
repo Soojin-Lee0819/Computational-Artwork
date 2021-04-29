@@ -74,7 +74,7 @@ Press the button to activate spinner
 
 ### Pass boolean from one class to another 
 
-The game "Dream cafe" Processing file is composed of a multiple pages for the players to navigate through and a number of tasks for them to complete. So instead of cramming everything in one pde file, I made multiple tabs and organized the code in classes. 
+"Dream Cafe" Processing file is composed of a multiple pages and a number of tasks for the players to complete. So instead of cramming everything into one pde file, I made multiple tabs and organized the code in classes. 
 
 ![alt-text](Images/classes.png)
 
@@ -83,21 +83,21 @@ In total, I have one main project file with five different class pages.
 ![alt-text](Images/cafe3.png)
 ![alt-text](Images/cafe2.png)
 
-Creating a new class tab was not a difficult part. However, I faced an issue when I tried to pass boolean from one tab to another. For example, initially, I declared the boolean variables like this in the StartScreen Tab
+Creating a new class tab was not a difficult part. However, I faced an issue when I tried to pass boolean from one tab to another. For example, initially, I declared the boolean variables
 
 ````
 boolean overTokyo = false;
 ````
-This is a boolean variable that identifies mouse over images. However, when I tried to bring this boolean at the main project file for mouseClicked() function, there was an error with a message that the boolean is not found. After some research, I found out that the boolean should be declared as a "public" to be able to pass over the different tabs, and the boolean that is declared on the main project file is read by other tabs. Therefore, when declaring boolean, I used public boolean like this
+in the StartScreen Tab. This is a boolean variable that identifies mouse over the images in StartScreen Tab. However, when I tried to use this boolean at the main project file for the mouseClicked() function, there was an error with a message saying that the boolean is not found. After some research, I found out that the boolean should be declared as a "public" to pass boolean from one class to another. I also found out that the boolean that is declared on the main project file can be read by other tabs. Therefore, when declaring boolean, I made boolean to be public like this:
 
 ````
 public boolean overTokyo = false;
 ````
-and to be extra safe, I started to declare all the booleans on the main project file. 
+and to be extra safe, I started to declare all the booleans in the main project file. 
 
 ### Processing - Arduino Communication
 
-Once I started to put Arduino and Processing in communication, I found out that for my previous project, I didn't make the handshake between Processing and Aruino. So to learn how to make a proper handshake was a challenge. 
+Once I begin to put Arduino and Processing in communication, I found out that for my previous project, I didn't make the handshake between Processing and Aruino. So to learn how to make a proper handshake was a challenge. 
 
 
 ````
@@ -113,28 +113,21 @@ Once I started to put Arduino and Processing in communication, I found out that 
       println(val); //receiving data
 ````
 
-I struggled stopping Arduino to send "A" to Processing when the first contact is completed. I enabled this by setting a boolean firstContact as false by default, and when the Processing reads the handshake value "A", it clears the port and changes the firstContact to be true. This way, once there is a first contact, Processing can read data values needed to run the program and start sending the data to Arudino. 
-
-
-### reset() Impossible
-
-![alt-text](Images/reset.png)
-
-
-For my midterm project that is based on Processing only, to reStart the game,  added the reset function to enable players to reStart the game. 
-
-I simply had to write rese();
-
-Unlike previous project, for this project, where it only used Processing or Arduino, 
+I struggled stopping Arduino to send "A" to Processing when the first contact is completed. I enabled this by setting a boolean firstContact as false by default, and when the Processing reads the handshake value "A", it clears the port and changes the firstContact to be true. This way, once there is a first contact, Processing can read data values needed to run the program as well as start sending the data to Arudino. 
 
 
 ### Weak accuracy of the potentiometer value 
 
-The accuracy of potentiometer was not great. Although I dial the potentiometer to the far right, the furthest I can go, it was only reading a value between 950-980. Hypothetically, the value should be 1023 when I turn the potentiometer to the furthest. In the beginning when I set the 4th song to be the value between 1023, the song was not being played because the value was not reached. Although I turn the 
+I struggled with the inaccurate potentiometer value. Although I dial the potentiometer to the far right, it was only reading the values between 950-980. Hypothetically, when I turn the potentiometer to the furthest left, the read value should be 0, and when it is turned to the furthest right, the read value should be 1023. However, the accuracy of the potentiometer was not so great. Therefore, I added the buffer value. Although there are only four choices of the songs, I mapped the value between 0 and 5
+
+````
+byte chooseSong = map(pmsensorValue, 0, 1023, 0, 5); 
+````
+allowing read value 0, and 5 to be noSong. And the read value 1-4 plays the four songs respectively.
 
 ### Allow Drawing by freezing Frame
 
-Coding a "drawing" function was a challenge. Drawing a continuous line was not challenging, but to draw a continuous line on the background/images was difficult.With background color or an image, although the function void drawLatte() is correctly written and is executed, because the background is also continuously being drawn, the lines are not visible on the screen.
+Coding a "drawing" function was a great challenge. Drawing a continuous line was not difficult, but to draw a continuous line on the background or images was difficult. With background color or an image, although the function void drawLatte() is correctly written and the drawing is executed, because the background or an image is also continuously being drawn, the lines are maksed by images and are not visible on the screen.
 
 ````
 class LatteArtPage { 
@@ -174,9 +167,9 @@ class LatteArtPage {
 ````
 ![alt-text](Images/noDraw.gif)
 
-First solution that came to my mind was obviously to get rid of the background. However, the issue was that when there is no background, I can draw continouous line on the page but the images from the previous page, the GamePage, is visible underneath. Therefore, I had to find another solution. 
+First solution that came to my mind was obviously to get rid of the background. However, the issue was that when there is no background, the continouous line that are being drawn are visible, but the images from the previous page, the GamePage, is also visible underneath. Therefore, I had to find another solution. 
 
-But this trouble give me a source of inspiration. Turning this trouble, the fact that the previous page is shown underneath, into my own advantage, I found the solution. Basically, I separated drawing page into two separate pages; one page that contains the background and images needed for this latte art; the LatteArtPage and another page that only contains the funciton of drawing the continuous line, the Draw Page. So once the drawing starts, the LatteArtPage is displayed and with 2 milliseconds of delay, 
+But this trouble gave me a source of inspiration. Turning this problem, the fact that the previous page is shown underneath, to opportunity, I found a solution. Basically, I separated drawing page into two separate pages; one page that contains the background and images needed for this latte art; the "LatteArtPage" and another page that only contains the funciton of drawing the continuous line, the "DrawPage". So once the drawing starts, the LatteArtPage is displayed followed by DrawPage after a 2 milliseconds of delay.
 
 ````
  if (keyCode == ENTER) { // confirm the order and start doing the latte art
@@ -185,7 +178,7 @@ But this trouble give me a source of inspiration. Turning this trouble, the fact
     latte_page = true;
 ````
 
-it moves to DrawPage. This allows players to draw on the transparent backgorund with the previous page, the exact page that is intended for the latte art. 
+This allows players to draw on the transparent backgorund and the previous page is shown underneath. The previous page in this case is the Draw_Page, the exact page that we need for the latte art drawing. 
 
 ## Process & Journal
 
