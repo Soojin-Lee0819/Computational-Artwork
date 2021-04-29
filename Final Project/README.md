@@ -97,7 +97,7 @@ and to be extra safe, I started to declare all the booleans on the main project 
 
 ### Processing - Arduino Communication
 
-Once I started this project, I found out that for my previous project, I didn't make a handshake between Processing and Aruino. So to find out how to make a proper handshake was a challenge.
+Once I started to put Arduino and Processing in communication, I found out that for my previous project, I didn't make the handshake between Processing and Aruino. So to learn how to make a proper handshake was a challenge. 
 
 
 ````
@@ -113,16 +113,15 @@ Once I started this project, I found out that for my previous project, I didn't 
       println(val); //receiving data
 ````
 
-I struggled making Arduino to stop sending "A" when the first contact is completed. I enabled this by setting a boolean firstContact as false by default and when the Processing reads the handshake value "A", it clears the port and changes the firstContact to be true. This way, once the first contact is complete, they can read data values needed to run the program. 
+I struggled stopping Arduino to send "A" to Processing when the first contact is completed. I enabled this by setting a boolean firstContact as false by default, and when the Processing reads the handshake value "A", it clears the port and changes the firstContact to be true. This way, once there is a first contact, Processing can read data values needed to run the program and start sending the data to Arudino. 
 
 
 ### reset() Impossible
 
 ![alt-text](Images/reset.png)
 
-When I tried to 
 
-For my midterm project that is based on Processing only, I added the reset function to enable players to reStart the game. 
+For my midterm project that is based on Processing only, to reStart the game,  added the reset function to enable players to reStart the game. 
 
 I simply had to write rese();
 
@@ -188,6 +187,11 @@ But this trouble give me a source of inspiration. Turning this trouble, the fact
 
 it moves to DrawPage. This allows players to draw on the transparent backgorund with the previous page, the exact page that is intended for the latte art. 
 
+## Process & Journal
+
+To Read the process of making this Dream Cafe with a day by day progress, challenges, and iterations,
+
+please visit [link to section](https://github.com/Soojin-Lee0819/IntrotoIM/blob/main/midtermProject/journal.md)
 
 ## Interesting Findings 
 
