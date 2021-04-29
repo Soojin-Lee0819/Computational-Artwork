@@ -85,7 +85,7 @@ In total, I have one main project file with five different pages.
 
 Creating a class was not a difficult part since I practiced it several times already. However, I faced an issue when I tried to pass boolean from one class to another. For example, initially, I declared the boolean at 
 
-Therefore, I declared the booleans on the main project file as a public boolean. This way, the boolean were applicable throughout all five classes. 
+Therefore, I declared the booleans on the main project file as a public boolean. This way, the booleans were applicable throughout all five classes. 
 
 ### Processing - Arduino Communication
 
@@ -107,40 +107,6 @@ Once I started this project, I found out that for my previous project, I did mak
 ````
 
 I struggled making Arduino to stop sending "A" when the first contact is completed. I enabled this by setting a boolean firstContact as false by default and when the Processing reads the handshake value "A", it clears the port and changes the firstContact to be true. This way, once the first contact is complete, they can read data values needed to run the program. 
-
-### LED light not bright enough 
-
-Once I secured the communication between Arduino and Processing, I 
-
-Second step was to make LED lights to light-up on hover. 
-
-````
- if (overShanghai) {
-      myPort.write('1');
-      image(shanghai, 600, 0, width/2, height/2);
-    } else {
-      myPort.write ('0');
-    }
-    if (overTokyo) {
-      myPort.write('2');
-      image(tokyo, 0, 0, width/2, height/2);
-    } else {
-      myPort.write ('0');
-    } 
-    if (overNewyork) {
-      myPort.write('3');
-      image(newyork, 600, 325, width/2, height/2);
-    } else {
-      myPort.write ('0');
-    }
-    if (overAbudhabi) {
-      myPort.write('4');
-      image(abudhabi, 0, 325, width/2, height/2);
-    } else {
-      myPort.write ('0');
-    }
-  }
-````
 
 
 ### reset() Impossible
@@ -216,7 +182,8 @@ it moves to DrawPage. This allows players to draw on the transparent backgorund 
 
 - Consistency is the Key!! Somedays you don't make less progress than the other day. But don't get frustrated and continue working everyday. When you look back, you have made so much progress already. 
 
-- 
+- Schematic does not tell you how to build the breadboard. This was my first time using more than breadboard for a project. When I was using only one breadboard, it was not necesarry to indicate how to build the circuit. However, since this project uses more than one breadboard, the image of the circuit was necessary for people to understand how this circuit is built. For example, if I build LED lights and potentiometer or photoresistor on the same breadboard, the players will face difficulty adjusting them because it will be covered by a map. 
+
 
 ## Evaluation 
 
