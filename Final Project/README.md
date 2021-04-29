@@ -191,7 +191,7 @@ it moves to DrawPage. This allows players to draw on the transparent backgorund 
 
 To Read the process of making this Dream Cafe with a day by day progress, challenges, and iterations,
 
-please visit [link to section](https://github.com/Soojin-Lee0819/IntrotoIM/blob/main/midtermProject/journal.md)
+please visit [link to section](Final Project/journal.md)
 
 ## Interesting Findings 
 
