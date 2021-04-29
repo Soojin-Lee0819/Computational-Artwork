@@ -4,7 +4,7 @@
 
 ![alt-text](Images/shanghai.jpg)
 
-I love going to cafe. I love drinking coffee, eating cakes, but apart from that I also love cafe for its vibe, its atmosphere, people I meet there, and the aesthetics of it; it is the whole experience I get all-together. One of my bucket list is to have my own coffee shop. So for my final project, using Arduino and Processing, I decided to produce a fun, relaxing cafe game and have my dream come-true!!
+I love going to cafe. I love drinking coffee but apart from that I also love cafe for its vibe, its atmosphere, people I meet there, and the aesthetics of it; it is the whole experience I get all-together. One of my bucket list is to have my own coffee shop. So for my final project, using Arduino and Processing, I decided to produce a fun, relaxing cafe game and have my dream come-true!!
 
 ## Description
 
@@ -89,7 +89,24 @@ Therefore, I declared the booleans on the main project file as a public boolean.
 
 ### Processing - Arduino Communication
 
-Once I started this project, I found out that 
+Once I started this project, I found out that for my previous project, I did make a communication between Arduino and Processing but without a handshake. For this time, I made sure I make a proper handshake before I put the two programs in communication. 
+
+
+
+````
+ if (firstContact == false) {
+      if (val.equals("A")) {
+        myPort.clear();
+        firstContact = true;
+        myPort.write("A");
+        println("contact");
+      }
+    } else { //if we've already established contact, keep getting and parsing data
+
+      println(val); //receiving data
+````
+
+I struggled making Arduino to stop sending "A" when the first contact is completed. I enabled this by setting a boolean firstContact as false by default and when the Processing reads the handshake value "A", it clears the port and changes the firstContact to be true. This way, once the first contact is complete, they can read data values needed to run the program. 
 
 ### LED light not bright enough 
 
