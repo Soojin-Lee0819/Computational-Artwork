@@ -4,7 +4,7 @@
 
 ![alt-text](Images/shanghai.jpg)
 
-I love going to cafe. I love drinking coffee but apart from that I also love cafe for its vibe, its atmosphere, people I meet there, and the aesthetics of it; it is the whole experience I get all-together. One of my bucket list is to have my own coffee shop. So for my final project, using Arduino and Processing, I decided to produce a fun, relaxing cafe game and have my dream come-true!!
+I love going to cafe. I love drinking coffee but apart from that I also love cafe for its vibe, its atmosphere, people I meet there, and the aesthetics of the cafe; it is the entire experience I get all-together. One of my bucket list is to have my own coffee shop. So for my final project, using Arduino and Processing, I decided to produce a fun, relaxing cafe game and make my dream come-true!!
 
 ## Description
 
@@ -12,7 +12,7 @@ I love going to cafe. I love drinking coffee but apart from that I also love caf
 
 ### Instruction:
 
-1) Choose a city where you want to open a cafe (On hover, that city will light up on the map!)
+1) Choose a city where you want to open a cafe (on hover, that city will light up on the map!)
 
 2) Turn on the light and set the music of your choice
 
@@ -74,7 +74,7 @@ Press the button to activate spinner
 
 ### Pass boolean from one class to another 
 
-The game "Dream cafe" has multiple pages and tasks that players have to navigate through and complete. In order to organize these layers of pages and sequence of tasks, I organized them in classes. 
+The game "Dream cafe" has multiple pages and tasks that players have to navigate through and complete. So to write down everything in one project file was too complicated  In order to organize these layers of pages and sequence of tasks, I organized them in classes. 
 
 ![alt-text](Images/classes.png)
 
