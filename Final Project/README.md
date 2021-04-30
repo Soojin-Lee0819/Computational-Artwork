@@ -4,11 +4,11 @@
 
 ![alt-text](Images/shanghai.jpg)
 
-I love going to cafe. I love drinking coffee but apart from that I also love cafe for its vibe, its atmosphere, people I meet there, and the aesthetics of the cafe; it is the entire experience I get all-together. One of my bucket list is to have my own coffee shop. So for my final project, using Arduino and Processing, I decided to produce a fun, relaxing cafe game and make my dream come-true!!
+I love going to cafe. I love drinking coffee but apart from that I also love cafe for its vibe, its atmosphere, people I meet there, and the aesthetics of the cafe; it is the experience I get all-together. One of my bucket list is to have my own coffee shop. So, for my final project, using Arduino and Processing, I decided to produce a fun, relaxing cafe game and make my dream come-true!!
 
 ## Description
 
-"Dream Cafe" is a fun and relaxing game for those who want to have an experience of opening a cafe. By playing "Dream Cafe", you will be able to have a holistic experience of opening a cafe from choosing a locaiton, setting up the cafe environment, receiving orders, making latte art, and serving coffee to the customers. Please follow the instruction below to enjoy this game. 
+"Dream Cafe" is a fun and relaxing game for those who want to have an experience of opening a cafe. By playing "Dream Cafe", you will be able to have a holistic experience of opening a cafe from choosing a locaiton, setting up the cafe environment, receiving orders, making latte art, and serving coffee to the customers. Please follow the instruction below to enjoy Dream Cafe. 
 
 ### Instruction:
 
@@ -24,10 +24,10 @@ I love going to cafe. I love drinking coffee but apart from that I also love caf
 4) Press yellow button to receive an order (Press the button until your friend says "STOP").
 
 5) Type-in the order that spinning wheel indicates and press ENTER
-// 6) Start drawing Latte Art and make coffee for the customer 
-      //Dial PINK potentiometer to adjust the brush stroke size
-// 7) Once you finish making coffee, press READY to serve the coffee to the customer. 
-// 8) Press RESTART to restart the game!
+6) Draw latte art for the customer
+   Dial PINK potentiometer to adjust the brush stroke size
+7) Once you finish making coffee, press READY to serve the coffee to the customer. 
+8) Press RESTART to restart the game!
 
 ## Schematic 
 
@@ -54,15 +54,15 @@ Click below to see the end result of my final project!
 
 ## Demo GIF 
 
-LED light on the map lights up according to your hover on the image 
+LED light on the map lights up according to your hover on the image
 
 ![alt-text](Images/lightmap.gif)
 
-Turn on the lamp to shed a light to the photoresistor and to light up the cafe
+Shed light to photoresistor in order to light up the cafe
 
 ![alt-text](Images/turnlight.gif)
 
-Drawing latte art and adjusting the brush size using potentiometer
+Draw latte art and adjust the brush size using potentiometer
 
 ![alt-text](Images/draw.gif)
 
@@ -74,21 +74,23 @@ Press the button to activate spinner
 
 ### Pass boolean from one class to another 
 
-"Dream Cafe" Processing file is composed of a multiple pages and a number of tasks for the players to complete. So instead of cramming everything into one pde file, I made multiple tabs and organized the code in classes. 
+The Processing file of the game "Dream Cafe" is composed of a multiple pages and a number of tasks for the players to complete. So instead of cramming everything into one pde file, I made a multiple tabs and organized the code in classes. 
 
 ![alt-text](Images/classes.png)
 
-In total, I have one main project file with five different class pages. 
+In total, I have one main project file with five class pages. Creating a new class tab was not a difficult part. However, I faced an issue when I tried to pass boolean from one tab to another. For example, initially, in order to identify the mouse over for the images in the StartScreen page, I declared the boolean variables like this in the StartScreen Tab.
 
 ![alt-text](Images/cafe3.png)
 ![alt-text](Images/cafe2.png)
 
-Creating a new class tab was not a difficult part. However, I faced an issue when I tried to pass boolean from one tab to another. For example, initially, I declared the boolean variables
+StartScreen                                            GamePage
+
 
 ````
 boolean overTokyo = false;
 ````
-in the StartScreen Tab. This is a boolean variable that identifies mouse over the images in StartScreen Tab. However, when I tried to use this boolean at the main project file for the mouseClicked() function, there was an error with a message saying that the boolean is not found. After some research, I found out that the boolean should be declared as a "public" to pass boolean from one class to another. I also found out that the boolean that is declared on the main project file can be read by other tabs. Therefore, when declaring boolean, I made boolean to be public like this:
+When the mouse is hovered within the parameter of overTokyo, the boolean turns true. 
+However, when I tried to use this boolean at the main project file for the mouseClicked() function, there was an error with a message saying that the boolean is not found. After some research, I found out that the boolean should be declared as a "public" to pass boolean from one class to another. I also found out that the boolean that is declared on the main project file can be read by other tabs. Therefore, when declaring boolean, I made boolean to be public like this:
 
 ````
 public boolean overTokyo = false;
