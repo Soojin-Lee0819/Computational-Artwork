@@ -16,13 +16,13 @@ For my final project, using Arduino and Processing, I want to produce a fun and 
 
 This is not a competitive game. It will be a chill and relaxing game where you follow the instructions and enjoy completing certain tasks. For now, considering the scope of this project, I plan to have 4-5 different challenges/tasks. Each task will involve the use of arduino, processing or both. I plan to make it very creative and engaging.
 
-Here are some of the challenges that I have in mind as of now.
+Here are the ideas that I have in mind. 
 
 ## Task Ideas
 
 ### Setting up light 
 
-Setting a cozy, welcoming, and comfortable environment for cafe is a key. Players will be given an image of the lighting of the cafe with some clues. Then it is their task to find a way to adjust the lighting of the cafe and set up a light in a way that matches the image. Photoresistor and LED lights will be needed for this challenge.
+Setting a cozy, welcoming, and comfortable environment for cafe is a key for this project. Players will be given an image of the lighting of the cafe with some clues. Then it is their task to find a way to adjust the lighting of the cafe and set up a light in a way that matches the image. Photoresistor and LED lights will be needed for this challenge.
 
 ![alt-text](Images/light.jpg) ![alt-text](Images/cafelight2.jpg) 
 
@@ -50,7 +50,7 @@ I want to incorporate motor for my final project but as of now I didn't learn ho
 
 ### Designing landing page for Processing 
 
-I started with desinging landing_page on Processing. For the landing_page, I wanted players to be able to choose where they want to open up a cafe, and have it viewed on the map by having Arduino LED lights to light up. I carefully chose the images of cafes around the world with a good resolution. When choosing cafe images, it was difficult to ignore my "perfectionist" mindset. I spent around 2 hours choosing the "perfect" images when the logical part of me was telling me that I should be spending more time getting the technical parts done, and work on the details later if I have more time. 
+I started with desinging landing_page on Processing. For the landing_page, I wanted players to be able to choose where they want to open a cafe, and have it viewed on the map by making Arduino LED lights to light up. I carefully chose the images of the cafes around the world with a good resolution. When choosing cafe images, it was difficult to ignore my "perfectionist" mindset. I spent around 2 hours choosing the "perfect" images when the logical part of me was telling me that I should be spending more time getting the technical parts done, and work on the details later if I have more time. 
 
 ![alt-text](Images/cafehover.png)
 
@@ -60,9 +60,9 @@ First, when the player hover mouse on the image,the opacity of the image changes
 
 Second, when the image is clicked, the clicked image will be the background of the next page, the GamePage. 
 
-Initially, for the class StartScreen, I just simply assigned to track the mouse and wrote a code for it to change the opacity of the image when the mouse is hovered on the image. With this, changing the opacity of the image was not an issue, but since there is no data recorded regarding which image is clicked on, I couldn't execute the second part; to set a clicked image to be the background image of the GamePage. 
+Initially, for the class StartScreen, I simply assigned to track the mouse and wrote a code for it to change the opacity of the image when the mouse is hovered on the image. With this code, changing the opacity of the image was not an issue, but since there is no data recorded regarding which image is clicked on, I couldn't execute the second part; to set a clicked image to be the background image of the GamePage. 
 
-Therefore, I redid the first part and set each image as a boolean. 
+Therefore, I redid the first part by setting each image as a boolean. 
 
 ````
 boolean shanghaiOver (int x, int y, int width, int height) {
@@ -74,16 +74,16 @@ boolean shanghaiOver (int x, int y, int width, int height) {
     }
   }
 ````
-and set the function; when the mouse is hovered on the image, it makes the boolean true. For instance, when I have my mouse hover on the parameter of Shanghai cafe image, 
+Then, I set the function; when the mouse is hovered on the image, it makes the boolean true. For instance, when I have my mouse hover on the parameter of Shanghai cafe image, 
 
 ````
 void update(int x, int y) {
     if ( shanghaiOver (ShanghaiX, ShanghaiY, imageWidth, imageHeight)) {
       overShanghai = true;
   ````
-  it returns the overShanghai TRUE
+ it returns the boolean overShanghai TRUE
   
-And on the main project page, I set for the function mouseClick(), when the mouse is clicked when overShanghai is ture, it turns the boolean cafeShanghai TRUE;
+And on the main project page, I set for the function mouseClick(); if the mouse is clicked while overShanghai is ture, it turns the boolean cafeShanghai TRUE;
   
   ````
    if (start_screen  && overShanghai ) { // when click Shanghai
@@ -96,14 +96,14 @@ And on the main project page, I set for the function mouseClick(), when the mous
   }
   ````
 
-which allows me to create a channel of communication where the click of certain image leads to having that image to be the background of the following page. 
+which allows me to create a channel of communication where the click of certain image leads to making that image to be the background of the following page. 
 
 ## 18 April 2021
 ##### day-3
 
 ### Arduino-Processing handshake 
 
-Today my goal was to connect Aruino, Processing and make the LED light up when the mouse is hovered on the image. I referenced the code that I used for my previous project "Draw Korean Flag" to initiate the contact between Processing and Aruino. I realized that for my previous project, I did make a communication between Arduino and Processing but without a handshake. For this time, I made sure I make a proper handshake before I put the two programs in communication. 
+Today my goal was to connect Aruino, Processing, and make the LED light up when the mouse is hovered on the image. I referenced the code that I used for my previous project "Draw Korean Flag" to initiate the contact between Processing and Aruino. I realized that for my previous project, I did allow the communication between Arduino and Processing but without a handshake. For this time, I made sure I make a proper handshake before I put the two programs in communication. 
 
 
 
@@ -121,6 +121,8 @@ Today my goal was to connect Aruino, Processing and make the LED light up when t
 ````
 
 I struggled making Arduino to stop sending "A" when the first contact is completed. I enabled this by setting a boolean firstContact as false by default and when the Processing reads the handshake value "A", it clears the port and changes the firstContact to be true. This way, once the first contact is complete, they can read data values needed to run the program. 
+
+I stopped my work here. I made a successful handshake between Arduino and Processing but I did not build the Arduino LED light. 
 
 
 ## 19 April 2021
@@ -162,12 +164,12 @@ and coded Arduino to turn on the LED light when it reads those assigned values;
 
 and if the mouse is not hovered on the images, the Processing sends the value (0), and when the Arduino receives the value '0' it digitalWrites all the pins to be LOW; turning off all the lights.
 
-I was surprised to find out how fast the interaction between Processing and Arduino could be. When I moved the mouse from one image to another, the Arduino light changed immediately without a delay. 
+I was surprised to find out how fast the interaction between Processing and Arduino could be. When I moved the mouse from one image to another, the Arduino light changed immediately without a noticeable delay. 
 
 ## 20 April 2021
 ##### day-5
 
-I started to develop the tasks for the GamePage. I made two tasks. First, the player has to shed the light to the photoresistor to make the cafe brighter and second, dial the potentiometer to choose the right song for the cafe. Only when the player has successfully set up the light and the sound for the cafe, he/she can proceed to the next part of the game.
+I started to develop the tasks for the GamePage. I made two tasks. First, the player has to shed light to the photoresistor to make the cafe brighter and second, dial the potentiometer to choose the right song for the cafe. If the player successfully set up the light and the sound for the cafe, he/she can proceed to the next part of the game.
 
 ### Designing & Building Game Page
 
@@ -219,7 +221,7 @@ I built the potentiometer to Arduino circuit and mapped the readings of its valu
 
 Arduino sends the value, and Processing reads the value. 
 
-Since both the potentiometer and photoresistor values are received simultaneously, I used a split to process the data by category.
+Since both the potentiometer and photoresistor values are received simultaneously, I used a split to process the data individually.
 
 ````
   println(val); //receiving data
@@ -228,9 +230,9 @@ Since both the potentiometer and photoresistor values are received simultaneousl
 
 When the processing receives 0 or 5 from the potentiometer value, it plays noSong, and when it receives the the value between 1-4, it plays the corresponding song. 
 
-I made the buffer value 0 and 5 so that when the potentiometer is not dialed, there is no song in the cafe. 
+I made the buffer value 0 and 5 so that even when the potentiometer value is not read with a high accuracy, all four songs are played without an issue and when the potentiometer is not dialed, there is no music being played in the cafe. 
 
-### When Sound and Light are set, Receive the order
+### When Sound and Light are set, start receiving order
 
 ````
    if ((int)(values[0]) == 0 || (int)(values[0]) ==5 && (int)(values[1]) == 0) {
@@ -240,18 +242,18 @@ I made the buffer value 0 and 5 so that when the potentiometer is not dialed, th
         }
  ````
  
- I made a boolean cafeReady. When the light and music are on, cafe is ready. If the cafe is ready, the GamePage will show the image of customer and another instruction for the players to follow. 
+ I made a boolean cafeReady. When the light and music are on, cafe is ready. If the cafe is ready, the GamePage will show the image of customer and the next instruction for the players to follow. 
 
 ## 21 April 2021
 ##### day-6
 
 ### Installing Servomotor for order 
 
-I continued working on the GamePage. I built the yellow button and the servo motor to the circuit. I plan to add the spinning wheel to the servo motor but for now, I focused on getting done with the funtional part. 
+I continued working on the GamePage. I built the yellow button and the servo motor to the circuit. I plan to add the spinning wheel to the servo motor later but for now, I focused on getting done with the funtional part. 
 
 ### Players Type-in the order
 
-I added the feature where the players can type in order and having it appear on the screen. 
+I added the feature where the players type in the order and having it appear on the screen. 
 
 ````
 void keyPressed() {
@@ -267,6 +269,7 @@ void keyPressed() {
     }
   }
  ````
+ 
 I even added the delete function to allow mistake. When they type a wrong letter, they can erase by pressing a BACKSPACE. I enabled this by using substring and order.length. 
 
 ![alt-text](Images/write.gif
@@ -292,7 +295,7 @@ I wanted to provide players with a sketch to draw on; the outline of the panda, 
 
 ![alt-text](Images/photoshop.jpeg)
 
-Once I made these outlined images, I wanted these images to pop-up according to the order the players have typed-in, in the previous page. For example, if the player typed "panda" and pressed enter, I wanted the outline sketch of "panda" to show up. 
+Once I made these outlined images, I wanted these images to pop-up according to the order the players typed-in, in the previous page. For example, if the player typed "panda" and pressed enter, I wanted the outline sketch of "panda" to show up. 
 
 To do this, I revisited the code for void KeyPressed()
 
@@ -369,9 +372,9 @@ class LatteArtPage {
 ````
 ![alt-text](Images/noDraw.gif)
 
-First solution that came to my mind was obviously to get rid of the background. However, the issue was that when there is no background, I can draw continouous line on the page but the images from the previous page, the GamePage, is visible underneath. Therefore, I had to find another solution. 
+First solution that came to my mind was obviously to get rid of the background. However, the issue was that when there is no background, the previous page, the GamePage, is visible underneath. Therefore, I had to find another solution. 
 
-But this trouble give me a source of inspiration. Turning this trouble, the fact that the previous page is shown underneath, into my own advantage, I found the solution. Basically, I separated drawing page into two separate pages; one page that contains the background and images needed for this latte art; the LatteArtPage and another page that only contains the funciton of drawing the continuous line, the Draw Page. So once the drawing starts, the LatteArtPage is displayed and with 2 milliseconds of delay, 
+But this trouble give me a source of inspiration. Turning this trouble, the fact that the previous page is shown underneath, to an opportunity, I found the solution. Basically, I separated drawing page into two separate pages; one page that contains the background and images needed for this latte art; the LatteArtPage and another page that only contains the funciton of drawing the continuous line, the Draw Page. So once the drawing starts, the LatteArtPage is displayed and with 2 milliseconds of delay, 
 
 ````
  if (keyCode == ENTER) { // confirm the order and start doing the latte art
@@ -380,7 +383,7 @@ But this trouble give me a source of inspiration. Turning this trouble, the fact
     latte_page = true;
 ````
 
-it moves to DrawPage. This allows players to draw on the transparent backgorund with the previous page, the exact page that is intended for the latte art. 
+it moves to DrawPage. This allows players to draw on the transparent backgorund with the previous page shown underneath, the exact page that is intended for the latte art. 
 
 [Adjusting Brush Stroke]
 
@@ -392,23 +395,6 @@ To use potentiometer to adjust the brush size, I mapped the value of the AnalogR
   int pmsensor2Value = analogRead (potentiometer2Pin);
   byte brushSize = map(pmsensor2Value, 0, 1023, 3, 10);
   ````
-
-### Arduino
-
-   //read the value of the potentiometer for brush stroke size(ANALOG)
-  int pmsensor2Value = analogRead (potentiometer2Pin);
-  byte brushSize = map(pmsensor2Value, 0, 1023, 3, 10);
-
-### Processing 
-
-if ((int)(values[2]) >2) {
-          allowDraw = true;
-          brushSize = float (values[2]);
-        } else {
-          allowDraw = false;
-        }
-
-I wanted the read value of the 2nd potentiometer to be directly assigned as a brushSize. I originally assigned the brushSize brushSize = int (values[2]); with an integer of the read value, which led to an error. I later found out that this is because the value should be read as a float
 
 
 ## 24 April 2021
@@ -491,7 +477,7 @@ I wonder if I need to specify that I used two breadboards on the schematic. If s
 ## 26 April 2021
 ##### day-11
 
-As I thought, the professor replied me that it is not necessary to specify using two breadboards on the schematic because schematic doesn't show the breadboard at all. The schematic only shows 
+As I thought, the professor replied on the discord that it is not necessary to specify using two breadboards on the schematic because schematic doesn't show the breadboard at all. The schematic only shows 
 
 1) which components I've used and
 2) the conncections between the components.
