@@ -44,3 +44,10 @@ Welcome to Soojin's Interactive Media class Github Repository. In this page, you
 
 [![Watch the video](images/lastgamefinalimage.jpg)](https://youtu.be/LDsbpfi08Vc)
 
+
+## [Arduino Analog VS. Digital | March 30, 2021 ](https://github.com/Soojin-Lee0819/IntrotoIM/tree/main/Mar30) 
+### Title: Dial to Find Out the Missing Parts of the Story!
+
+
+[![Watch the video](Images/youtubeimage.png)](https://youtu.be/YMRoeIXkoDQ)
+
