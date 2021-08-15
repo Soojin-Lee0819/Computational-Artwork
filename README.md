@@ -12,6 +12,7 @@ Welcome to Soojin's Interactive Media class Github Repository. In this page, you
 ![alt-text](images/soojinportrait.gif)
 
                                             
-### [Processing Computer Graphic Artwork | Patterns in Nature ](https://github.com/Soojin-Lee0819/IntrotoIM/tree/main/Feb2) 
+### [Processing Computer Graphic Artwork |  ](https://github.com/Soojin-Lee0819/IntrotoIM/tree/main/Feb2) 
+### <Patterns in Nature>
 
 ![](images/SoojinComputerArt.png)
