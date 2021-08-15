@@ -7,7 +7,7 @@ Welcome to Soojin's Interactive Media class Github Repository. In this page, you
 # Project Gallery
 
 ### [Processing Self Portrait | January 26, 2021](https://github.com/Soojin-Lee0819/IntrotoIM/tree/main/January26) 
-### Soojin's Portrait
+### <Soojin's Portrait>
 
 ![alt-text](images/soojinportrait.gif)
 
