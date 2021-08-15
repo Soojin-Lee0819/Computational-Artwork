@@ -10,5 +10,6 @@ Hope you enjoy :)
 
 ### 1. Processing Self Portrait 
 
-<img src="images/soojinportrait.gif" width="100> 
+![alt-text](images/soojinportrait.gif)
+
                                             
