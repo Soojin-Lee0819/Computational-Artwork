@@ -2,7 +2,7 @@
 
 # Welcome
 
-Welcome to Soojin's Interactive Media class Github Repository. In this page, you can find weekly digital artworks and games that I created using Processing and Arduino. I have also documented the process to share the journey. Hope you enjoy :) 
+Welcome to Soojin's Interactive Media class Github Repository. In this page, you can find weekly digital artworks and games that I created using Processing and Arduino. Click on each item to see the project and its process documentation. Hope you enjoy :) 
 
 # Project Gallery
 
