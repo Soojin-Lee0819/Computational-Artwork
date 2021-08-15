@@ -57,3 +57,16 @@ Welcome to Soojin's Interactive Media class Github Repository. In this page, you
 
 [![Watch the video](images/youtube.jpg.png)](https://youtu.be/p1_w7RVucHg)
 
+## [Arduino - Processing Project | April 13, 2021 ](https://github.com/Soojin-Lee0819/IntrotoIM/tree/main/April13) 
+### Title: Draw Korean Flag (Tae-Guk-key) !
+
+
+[![Watch the video](images/drawkoreanflag.png)](https://youtu.be/A0OAqD5EGqc)
+
+
+## [Final Project | May 1, 2021 ](https://github.com/Soojin-Lee0819/IntrotoIM/tree/main/Final%20Project) 
+### Dream Cafe!
+
+
+
+[![Watch the video](images/dreamcafe.png)](https://youtu.be/8zPUVFaiePk)
