@@ -26,5 +26,9 @@ Welcome to Soojin's Interactive Media class Github Repository. In this page, you
 
 
 
+### [Data Visualization & Generative Text| Febuary 16, 2021 ](https://github.com/Soojin-Lee0819/IntrotoIM/tree/main/Feb16) 
+### Title: Special Full-Course Dinner Reservation 
+
+![alt-text](images/demo.gif)
 
 
