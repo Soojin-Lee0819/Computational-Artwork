@@ -49,5 +49,5 @@ Welcome to Soojin's Interactive Media class Github Repository. In this page, you
 ### Title: Dial to Find Out the Missing Parts of the Story!
 
 
-[![Watch the video](Images/youtubeimage.png)](https://youtu.be/YMRoeIXkoDQ)
+[![Watch the video](images/youtubeimage.png)](https://youtu.be/YMRoeIXkoDQ)
 
