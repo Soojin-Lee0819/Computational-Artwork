@@ -9,6 +9,6 @@ Welcome to Soojin's Interactive Media class Github Repository. In this page, you
 ![alt-text](images/soojinportrait.gif)
 
                                             
-### [1. Processing Self Portrait ](https://github.com/Soojin-Lee0819/IntrotoIM/tree/main/January26) 
+### [Processing Computer Graphic Artwork | Patterns in Nature ](https://github.com/Soojin-Lee0819/IntrotoIM/tree/main/Feb2) 
 
-![alt-text](images/soojinportrait.gif)
+![](images/SoojinComputerArt.png)
