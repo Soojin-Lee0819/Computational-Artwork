@@ -10,4 +10,4 @@ Hope you enjoy :)
 
 ### 1. Processing Self Portrait 
 
-![alt-text](images/soojinportrait.gif | width=100)
+![alt-text](images/soojinportrait.gif)
