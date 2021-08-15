@@ -1,9 +1,10 @@
 # Intro to IM
-This is a Github repository for Soojin's Intro to Interactive Media class.
 
-You can find Soojin's Interactive Media projects that use Processing and Arduino. 
+Welcome to Soojin's Interactive Media class Github Repository.
 
-You can also read Soojin's learning process. 
+On this page, you can find digital artworks and games that I created every week using Processing and Arduino. 
+
+I have also documented the process to share the journey. 
 
 Hope you enjoy :) 
 
