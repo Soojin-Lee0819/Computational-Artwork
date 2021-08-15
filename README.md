@@ -51,3 +51,9 @@ Welcome to Soojin's Interactive Media class Github Repository. In this page, you
 
 [![Watch the video](images/youtubeimage.png)](https://youtu.be/YMRoeIXkoDQ)
 
+## [Arduino Sound Assignment | April 6, 2021 ](https://github.com/Soojin-Lee0819/IntrotoIM/tree/main/April6) 
+### Title: Cute Birthday Celebration!
+
+
+[![Watch the video](images/youtube.jpg)](https://youtu.be/p1_w7RVucHg)
+
