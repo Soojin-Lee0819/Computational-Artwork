@@ -16,3 +16,15 @@ Welcome to Soojin's Interactive Media class Github Repository. In this page, you
 ### Title: Patterns in Nature
 
 ![](images/SoojinComputerArt.png)
+
+
+
+### [Object Oriented Programming| Febuary 9, 2021 ](https://github.com/Soojin-Lee0819/IntrotoIM/tree/main/Feb9) 
+### Title: The Underwater Foodchain
+
+[![Watch the video](images/salmoneatsfish.png)](https://youtu.be/HjzMetCymzY)
+
+
+
+
+
