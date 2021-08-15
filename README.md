@@ -55,5 +55,5 @@ Welcome to Soojin's Interactive Media class Github Repository. In this page, you
 ### Title: Cute Birthday Celebration!
 
 
-[![Watch the video](images/youtube.jpg)](https://youtu.be/p1_w7RVucHg)
+[![Watch the video](images/youtube.jpg.png)](https://youtu.be/p1_w7RVucHg)
 
