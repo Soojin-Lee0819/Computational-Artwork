@@ -1,4 +1,4 @@
-# IntrotoIM
+# Intro to IM
 This is a Github repository for Soojin's Intro to Interactive Media class.
 
 You can find Soojin's Interactive Media projects that use Processing and Arduino. 
