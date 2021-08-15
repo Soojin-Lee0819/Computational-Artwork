@@ -8,3 +8,6 @@ I have also documented the process to share the journey.
 
 Hope you enjoy :) 
 
+### 1. Processing Self Portrait 
+
+
